@@ -1,0 +1,2010 @@
+Doctor_Name,Disease,Specialization,Experience,Rating,Hospital,City,Fees,Availability
+Dr. Abhiram Bhattacharyya,Aortic enlargement,Cardiologist,15,4.1,AIIMS,Gadag,1336,Available
+Dr. Aarush Pradhan,Cardiomegaly,Cardiologist,21,4.0,Columbia Asia,Tumkur,1494,Available
+Dr. Girik Swamy,Cardiomegaly,Cardiologist,15,3.6,Aster Hospital,Kolar,580,Available
+Dr. Idika Babu,ILD,Pulmonologist,6,3.9,KMC Hospital,Gadag,1284,Available
+Dr. Osha Krishnan,Lung Opacity,Pulmonologist,24,4.5,KMC Hospital,Bangalore,1166,Available
+Dr. Jairaj Dugar,Pleural effusion,Pulmonologist,12,4.1,Sparsh Hospital,Mandya,527,Busy
+Dr. Aahana Chaudry,Nodule/Mass,Oncologist,23,4.2,Columbia Asia,Mandya,325,Busy
+Dr. Raksha Sule,Consolidation,Pulmonologist,21,3.6,Narayana Health,Hubli,1054,Busy
+Dr. Isha Baria,Lung Opacity,Pulmonologist,25,4.3,Columbia Asia,Bagalkot,648,Available
+Dr. Aayush Rama,No Finding,General Physician,25,4.5,Narayana Health,Yadgir,1431,Available
+Dr. Ira Deshmukh,Pleural effusion,Pulmonologist,23,4.8,Sparsh Hospital,Chitradurga,776,Available
+Dr. Jeevika Vasa,Nodule/Mass,Oncologist,20,4.3,Aster Hospital,Mysore,933,Busy
+Dr. Alka Sani,Other lesion,Pulmonologist,9,4.3,KMC Hospital,Ramanagara,328,Busy
+Dr. Timothy Goswami,Pleural thickening,Pulmonologist,22,3.8,Sparsh Hospital,Yadgir,1397,Available
+Dr. Bhavya Nagy,Infiltration,Pulmonologist,21,4.3,Manipal Hospital,Hassan,1434,Busy
+Dr. Umang Dyal,Nodule/Mass,Oncologist,8,4.4,Sparsh Hospital,Tumkur,1177,Available
+Dr. Yachana Thakur,Nodule/Mass,Oncologist,23,4.7,KMC Hospital,Chamarajanagar,1136,Available
+Dr. Jalsa Natarajan,No Finding,General Physician,20,4.7,Rainbow Hospital,Hassan,1074,Busy
+Dr. Gaurika Mitra,Infiltration,Pulmonologist,12,4.3,Fortis Hospital,Raichur,1140,Busy
+Dr. Anusha Oommen,No Finding,General Physician,2,4.7,Aster Hospital,Mandya,428,Busy
+Dr. Rehaan Sarin,Pulmonary fibrosis,Pulmonologist,22,3.6,Fortis Hospital,Bidar,788,Available
+Dr. Utkarsh Ramachandran,Pleural thickening,Pulmonologist,25,3.7,Apollo Hospital,Yadgir,694,Busy
+Dr. Bhavika Bahl,Other lesion,Pulmonologist,5,4.5,Aster Hospital,Ramanagara,783,Busy
+Dr. Ishwar Kala,Calcification,Pulmonologist,24,4.6,Narayana Health,Karwar,1166,Busy
+Dr. Ekbal Hora,Aortic enlargement,Cardiologist,21,4.9,Apollo Hospital,Bangalore,727,Available
+Dr. Mitali Biswas,Infiltration,Pulmonologist,25,4.6,Manipal Hospital,Vijayapura,597,Busy
+Dr. Alexander Dash,Aortic enlargement,Cardiologist,7,3.9,Sparsh Hospital,Mysore,704,Busy
+Dr. Sanaya Suresh,Cardiomegaly,Cardiologist,14,3.8,Apollo Hospital,Bidar,396,Available
+Dr. Jatin Jayaraman,Other lesion,Pulmonologist,18,3.7,Fortis Hospital,Udupi,408,Busy
+Dr. Aditya Sani,Nodule/Mass,Oncologist,12,4.9,Apollo Hospital,Udupi,943,Busy
+Dr. Tarak Khalsa,ILD,Pulmonologist,17,5.0,Fortis Hospital,Ramanagara,1376,Available
+Dr. Anthony Sule,Atelectasis,Pulmonologist,8,3.8,Apollo Hospital,Gadag,1140,Available
+Dr. Gunbir Yadav,Pneumothorax,Pulmonologist,13,5.0,Aster Hospital,Yadgir,759,Busy
+Dr. Yashica Guha,Other lesion,Pulmonologist,1,3.7,Rainbow Hospital,Udupi,807,Busy
+Dr. Samesh Bora,Calcification,Pulmonologist,8,4.1,Columbia Asia,Chikkaballapur,1340,Busy
+Dr. Deepa Som,Lung Opacity,Pulmonologist,20,3.9,Columbia Asia,Kolar,1100,Busy
+Dr. Aarnav Ratti,Cardiomegaly,Cardiologist,25,4.8,Rainbow Hospital,Mandya,379,Available
+Dr. Upma Nagar,Other lesion,Pulmonologist,3,4.2,Columbia Asia,Hubli,1066,Available
+Dr. Ekani Ramachandran,Pleural effusion,Pulmonologist,25,4.8,Aster Hospital,Haveri,1222,Busy
+Dr. Praneel Mandal,Infiltration,Pulmonologist,16,3.7,Apollo Hospital,Shimoga,942,Busy
+Dr. Jai Dutta,Consolidation,Pulmonologist,21,4.5,Sparsh Hospital,Tumkur,473,Available
+Dr. Gauri Mand,Lung Opacity,Pulmonologist,6,4.6,Rainbow Hospital,Belgaum,987,Busy
+Dr. Odika Bassi,Calcification,Pulmonologist,18,4.3,Aster Hospital,Tumkur,370,Busy
+Dr. Reyansh Bajwa,Other lesion,Pulmonologist,21,4.1,KMC Hospital,Kolar,773,Busy
+Dr. Neelima Sha,Atelectasis,Pulmonologist,24,4.9,Rainbow Hospital,Chamarajanagar,351,Available
+Dr. Jagat Singh,Calcification,Pulmonologist,2,3.5,Apollo Hospital,Vijayapura,349,Busy
+Dr. Jagat Ganguly,Pleural effusion,Pulmonologist,25,4.0,Manipal Hospital,Mandya,1483,Busy
+Dr. Ekantika Dewan,Nodule/Mass,Oncologist,15,4.3,AIIMS,Dharwad,1266,Busy
+Dr. Maanav Bora,Consolidation,Pulmonologist,24,4.2,Fortis Hospital,Haveri,1188,Available
+Dr. Nikita Brahmbhatt,Pleural effusion,Pulmonologist,1,3.9,Fortis Hospital,Dharwad,474,Available
+Dr. Anamika Gole,Aortic enlargement,Cardiologist,4,4.3,Apollo Hospital,Yadgir,753,Available
+Dr. Faris Ranganathan,Calcification,Pulmonologist,5,4.1,Manipal Hospital,Raichur,791,Available
+Dr. Sai Kakar,Pleural effusion,Pulmonologist,17,4.6,Rainbow Hospital,Tumkur,964,Available
+Dr. Krishna Subramanian,Calcification,Pulmonologist,8,4.7,KMC Hospital,Raichur,391,Busy
+Dr. Chanchal Sachar,No Finding,General Physician,4,3.6,Sparsh Hospital,Hassan,684,Available
+Dr. Krishna Pathak,Other lesion,Pulmonologist,14,5.0,Sparsh Hospital,Ramanagara,393,Busy
+Dr. Yamini Boase,Other lesion,Pulmonologist,18,4.1,Apollo Hospital,Tumkur,1079,Busy
+Dr. Jeremiah Sridhar,Pulmonary fibrosis,Pulmonologist,22,4.9,Apollo Hospital,Haveri,704,Busy
+Dr. Harinakshi Vig,Pleural effusion,Pulmonologist,20,4.5,Aster Hospital,Gadag,537,Available
+Dr. Meera Prabhakar,Atelectasis,Pulmonologist,7,4.1,AIIMS,Karwar,1221,Busy
+Dr. Daniel Nayak,Pleural thickening,Pulmonologist,6,4.1,Fortis Hospital,Chitradurga,732,Available
+Dr. Sai Pillay,Consolidation,Pulmonologist,21,3.9,Rainbow Hospital,Belgaum,824,Busy
+Dr. Leena Divan,Nodule/Mass,Oncologist,17,3.7,Aster Hospital,Mangalore,944,Available
+Dr. Isha Shankar,Pneumothorax,Pulmonologist,22,4.0,Columbia Asia,Bidar,932,Available
+Dr. Sanya Chaudhry,Pneumothorax,Pulmonologist,4,3.9,Sparsh Hospital,Davanagere,1488,Available
+Dr. Damini Kari,Lung Opacity,Pulmonologist,15,4.9,Apollo Hospital,Tumkur,1067,Available
+Dr. Aishani Pathak,Calcification,Pulmonologist,15,3.7,Sparsh Hospital,Davanagere,695,Available
+Dr. Libni Chakrabarti,Pneumothorax,Pulmonologist,7,4.9,KMC Hospital,Hubli,430,Busy
+Dr. Yasti Dhar,Other lesion,Pulmonologist,9,4.7,Fortis Hospital,Ramanagara,626,Available
+Dr. Upma Bajwa,Nodule/Mass,Oncologist,11,4.2,Manipal Hospital,Hubli,674,Busy
+Dr. Anamika Sahni,No Finding,General Physician,11,5.0,Aster Hospital,Davanagere,855,Available
+Dr. Mugdha Wali,Consolidation,Pulmonologist,19,4.2,Fortis Hospital,Belgaum,1078,Busy
+Dr. Amol Biswas,Consolidation,Pulmonologist,23,3.7,KMC Hospital,Dharwad,857,Available
+Dr. Gaurav Kara,Pleural thickening,Pulmonologist,24,4.1,Narayana Health,Karwar,501,Available
+Dr. Udarsh Bhandari,Lung Opacity,Pulmonologist,5,4.8,Narayana Health,Davanagere,900,Available
+Dr. Zayan Srinivasan,Other lesion,Pulmonologist,1,4.5,Apollo Hospital,Vijayapura,916,Available
+Dr. Bhanumati Manda,Other lesion,Pulmonologist,2,4.1,Fortis Hospital,Ramanagara,483,Busy
+Dr. Rishi Garg,Pleural thickening,Pulmonologist,4,3.5,Apollo Hospital,Raichur,846,Available
+Dr. Daniel Dar,Calcification,Pulmonologist,2,5.0,Sparsh Hospital,Chamarajanagar,824,Busy
+Dr. Advik Bumb,Aortic enlargement,Cardiologist,4,4.6,Fortis Hospital,Raichur,301,Busy
+Dr. Janaki Bajwa,Aortic enlargement,Cardiologist,10,3.6,Fortis Hospital,Haveri,843,Busy
+Dr. Unnati Seth,Other lesion,Pulmonologist,25,3.9,Aster Hospital,Bangalore,670,Available
+Dr. Sanaya Purohit,Other lesion,Pulmonologist,11,4.1,AIIMS,Yadgir,965,Busy
+Dr. Jyoti Mistry,Nodule/Mass,Oncologist,8,4.6,Aster Hospital,Chikkaballapur,1070,Busy
+Dr. Faqid Char,Lung Opacity,Pulmonologist,16,4.3,Sparsh Hospital,Gadag,1137,Available
+Dr. Dayita Lad,Infiltration,Pulmonologist,14,4.0,AIIMS,Dharwad,1419,Available
+Dr. Darsh Setty,Nodule/Mass,Oncologist,17,4.0,Fortis Hospital,Bidar,953,Available
+Dr. Rishi Pau,Pleural effusion,Pulmonologist,12,3.8,Narayana Health,Hubli,526,Busy
+Dr. Ria Gera,Pleural thickening,Pulmonologist,14,3.5,Manipal Hospital,Gadag,526,Busy
+Dr. Orinder Wali,Cardiomegaly,Cardiologist,23,3.7,KMC Hospital,Kolar,765,Available
+Dr. Rayaan Choudhury,Aortic enlargement,Cardiologist,20,4.9,AIIMS,Bagalkot,1397,Available
+Dr. Hredhaan Lad,No Finding,General Physician,8,4.9,Aster Hospital,Udupi,749,Available
+Dr. Chanchal Murty,ILD,Pulmonologist,21,4.5,Aster Hospital,Mysore,1068,Available
+Dr. Diya Balakrishnan,Pleural effusion,Pulmonologist,3,4.6,Sparsh Hospital,Mandya,482,Available
+Dr. Sarthak Dora,Calcification,Pulmonologist,18,4.5,Columbia Asia,Davanagere,997,Busy
+Dr. Oni Sood,Infiltration,Pulmonologist,17,4.5,AIIMS,Udupi,1438,Available
+Dr. Dalaja Sanghvi,Cardiomegaly,Cardiologist,24,3.7,Narayana Health,Raichur,1133,Available
+Dr. Madhav Iyer,Consolidation,Pulmonologist,19,4.3,Fortis Hospital,Gadag,1496,Busy
+Dr. Ekansh Goda,Lung Opacity,Pulmonologist,16,3.8,Sparsh Hospital,Chikkaballapur,1083,Busy
+Dr. Omisha Dani,Other lesion,Pulmonologist,9,4.8,Aster Hospital,Udupi,1302,Busy
+Dr. Bhanumati Ghose,Cardiomegaly,Cardiologist,14,3.8,Manipal Hospital,Mandya,877,Available
+Dr. Gabriel Bir,Nodule/Mass,Oncologist,7,3.6,Manipal Hospital,Karwar,344,Busy
+Dr. Mohammed Prabhu,No Finding,General Physician,2,4.4,AIIMS,Raichur,933,Available
+Dr. Chatresh Gill,Pulmonary fibrosis,Pulmonologist,12,3.5,AIIMS,Bagalkot,406,Busy
+Dr. Chameli Gola,Atelectasis,Pulmonologist,23,4.5,Aster Hospital,Ramanagara,658,Busy
+Dr. Faris Natt,Infiltration,Pulmonologist,25,4.4,Rainbow Hospital,Udupi,721,Available
+Dr. Hardik Agarwal,Cardiomegaly,Cardiologist,8,3.6,Apollo Hospital,Belgaum,573,Busy
+Dr. Ronith Prakash,Atelectasis,Pulmonologist,18,3.9,Sparsh Hospital,Bellary,1494,Available
+Dr. Nidhi Bava,Pleural effusion,Pulmonologist,12,3.9,Narayana Health,Raichur,1497,Busy
+Dr. Samaksh Dube,Other lesion,Pulmonologist,5,4.0,Manipal Hospital,Chikkaballapur,759,Available
+Dr. Samesh Patel,Pulmonary fibrosis,Pulmonologist,1,4.6,Sparsh Hospital,Dharwad,1320,Available
+Dr. Raghav Lala,Consolidation,Pulmonologist,12,4.2,KMC Hospital,Haveri,676,Busy
+Dr. Arya Bobal,Atelectasis,Pulmonologist,17,3.6,Apollo Hospital,Davanagere,392,Busy
+Dr. Kashvi Borah,Cardiomegaly,Cardiologist,1,3.7,Manipal Hospital,Tumkur,1019,Busy
+Dr. Ucchal Dave,Infiltration,Pulmonologist,5,4.7,Narayana Health,Shimoga,827,Available
+Dr. Krisha Varty,Infiltration,Pulmonologist,19,3.6,Rainbow Hospital,Bagalkot,607,Available
+Dr. Chanchal Sridhar,Pneumothorax,Pulmonologist,16,4.2,Rainbow Hospital,Bangalore,731,Busy
+Dr. Oliver Kumar,Other lesion,Pulmonologist,8,3.7,AIIMS,Raichur,524,Busy
+Dr. Leena Trivedi,Nodule/Mass,Oncologist,1,5.0,Sparsh Hospital,Shimoga,475,Busy
+Dr. Kavya Jayaraman,Calcification,Pulmonologist,16,3.8,Fortis Hospital,Ramanagara,540,Available
+Dr. Saksham Tank,Infiltration,Pulmonologist,20,4.8,Columbia Asia,Raichur,1157,Busy
+Dr. Jeremiah Sane,Pneumothorax,Pulmonologist,4,4.2,Columbia Asia,Davanagere,765,Busy
+Dr. Darsh Parmar,Pulmonary fibrosis,Pulmonologist,16,4.8,Apollo Hospital,Vijayapura,829,Available
+Dr. Zehaan Bahl,Other lesion,Pulmonologist,19,3.6,Sparsh Hospital,Chamarajanagar,770,Available
+Dr. Arjun Sharma,Cardiomegaly,Cardiologist,23,4.5,Sparsh Hospital,Ramanagara,610,Available
+Dr. Frederick Bawa,Pulmonary fibrosis,Pulmonologist,15,4.5,Aster Hospital,Karwar,1302,Busy
+Dr. Nathaniel Chhabra,Other lesion,Pulmonologist,20,4.8,AIIMS,Vijayapura,1184,Available
+Dr. Aadi Gala,Calcification,Pulmonologist,9,4.6,Narayana Health,Bangalore,347,Available
+Dr. Oviya Chand,Calcification,Pulmonologist,14,4.8,Sparsh Hospital,Belgaum,555,Busy
+Dr. Arunima Desai,Nodule/Mass,Oncologist,22,4.8,Rainbow Hospital,Mangalore,830,Busy
+Dr. Tara Magar,Aortic enlargement,Cardiologist,19,4.4,Apollo Hospital,Bangalore,1413,Available
+Dr. Jatin Wali,Calcification,Pulmonologist,3,3.7,Fortis Hospital,Gadag,409,Available
+Dr. Triveni Saran,Atelectasis,Pulmonologist,6,5.0,Narayana Health,Chamarajanagar,1077,Available
+Dr. Chaitanya Walia,ILD,Pulmonologist,20,4.2,Manipal Hospital,Hubli,1403,Available
+Dr. Harinakshi Sule,Aortic enlargement,Cardiologist,16,3.9,Apollo Hospital,Tumkur,960,Available
+Dr. Bachittar Ravi,Cardiomegaly,Cardiologist,7,5.0,Apollo Hospital,Karwar,904,Available
+Dr. Pavani Bhatt,Calcification,Pulmonologist,12,4.4,Columbia Asia,Raichur,1063,Busy
+Dr. Jonathan Kar,Infiltration,Pulmonologist,23,3.8,Fortis Hospital,Karwar,477,Available
+Dr. Yashica Dhawan,Calcification,Pulmonologist,10,3.9,Narayana Health,Tumkur,1394,Busy
+Dr. Ranveer Mutti,Lung Opacity,Pulmonologist,10,4.2,Columbia Asia,Yadgir,1257,Available
+Dr. Dominic Som,Cardiomegaly,Cardiologist,16,4.2,Manipal Hospital,Mysore,1216,Busy
+Dr. Varenya Sen,Pleural effusion,Pulmonologist,16,3.5,Rainbow Hospital,Vijayapura,992,Available
+Dr. Tarak Srinivas,Consolidation,Pulmonologist,10,4.8,Aster Hospital,Shimoga,604,Busy
+Dr. Faraj Agrawal,Other lesion,Pulmonologist,3,4.1,Narayana Health,Dharwad,1423,Busy
+Dr. Zayyan Walla,Aortic enlargement,Cardiologist,8,3.6,Fortis Hospital,Belgaum,1206,Busy
+Dr. Lekha Sibal,Atelectasis,Pulmonologist,9,4.7,Manipal Hospital,Mysore,1015,Available
+Dr. Sai Nath,Infiltration,Pulmonologist,25,4.4,Columbia Asia,Bidar,869,Available
+Dr. Harrison Pillay,ILD,Pulmonologist,21,3.9,KMC Hospital,Mangalore,915,Available
+Dr. Saumya Bava,Aortic enlargement,Cardiologist,9,4.3,KMC Hospital,Bagalkot,1464,Available
+Dr. Ladli Shere,Pneumothorax,Pulmonologist,21,4.5,Sparsh Hospital,Belgaum,764,Available
+Dr. Chakrika Barad,Consolidation,Pulmonologist,5,3.5,Sparsh Hospital,Chitradurga,361,Busy
+Dr. Aarini Bava,Pleural thickening,Pulmonologist,20,4.3,Rainbow Hospital,Hubli,693,Available
+Dr. Nilima Barad,ILD,Pulmonologist,9,4.0,KMC Hospital,Bidar,912,Available
+Dr. Ethan Memon,Other lesion,Pulmonologist,13,3.6,Fortis Hospital,Udupi,309,Available
+Dr. Anamika Bhatt,Pleural thickening,Pulmonologist,21,4.4,Fortis Hospital,Bangalore,1270,Available
+Dr. Manbir Brahmbhatt,Other lesion,Pulmonologist,21,3.8,Manipal Hospital,Tumkur,638,Busy
+Dr. Nakul Ramakrishnan,Consolidation,Pulmonologist,10,4.4,Apollo Hospital,Shimoga,1376,Available
+Dr. Oeshi Puri,Aortic enlargement,Cardiologist,10,4.6,Aster Hospital,Haveri,381,Available
+Dr. Lavanya Koshy,Calcification,Pulmonologist,3,4.1,AIIMS,Karwar,570,Busy
+Dr. Teerth Konda,Infiltration,Pulmonologist,3,4.9,AIIMS,Dharwad,659,Available
+Dr. Lajita Chandran,Atelectasis,Pulmonologist,15,3.6,Manipal Hospital,Yadgir,304,Busy
+Dr. Oviya Shan,Atelectasis,Pulmonologist,11,4.3,Sparsh Hospital,Tumkur,330,Busy
+Dr. Hemani Handa,Lung Opacity,Pulmonologist,20,4.4,Aster Hospital,Udupi,863,Busy
+Dr. Rachita Mistry,Cardiomegaly,Cardiologist,21,4.5,Columbia Asia,Karwar,353,Available
+Dr. Leena Dugar,Other lesion,Pulmonologist,6,3.5,Rainbow Hospital,Chitradurga,1254,Busy
+Dr. Deepa Ramanathan,Pulmonary fibrosis,Pulmonologist,16,4.2,Aster Hospital,Belgaum,1263,Available
+Dr. Oliver Parikh,Other lesion,Pulmonologist,2,4.6,Sparsh Hospital,Chamarajanagar,902,Available
+Dr. Avi Hans,No Finding,General Physician,17,3.5,AIIMS,Bagalkot,1344,Available
+Dr. Udyati Wadhwa,Aortic enlargement,Cardiologist,8,3.8,Fortis Hospital,Haveri,1034,Available
+Dr. Urishilla Ganguly,Aortic enlargement,Cardiologist,6,4.4,Apollo Hospital,Raichur,1276,Busy
+Dr. Rushil Arya,Pulmonary fibrosis,Pulmonologist,17,4.5,Aster Hospital,Mangalore,504,Available
+Dr. Siya Pai,No Finding,General Physician,14,4.4,AIIMS,Chamarajanagar,1111,Busy
+Dr. Jackson Keer,Calcification,Pulmonologist,14,4.3,KMC Hospital,Shimoga,586,Busy
+Dr. Yutika Uppal,Infiltration,Pulmonologist,20,4.9,Rainbow Hospital,Karwar,1398,Busy
+Dr. Gaurika Pandey,Aortic enlargement,Cardiologist,23,4.4,Sparsh Hospital,Davanagere,1461,Busy
+Dr. Odika Oza,Cardiomegaly,Cardiologist,15,4.4,Manipal Hospital,Bellary,840,Busy
+Dr. Nitara Purohit,Cardiomegaly,Cardiologist,15,3.9,Rainbow Hospital,Mysore,385,Busy
+Dr. Chakradhar Devi,Other lesion,Pulmonologist,15,5.0,AIIMS,Udupi,894,Busy
+Dr. Nathan Din,Infiltration,Pulmonologist,18,4.5,Fortis Hospital,Mandya,529,Available
+Dr. Kavya Warrior,Aortic enlargement,Cardiologist,6,4.0,Manipal Hospital,Kolar,909,Available
+Dr. Finn Bassi,Pulmonary fibrosis,Pulmonologist,23,4.6,Columbia Asia,Kolar,1062,Busy
+Dr. Kritika Thaker,Calcification,Pulmonologist,22,4.5,KMC Hospital,Bagalkot,1293,Available
+Dr. Zilmil Banik,Aortic enlargement,Cardiologist,10,5.0,Manipal Hospital,Hassan,1122,Busy
+Dr. Timothy Sanghvi,Pulmonary fibrosis,Pulmonologist,14,5.0,Sparsh Hospital,Shimoga,775,Busy
+Dr. Zashil Pandit,Calcification,Pulmonologist,1,4.6,Columbia Asia,Bagalkot,402,Busy
+Dr. Priya Hari,Atelectasis,Pulmonologist,21,4.4,Fortis Hospital,Bagalkot,689,Available
+Dr. Gauri Bali,Other lesion,Pulmonologist,15,3.6,Sparsh Hospital,Dharwad,970,Busy
+Dr. Ekantika Sampath,Cardiomegaly,Cardiologist,20,3.6,Manipal Hospital,Tumkur,1246,Available
+Dr. Gauri Contractor,No Finding,General Physician,14,3.9,Fortis Hospital,Hubli,1400,Busy
+Dr. Chaitaly Dugar,Atelectasis,Pulmonologist,22,4.1,Sparsh Hospital,Chikkaballapur,892,Busy
+Dr. Raagini Mitter,Infiltration,Pulmonologist,13,3.7,Rainbow Hospital,Mangalore,1228,Busy
+Dr. Suhani Trivedi,Consolidation,Pulmonologist,9,4.4,Fortis Hospital,Tumkur,834,Available
+Dr. Leena Suri,Atelectasis,Pulmonologist,2,3.8,Apollo Hospital,Bidar,869,Available
+Dr. Chavvi Sane,Other lesion,Pulmonologist,14,4.0,Narayana Health,Tumkur,385,Available
+Dr. Ekaraj Handa,Pleural thickening,Pulmonologist,23,4.4,Columbia Asia,Yadgir,818,Busy
+Dr. Janani Doctor,Pulmonary fibrosis,Pulmonologist,3,3.8,Aster Hospital,Gadag,801,Available
+Dr. Liam Varughese,Calcification,Pulmonologist,22,4.0,Columbia Asia,Bellary,1210,Available
+Dr. Barkha Kashyap,Nodule/Mass,Oncologist,22,4.4,Apollo Hospital,Vijayapura,920,Available
+Dr. Chandran Kumar,Lung Opacity,Pulmonologist,24,3.7,KMC Hospital,Davanagere,1068,Available
+Dr. Maya Minhas,Infiltration,Pulmonologist,20,4.5,Sparsh Hospital,Chitradurga,994,Available
+Dr. Saanvi Chahal,No Finding,General Physician,5,4.0,AIIMS,Chikkaballapur,1423,Busy
+Dr. Arya Tailor,Pleural thickening,Pulmonologist,8,4.6,Columbia Asia,Hubli,332,Busy
+Dr. Vaishnavi Devan,Calcification,Pulmonologist,2,5.0,KMC Hospital,Bidar,1197,Busy
+Dr. Ishita Memon,Calcification,Pulmonologist,8,3.6,Aster Hospital,Vijayapura,808,Available
+Dr. Hemal Bahl,Aortic enlargement,Cardiologist,13,4.3,Fortis Hospital,Belgaum,1462,Available
+Dr. Riya Jani,Cardiomegaly,Cardiologist,10,3.6,Fortis Hospital,Shimoga,390,Available
+Dr. Girish Sandhu,Other lesion,Pulmonologist,8,4.9,Aster Hospital,Bagalkot,982,Available
+Dr. Shravya Sami,Lung Opacity,Pulmonologist,2,4.4,Fortis Hospital,Belgaum,944,Available
+Dr. Om Kapoor,Lung Opacity,Pulmonologist,16,4.7,Fortis Hospital,Kolar,554,Available
+Dr. Jhalak Mandal,Pleural thickening,Pulmonologist,20,4.3,Rainbow Hospital,Bellary,597,Available
+Dr. Tara Dhawan,Pleural thickening,Pulmonologist,7,4.1,Narayana Health,Tumkur,1026,Available
+Dr. Vansha Nagy,Other lesion,Pulmonologist,3,3.9,Sparsh Hospital,Udupi,533,Available
+Dr. Wishi Grover,Lung Opacity,Pulmonologist,8,4.1,Apollo Hospital,Mangalore,501,Busy
+Dr. Janya Narula,Pulmonary fibrosis,Pulmonologist,18,4.2,AIIMS,Tumkur,1188,Available
+Dr. Lakshmi Manne,Atelectasis,Pulmonologist,2,4.0,Columbia Asia,Mysore,1080,Busy
+Dr. Watika Sundaram,Pulmonary fibrosis,Pulmonologist,3,4.5,Manipal Hospital,Shimoga,1157,Busy
+Dr. Nathan Ravel,Nodule/Mass,Oncologist,22,4.2,Aster Hospital,Mandya,749,Busy
+Dr. Indrajit Ravi,Atelectasis,Pulmonologist,14,4.5,KMC Hospital,Tumkur,1002,Available
+Dr. Daksha Tella,Nodule/Mass,Oncologist,3,4.6,Narayana Health,Belgaum,1444,Available
+Dr. Siddharth Nagy,Infiltration,Pulmonologist,8,4.3,AIIMS,Dharwad,903,Available
+Dr. Anusha Misra,No Finding,General Physician,22,4.1,Apollo Hospital,Mandya,880,Available
+Dr. Megha Pant,No Finding,General Physician,20,3.5,AIIMS,Haveri,1442,Available
+Dr. Max Grover,Calcification,Pulmonologist,6,4.9,Aster Hospital,Bagalkot,712,Busy
+Dr. Bishakha Soni,Pulmonary fibrosis,Pulmonologist,18,4.7,Narayana Health,Karwar,493,Busy
+Dr. Idika Bhandari,ILD,Pulmonologist,25,4.2,Rainbow Hospital,Dharwad,359,Available
+Dr. Ryan Dani,ILD,Pulmonologist,6,3.8,Narayana Health,Ramanagara,710,Busy
+Dr. Raagini Gill,Nodule/Mass,Oncologist,6,4.7,KMC Hospital,Karwar,606,Busy
+Dr. Indrajit Suri,Other lesion,Pulmonologist,14,4.3,Fortis Hospital,Chitradurga,330,Busy
+Dr. Chatresh Kade,Aortic enlargement,Cardiologist,9,3.6,Narayana Health,Hassan,1370,Available
+Dr. Nachiket Choudhury,Pneumothorax,Pulmonologist,7,4.2,Sparsh Hospital,Ramanagara,515,Busy
+Dr. Aarini Mukherjee,No Finding,General Physician,14,4.1,Manipal Hospital,Kolar,754,Busy
+Dr. Yasti Gala,Lung Opacity,Pulmonologist,11,4.5,Columbia Asia,Dharwad,830,Available
+Dr. Samesh Kota,Cardiomegaly,Cardiologist,15,4.6,Aster Hospital,Bangalore,1403,Busy
+Dr. Anika Pau,Pleural thickening,Pulmonologist,24,3.6,Columbia Asia,Davanagere,345,Available
+Dr. Dalaja Badal,Infiltration,Pulmonologist,12,3.8,KMC Hospital,Bellary,1135,Busy
+Dr. Aditya Sachdeva,Pulmonary fibrosis,Pulmonologist,10,3.9,Rainbow Hospital,Bellary,1388,Busy
+Dr. Ikbal Oza,Pleural thickening,Pulmonologist,5,3.5,Apollo Hospital,Tumkur,1098,Available
+Dr. Yadavi Rau,No Finding,General Physician,12,3.7,KMC Hospital,Ramanagara,1196,Available
+Dr. Udarsh Ahuja,Cardiomegaly,Cardiologist,25,4.1,Rainbow Hospital,Davanagere,1085,Busy
+Dr. Zaitra Baral,Pleural thickening,Pulmonologist,25,3.6,AIIMS,Bellary,673,Available
+Dr. Charan Zachariah,Nodule/Mass,Oncologist,10,4.2,Manipal Hospital,Raichur,581,Busy
+Dr. Unni Sheth,Calcification,Pulmonologist,19,3.8,Narayana Health,Mangalore,1010,Busy
+Dr. Eta Gill,ILD,Pulmonologist,5,3.7,Aster Hospital,Haveri,1481,Busy
+Dr. Urvashi Ranganathan,Infiltration,Pulmonologist,6,4.9,Manipal Hospital,Davanagere,537,Busy
+Dr. Yochana Palan,Cardiomegaly,Cardiologist,3,3.7,Rainbow Hospital,Shimoga,343,Busy
+Dr. Eesha Sathe,Cardiomegaly,Cardiologist,2,4.4,Apollo Hospital,Gadag,1498,Busy
+Dr. Charita Hayer,ILD,Pulmonologist,11,3.9,Manipal Hospital,Raichur,1348,Available
+Dr. Shivansh Agarwal,Pleural thickening,Pulmonologist,24,4.8,AIIMS,Davanagere,744,Busy
+Dr. Zaitra Vasa,No Finding,General Physician,21,4.6,AIIMS,Mangalore,1039,Available
+Dr. Neelima Pandit,Nodule/Mass,Oncologist,10,3.6,Sparsh Hospital,Bangalore,1051,Available
+Dr. Parth Bhasin,Calcification,Pulmonologist,7,4.6,Aster Hospital,Chamarajanagar,547,Available
+Dr. Samaksh Gokhale,Atelectasis,Pulmonologist,4,4.0,Rainbow Hospital,Mysore,1101,Available
+Dr. Isha Deo,Consolidation,Pulmonologist,9,4.0,Apollo Hospital,Shimoga,1002,Available
+Dr. Jeremiah Lad,Pneumothorax,Pulmonologist,7,4.2,Rainbow Hospital,Mysore,917,Busy
+Dr. Harish Dasgupta,Infiltration,Pulmonologist,9,4.6,Columbia Asia,Ramanagara,363,Available
+Dr. Vasana Sura,Pulmonary fibrosis,Pulmonologist,5,3.6,Fortis Hospital,Bangalore,1091,Available
+Dr. Ekansh Randhawa,No Finding,General Physician,18,4.9,Manipal Hospital,Hassan,842,Available
+Dr. Ranbir Kala,Consolidation,Pulmonologist,10,3.6,Fortis Hospital,Raichur,1176,Available
+Dr. Madhavi Cheema,Calcification,Pulmonologist,2,3.9,Sparsh Hospital,Dharwad,466,Available
+Dr. Eshana More,Cardiomegaly,Cardiologist,2,4.2,Sparsh Hospital,Chitradurga,791,Busy
+Dr. Urishilla Atwal,Pulmonary fibrosis,Pulmonologist,1,3.7,AIIMS,Ramanagara,747,Busy
+Dr. Viraj Balakrishnan,Atelectasis,Pulmonologist,15,4.0,AIIMS,Belgaum,1014,Busy
+Dr. Faras Dar,Infiltration,Pulmonologist,23,4.7,KMC Hospital,Davanagere,964,Available
+Dr. Jason Keer,Consolidation,Pulmonologist,21,4.6,Columbia Asia,Vijayapura,1393,Available
+Dr. Pahal Mani,Lung Opacity,Pulmonologist,5,4.8,Manipal Hospital,Udupi,849,Busy
+Dr. Tanay Raja,ILD,Pulmonologist,17,3.5,Sparsh Hospital,Chitradurga,1484,Busy
+Dr. Ranveer Wali,Other lesion,Pulmonologist,16,4.6,Fortis Hospital,Vijayapura,698,Available
+Dr. Tanay Lalla,No Finding,General Physician,7,4.0,Manipal Hospital,Dharwad,784,Busy
+Dr. Inaya Sarma,No Finding,General Physician,20,4.8,Narayana Health,Haveri,1060,Available
+Dr. Brijesh Sethi,Pneumothorax,Pulmonologist,21,3.7,AIIMS,Haveri,1010,Available
+Dr. Onveer Kunda,Pleural effusion,Pulmonologist,11,4.4,KMC Hospital,Vijayapura,339,Available
+Dr. Lohit Bawa,No Finding,General Physician,12,4.8,Fortis Hospital,Mangalore,399,Busy
+Dr. Chaaya Dutt,Consolidation,Pulmonologist,4,4.3,KMC Hospital,Bidar,1476,Available
+Dr. Geetika Ramakrishnan,Nodule/Mass,Oncologist,24,4.1,Apollo Hospital,Udupi,318,Available
+Dr. Michael Bobal,Lung Opacity,Pulmonologist,11,4.1,Fortis Hospital,Bellary,656,Busy
+Dr. Hiral Agarwal,Pulmonary fibrosis,Pulmonologist,7,5.0,Columbia Asia,Kolar,836,Busy
+Dr. Diya Bhattacharyya,Cardiomegaly,Cardiologist,25,4.9,Aster Hospital,Karwar,702,Available
+Dr. Leena Kurian,Pneumothorax,Pulmonologist,3,4.4,KMC Hospital,Davanagere,392,Busy
+Dr. Chaitaly Kala,Atelectasis,Pulmonologist,3,4.5,Fortis Hospital,Mangalore,1210,Busy
+Dr. Hemang Chahal,Pleural effusion,Pulmonologist,16,4.4,Sparsh Hospital,Vijayapura,404,Busy
+Dr. Yashvi Gour,Pleural effusion,Pulmonologist,3,3.7,Columbia Asia,Bidar,817,Available
+Dr. Caleb Tara,Pleural effusion,Pulmonologist,8,4.8,KMC Hospital,Hassan,717,Busy
+Dr. Ansh Prashad,Lung Opacity,Pulmonologist,12,4.4,KMC Hospital,Udupi,1093,Busy
+Dr. Ryan Murthy,No Finding,General Physician,19,4.5,Aster Hospital,Yadgir,916,Busy
+Dr. Ishita Patil,Pneumothorax,Pulmonologist,21,3.9,Apollo Hospital,Bagalkot,477,Busy
+Dr. Kala Panchal,Atelectasis,Pulmonologist,2,4.0,Fortis Hospital,Raichur,1136,Busy
+Dr. Megha Sami,Lung Opacity,Pulmonologist,1,5.0,Narayana Health,Gadag,1424,Busy
+Dr. Bhavna Sachar,Lung Opacity,Pulmonologist,3,4.9,Narayana Health,Tumkur,953,Busy
+Dr. Rudra Amble,ILD,Pulmonologist,21,4.5,Apollo Hospital,Belgaum,1108,Available
+Dr. Advaith Iyengar,Pneumothorax,Pulmonologist,4,4.7,Fortis Hospital,Vijayapura,979,Busy
+Dr. Siddharth Chakrabarti,Pulmonary fibrosis,Pulmonologist,6,4.8,Narayana Health,Ramanagara,642,Available
+Dr. Ranbir Gole,Pneumothorax,Pulmonologist,1,4.2,KMC Hospital,Bellary,362,Busy
+Dr. Kabir Tiwari,Pulmonary fibrosis,Pulmonologist,2,4.2,KMC Hospital,Kolar,926,Available
+Dr. Gaurang Ahuja,Consolidation,Pulmonologist,7,3.6,Apollo Hospital,Chikkaballapur,952,Available
+Dr. Rachita Panchal,Nodule/Mass,Oncologist,1,4.6,Fortis Hospital,Belgaum,481,Busy
+Dr. Rajeshri Dugal,Pulmonary fibrosis,Pulmonologist,19,4.7,AIIMS,Haveri,961,Available
+Dr. Daksha Chhabra,Cardiomegaly,Cardiologist,17,3.7,AIIMS,Kolar,975,Busy
+Dr. Yashodhara Sridhar,Pulmonary fibrosis,Pulmonologist,25,4.7,Manipal Hospital,Hassan,881,Available
+Dr. Gautami Buch,Consolidation,Pulmonologist,13,4.8,Columbia Asia,Ramanagara,477,Busy
+Dr. Vedhika Borah,Nodule/Mass,Oncologist,4,4.3,Columbia Asia,Ramanagara,905,Busy
+Dr. Ira Sastry,No Finding,General Physician,20,3.8,Rainbow Hospital,Belgaum,772,Busy
+Dr. Owen Sahni,Pulmonary fibrosis,Pulmonologist,8,4.9,Columbia Asia,Tumkur,1435,Available
+Dr. Veda Guha,Infiltration,Pulmonologist,6,3.6,Columbia Asia,Bidar,1464,Available
+Dr. Gaurangi Parmar,Lung Opacity,Pulmonologist,18,4.1,AIIMS,Udupi,764,Busy
+Dr. Rishi Nagy,Infiltration,Pulmonologist,25,3.9,KMC Hospital,Chikkaballapur,1462,Available
+Dr. Ekani Rastogi,ILD,Pulmonologist,1,4.9,KMC Hospital,Haveri,812,Available
+Dr. Manbir Sodhi,ILD,Pulmonologist,2,4.2,Columbia Asia,Bidar,980,Available
+Dr. Gautam Jayaraman,No Finding,General Physician,24,5.0,Manipal Hospital,Hassan,813,Available
+Dr. Omisha Rege,Pulmonary fibrosis,Pulmonologist,6,4.6,Columbia Asia,Dharwad,1236,Busy
+Dr. Janani Barad,Nodule/Mass,Oncologist,12,3.6,Aster Hospital,Gadag,660,Busy
+Dr. Tanish Rau,Calcification,Pulmonologist,11,4.6,Manipal Hospital,Udupi,1214,Busy
+Dr. Damini Nair,Aortic enlargement,Cardiologist,11,4.2,Manipal Hospital,Bangalore,1059,Busy
+Dr. Lila Kapadia,No Finding,General Physician,17,4.9,Manipal Hospital,Raichur,381,Busy
+Dr. Faqid Atwal,Nodule/Mass,Oncologist,25,3.7,KMC Hospital,Mangalore,994,Busy
+Dr. Farhan Shankar,Cardiomegaly,Cardiologist,24,4.0,Sparsh Hospital,Shimoga,1415,Busy
+Dr. Janaki Dubey,Nodule/Mass,Oncologist,18,4.7,Columbia Asia,Belgaum,1484,Available
+Dr. Daksh Bail,Nodule/Mass,Oncologist,4,4.5,AIIMS,Chikkaballapur,490,Busy
+Dr. Dayita Natarajan,Pneumothorax,Pulmonologist,24,3.7,AIIMS,Kolar,685,Available
+Dr. Fitan Soni,Pleural effusion,Pulmonologist,7,3.9,Apollo Hospital,Mangalore,1497,Available
+Dr. Meera Dubey,Calcification,Pulmonologist,5,3.8,Narayana Health,Yadgir,441,Available
+Dr. Anya Randhawa,Aortic enlargement,Cardiologist,10,4.5,Rainbow Hospital,Chitradurga,550,Available
+Dr. Kamya Zacharia,Infiltration,Pulmonologist,7,4.8,Narayana Health,Vijayapura,1258,Busy
+Dr. Oni Din,Other lesion,Pulmonologist,24,3.7,Sparsh Hospital,Vijayapura,604,Available
+Dr. Peter Deo,Lung Opacity,Pulmonologist,9,4.0,Narayana Health,Kolar,487,Busy
+Dr. Vedika Minhas,Pleural thickening,Pulmonologist,19,4.6,Manipal Hospital,Mysore,1301,Available
+Dr. Chaitaly Bail,Lung Opacity,Pulmonologist,23,3.7,AIIMS,Mysore,1400,Available
+Dr. Shivansh Parekh,Aortic enlargement,Cardiologist,10,3.9,Narayana Health,Bagalkot,1033,Busy
+Dr. Anika Lal,Lung Opacity,Pulmonologist,16,5.0,Fortis Hospital,Gadag,1179,Busy
+Dr. Vinaya Ganguly,Infiltration,Pulmonologist,5,3.7,Narayana Health,Chamarajanagar,652,Busy
+Dr. Ganga Natarajan,Pneumothorax,Pulmonologist,11,3.5,Fortis Hospital,Mysore,754,Available
+Dr. Madhavi Peri,Aortic enlargement,Cardiologist,23,4.6,Fortis Hospital,Tumkur,329,Busy
+Dr. Vihaan Kalla,Pleural effusion,Pulmonologist,21,3.8,Narayana Health,Tumkur,676,Available
+Dr. Jeet Saini,Pulmonary fibrosis,Pulmonologist,19,4.2,KMC Hospital,Davanagere,1217,Busy
+Dr. Reyansh Andra,Pleural effusion,Pulmonologist,10,3.6,Narayana Health,Mangalore,556,Busy
+Dr. Balhaar Andra,ILD,Pulmonologist,8,4.5,Apollo Hospital,Yadgir,754,Busy
+Dr. Kala Sani,Pneumothorax,Pulmonologist,6,4.1,Narayana Health,Chamarajanagar,984,Available
+Dr. Hemangini Murthy,Pleural effusion,Pulmonologist,23,4.5,AIIMS,Udupi,494,Busy
+Dr. Ayaan Uppal,Pleural effusion,Pulmonologist,3,4.8,Fortis Hospital,Davanagere,990,Available
+Dr. Vrishti Arya,Lung Opacity,Pulmonologist,21,3.9,KMC Hospital,Haveri,496,Available
+Dr. Daniel Shroff,Other lesion,Pulmonologist,6,4.1,Manipal Hospital,Shimoga,473,Busy
+Dr. Krisha Bhattacharyya,Atelectasis,Pulmonologist,16,4.4,Rainbow Hospital,Bellary,1006,Available
+Dr. Jai Sahota,Consolidation,Pulmonologist,2,4.6,AIIMS,Dharwad,915,Busy
+Dr. Jatin Ray,Cardiomegaly,Cardiologist,2,3.9,Fortis Hospital,Shimoga,403,Available
+Dr. Edhitha Bath,Lung Opacity,Pulmonologist,8,3.6,Sparsh Hospital,Bangalore,1041,Available
+Dr. Charita Ahluwalia,No Finding,General Physician,15,3.7,Rainbow Hospital,Udupi,1437,Busy
+Dr. Jeremiah Garde,Pulmonary fibrosis,Pulmonologist,18,4.3,AIIMS,Bangalore,857,Available
+Dr. Brijesh Maharaj,ILD,Pulmonologist,12,3.8,Narayana Health,Hubli,1280,Busy
+Dr. Bachittar Kumar,Pleural thickening,Pulmonologist,13,4.3,Sparsh Hospital,Chikkaballapur,588,Available
+Dr. Jagrati Mannan,ILD,Pulmonologist,16,4.6,Sparsh Hospital,Hubli,325,Available
+Dr. Nilima Sarma,Nodule/Mass,Oncologist,1,3.9,Aster Hospital,Vijayapura,849,Busy
+Dr. Keya Chatterjee,Cardiomegaly,Cardiologist,5,3.5,Sparsh Hospital,Mandya,606,Available
+Dr. Kavya Raman,Calcification,Pulmonologist,3,4.4,Fortis Hospital,Tumkur,1451,Busy
+Dr. Qushi Oak,ILD,Pulmonologist,14,4.5,Narayana Health,Bidar,1195,Available
+Dr. Triya Sandhu,Consolidation,Pulmonologist,9,4.6,Manipal Hospital,Mandya,901,Busy
+Dr. Isaiah Lata,Pleural thickening,Pulmonologist,3,4.2,Narayana Health,Haveri,1214,Busy
+Dr. Omkaar Balay,Infiltration,Pulmonologist,10,4.9,Apollo Hospital,Udupi,1376,Busy
+Dr. Harini Bath,Pleural thickening,Pulmonologist,19,4.0,Columbia Asia,Chitradurga,1418,Available
+Dr. Owen Bhat,Atelectasis,Pulmonologist,8,4.1,Narayana Health,Ramanagara,946,Available
+Dr. Vritti Sandal,Consolidation,Pulmonologist,1,4.6,KMC Hospital,Yadgir,973,Available
+Dr. Onveer Khanna,Other lesion,Pulmonologist,9,4.1,KMC Hospital,Udupi,647,Busy
+Dr. Osha Pandya,Pulmonary fibrosis,Pulmonologist,4,4.8,KMC Hospital,Yadgir,591,Available
+Dr. Harsh Naik,Nodule/Mass,Oncologist,10,3.8,Manipal Hospital,Chamarajanagar,632,Busy
+Dr. Dhriti Khurana,Pleural thickening,Pulmonologist,6,4.7,Fortis Hospital,Bellary,1441,Available
+Dr. Nitesh Khurana,ILD,Pulmonologist,7,4.4,Rainbow Hospital,Yadgir,540,Available
+Dr. Michael Suresh,Pneumothorax,Pulmonologist,11,3.7,Manipal Hospital,Raichur,663,Busy
+Dr. Atharv Naik,Pneumothorax,Pulmonologist,16,3.8,Sparsh Hospital,Chitradurga,1365,Available
+Dr. Siddharth Naidu,Calcification,Pulmonologist,14,3.7,Narayana Health,Raichur,1227,Busy
+Dr. Warhi Shan,Other lesion,Pulmonologist,23,4.3,Sparsh Hospital,Haveri,337,Busy
+Dr. Gopal Keer,Infiltration,Pulmonologist,3,3.6,Fortis Hospital,Chamarajanagar,592,Available
+Dr. Abeer Banerjee,Nodule/Mass,Oncologist,5,4.9,KMC Hospital,Ramanagara,1144,Busy
+Dr. Charvi Sule,Consolidation,Pulmonologist,14,4.4,AIIMS,Bidar,1246,Busy
+Dr. Pavani Krishnamurthy,Other lesion,Pulmonologist,25,4.8,Sparsh Hospital,Raichur,1321,Busy
+Dr. Aarush Pandit,Infiltration,Pulmonologist,15,3.7,Apollo Hospital,Vijayapura,377,Available
+Dr. Rachita Jha,Atelectasis,Pulmonologist,19,3.6,Manipal Hospital,Raichur,1293,Available
+Dr. Urishilla Banik,Nodule/Mass,Oncologist,16,4.8,Rainbow Hospital,Mysore,1068,Available
+Dr. Jeet Sachdeva,Pleural thickening,Pulmonologist,18,4.2,AIIMS,Bangalore,430,Busy
+Dr. Dalaja Gara,Other lesion,Pulmonologist,24,3.7,Manipal Hospital,Chamarajanagar,427,Busy
+Dr. Christopher Nagar,ILD,Pulmonologist,15,3.7,Narayana Health,Mandya,862,Available
+Dr. Harini Hayer,Cardiomegaly,Cardiologist,17,3.6,Narayana Health,Belgaum,1467,Busy
+Dr. Ethan Jayaraman,Atelectasis,Pulmonologist,12,4.2,Apollo Hospital,Bidar,1371,Available
+Dr. Qarin Natarajan,Pleural thickening,Pulmonologist,5,3.6,Narayana Health,Kolar,893,Busy
+Dr. Champak Garde,Lung Opacity,Pulmonologist,21,4.9,AIIMS,Chitradurga,981,Available
+Dr. Timothy Walia,Consolidation,Pulmonologist,25,4.0,Sparsh Hospital,Hubli,1012,Available
+Dr. Alexander Pradhan,Nodule/Mass,Oncologist,9,4.3,Fortis Hospital,Vijayapura,410,Busy
+Dr. Warjas Bhasin,ILD,Pulmonologist,25,4.0,Narayana Health,Raichur,426,Busy
+Dr. Dakshesh Kara,Pleural thickening,Pulmonologist,6,3.5,AIIMS,Hubli,1476,Busy
+Dr. Krisha Iyengar,Aortic enlargement,Cardiologist,18,4.6,Fortis Hospital,Ramanagara,449,Busy
+Dr. Pahal Gera,Pleural thickening,Pulmonologist,11,5.0,Rainbow Hospital,Yadgir,1310,Available
+Dr. Udyati Sura,Pleural effusion,Pulmonologist,15,4.4,Columbia Asia,Gadag,393,Busy
+Dr. Shivansh Natt,Pulmonary fibrosis,Pulmonologist,7,3.8,KMC Hospital,Hassan,1190,Available
+Dr. Anamika Chaudhary,Cardiomegaly,Cardiologist,21,4.3,Fortis Hospital,Bellary,976,Available
+Dr. Chatura Dugar,Aortic enlargement,Cardiologist,13,4.1,Aster Hospital,Bidar,994,Available
+Dr. Daniel Raja,Cardiomegaly,Cardiologist,17,3.5,Aster Hospital,Shimoga,1342,Available
+Dr. Chaaya Shroff,Consolidation,Pulmonologist,23,4.8,Apollo Hospital,Bidar,878,Busy
+Dr. Samar Prakash,Atelectasis,Pulmonologist,17,4.4,Columbia Asia,Dharwad,1181,Available
+Dr. Osha Nagi,Calcification,Pulmonologist,8,4.6,Rainbow Hospital,Dharwad,587,Available
+Dr. Kalpit Kala,Other lesion,Pulmonologist,15,3.5,Fortis Hospital,Mangalore,1090,Available
+Dr. Noah Deshpande,Pneumothorax,Pulmonologist,10,4.0,Sparsh Hospital,Bagalkot,1497,Available
+Dr. Udarsh Lata,Calcification,Pulmonologist,25,3.8,Apollo Hospital,Karwar,533,Busy
+Dr. Zashil Bose,Pleural effusion,Pulmonologist,13,4.7,Fortis Hospital,Gadag,1496,Busy
+Dr. Reyansh Dar,ILD,Pulmonologist,19,4.6,Rainbow Hospital,Bangalore,1431,Available
+Dr. Patrick Rai,Cardiomegaly,Cardiologist,5,3.9,Rainbow Hospital,Chitradurga,913,Busy
+Dr. Jeremiah Goel,Aortic enlargement,Cardiologist,21,3.5,Aster Hospital,Bellary,1392,Busy
+Dr. Anamika Contractor,Aortic enlargement,Cardiologist,21,3.7,Sparsh Hospital,Bangalore,1407,Available
+Dr. Abhimanyu Gade,Pleural thickening,Pulmonologist,4,4.0,KMC Hospital,Mandya,1180,Busy
+Dr. Oni Nagarajan,Atelectasis,Pulmonologist,13,4.5,AIIMS,Mysore,1177,Available
+Dr. Wridesh Palla,Atelectasis,Pulmonologist,18,3.6,Manipal Hospital,Chikkaballapur,1103,Busy
+Dr. Nidra Dubey,No Finding,General Physician,6,4.0,Aster Hospital,Mysore,1004,Busy
+Dr. Harrison Rajagopal,Lung Opacity,Pulmonologist,4,4.7,Manipal Hospital,Chikkaballapur,679,Busy
+Dr. Hemangini Gade,Pulmonary fibrosis,Pulmonologist,1,4.2,Aster Hospital,Ramanagara,1380,Available
+Dr. Advika Shah,Other lesion,Pulmonologist,18,4.4,Apollo Hospital,Mandya,1448,Busy
+Dr. Chanakya Lad,Pleural thickening,Pulmonologist,1,4.0,Rainbow Hospital,Udupi,619,Available
+Dr. Dipta Devi,Calcification,Pulmonologist,10,4.6,Sparsh Hospital,Dharwad,605,Busy
+Dr. Tanish Wason,Other lesion,Pulmonologist,9,4.7,Rainbow Hospital,Dharwad,1349,Busy
+Dr. Kavya Bala,No Finding,General Physician,13,4.1,Columbia Asia,Ramanagara,1473,Busy
+Dr. Simon Mody,Pleural effusion,Pulmonologist,16,4.8,Sparsh Hospital,Bagalkot,1489,Available
+Dr. Unni Gala,Aortic enlargement,Cardiologist,25,3.6,Fortis Hospital,Vijayapura,997,Busy
+Dr. Devika Sura,Atelectasis,Pulmonologist,5,4.5,KMC Hospital,Hubli,683,Busy
+Dr. Brijesh Mohan,Aortic enlargement,Cardiologist,7,4.5,Fortis Hospital,Mysore,1105,Available
+Dr. Ira Bains,Lung Opacity,Pulmonologist,13,3.9,Aster Hospital,Chamarajanagar,1051,Available
+Dr. Omaja Keer,Pleural effusion,Pulmonologist,3,3.7,KMC Hospital,Tumkur,1309,Busy
+Dr. Wriddhish Subramaniam,Consolidation,Pulmonologist,8,4.7,Aster Hospital,Mysore,424,Busy
+Dr. Rehaan Kalla,Lung Opacity,Pulmonologist,23,4.9,Fortis Hospital,Shimoga,720,Available
+Dr. Advik Jha,Infiltration,Pulmonologist,7,3.9,Narayana Health,Vijayapura,597,Available
+Dr. Omkaar Chada,No Finding,General Physician,12,4.7,Sparsh Hospital,Udupi,681,Available
+Dr. Baghyawati Sandhu,Infiltration,Pulmonologist,5,4.3,Columbia Asia,Raichur,1382,Available
+Dr. Vasatika Kala,Atelectasis,Pulmonologist,1,4.3,AIIMS,Ramanagara,1464,Available
+Dr. Upadhriti Chandra,Nodule/Mass,Oncologist,16,4.5,Fortis Hospital,Mandya,407,Busy
+Dr. Raghav Chaudhari,Pneumothorax,Pulmonologist,17,3.8,Sparsh Hospital,Hassan,431,Busy
+Dr. Mugdha Kuruvilla,Aortic enlargement,Cardiologist,8,3.7,Apollo Hospital,Tumkur,704,Busy
+Dr. Benjamin Palan,Aortic enlargement,Cardiologist,24,4.5,Columbia Asia,Udupi,867,Busy
+Dr. Brijesh Sant,Infiltration,Pulmonologist,24,3.8,AIIMS,Raichur,392,Available
+Dr. Andrew Lad,Infiltration,Pulmonologist,11,3.7,Narayana Health,Mysore,1254,Busy
+Dr. Kiaan Minhas,Pleural effusion,Pulmonologist,4,4.6,Manipal Hospital,Haveri,1432,Available
+Dr. Priya Dasgupta,Nodule/Mass,Oncologist,22,4.6,Aster Hospital,Hassan,1106,Busy
+Dr. Girindra Ahuja,Aortic enlargement,Cardiologist,22,3.7,Narayana Health,Tumkur,552,Busy
+Dr. Krishna Yadav,Atelectasis,Pulmonologist,10,4.9,AIIMS,Hubli,659,Available
+Dr. Kala Sodhi,Cardiomegaly,Cardiologist,18,4.7,Aster Hospital,Ramanagara,1337,Available
+Dr. Mitali Deo,Atelectasis,Pulmonologist,1,4.9,Sparsh Hospital,Shimoga,449,Busy
+Dr. Ladli Shukla,ILD,Pulmonologist,11,4.6,KMC Hospital,Dharwad,813,Busy
+Dr. Samuel Goyal,Other lesion,Pulmonologist,5,4.1,Narayana Health,Raichur,1000,Available
+Dr. Yashodhara Sem,Lung Opacity,Pulmonologist,5,4.3,Apollo Hospital,Davanagere,323,Busy
+Dr. Hamsini Chauhan,Lung Opacity,Pulmonologist,19,4.4,Apollo Hospital,Ramanagara,1352,Available
+Dr. Tanvi Ratta,Pneumothorax,Pulmonologist,24,3.9,Apollo Hospital,Mangalore,1418,Available
+Dr. Amruta Bahri,No Finding,General Physician,13,4.0,Apollo Hospital,Chikkaballapur,1138,Available
+Dr. Tanay Bhatt,Other lesion,Pulmonologist,9,3.9,Narayana Health,Haveri,1364,Busy
+Dr. Omaja Ramanathan,Lung Opacity,Pulmonologist,3,3.6,Apollo Hospital,Tumkur,1206,Available
+Dr. Ansh Saini,Aortic enlargement,Cardiologist,15,4.7,Narayana Health,Bagalkot,870,Available
+Dr. Watika Pradhan,Cardiomegaly,Cardiologist,16,4.3,Sparsh Hospital,Chamarajanagar,366,Available
+Dr. Dalbir Basu,Consolidation,Pulmonologist,2,3.9,Columbia Asia,Bagalkot,600,Busy
+Dr. Teerth Rama,Aortic enlargement,Cardiologist,1,4.7,AIIMS,Ramanagara,633,Busy
+Dr. Ekalinga Chauhan,Calcification,Pulmonologist,16,4.9,Columbia Asia,Yadgir,821,Available
+Dr. Oscar Om,Pulmonary fibrosis,Pulmonologist,25,3.6,Rainbow Hospital,Mandya,657,Available
+Dr. Yashvi Chokshi,Pneumothorax,Pulmonologist,16,3.8,AIIMS,Mangalore,1279,Available
+Dr. Krisha Ratta,Lung Opacity,Pulmonologist,5,4.4,Narayana Health,Karwar,1334,Busy
+Dr. Zashil Sem,Pulmonary fibrosis,Pulmonologist,7,4.2,Sparsh Hospital,Karwar,485,Available
+Dr. Warhi Srinivas,Pneumothorax,Pulmonologist,22,3.9,Manipal Hospital,Bagalkot,443,Available
+Dr. Advik Majumdar,Atelectasis,Pulmonologist,24,3.7,Narayana Health,Raichur,914,Busy
+Dr. Riya Bakshi,Nodule/Mass,Oncologist,18,4.7,Sparsh Hospital,Hubli,761,Busy
+Dr. Umang Deshmukh,Consolidation,Pulmonologist,10,3.9,Apollo Hospital,Gadag,1411,Busy
+Dr. Saksham Swamy,Atelectasis,Pulmonologist,18,4.1,Sparsh Hospital,Tumkur,1170,Available
+Dr. Chaitanya Mukhopadhyay,Pneumothorax,Pulmonologist,7,3.9,Aster Hospital,Mandya,892,Busy
+Dr. Jatin Palla,ILD,Pulmonologist,5,4.6,Sparsh Hospital,Karwar,495,Busy
+Dr. Michael Prabhu,Consolidation,Pulmonologist,24,4.5,Sparsh Hospital,Ramanagara,1002,Busy
+Dr. Wakeeta Mahal,Atelectasis,Pulmonologist,20,4.8,KMC Hospital,Vijayapura,1499,Available
+Dr. Ekantika Prabhu,Cardiomegaly,Cardiologist,3,4.5,Fortis Hospital,Haveri,418,Available
+Dr. Nikita Kashyap,Nodule/Mass,Oncologist,12,4.4,Sparsh Hospital,Ramanagara,1216,Busy
+Dr. Tanvi Devi,Calcification,Pulmonologist,20,4.6,KMC Hospital,Chamarajanagar,386,Busy
+Dr. Xavier Anand,Consolidation,Pulmonologist,23,4.9,KMC Hospital,Bidar,1459,Busy
+Dr. Pranit Agarwal,Pneumothorax,Pulmonologist,10,4.3,Manipal Hospital,Ramanagara,513,Available
+Dr. Ijaya Chowdhury,Other lesion,Pulmonologist,25,4.0,Aster Hospital,Chitradurga,1489,Busy
+Dr. Fariq Buch,Infiltration,Pulmonologist,7,3.6,Manipal Hospital,Dharwad,398,Available
+Dr. Balendra Gole,Nodule/Mass,Oncologist,10,3.9,Aster Hospital,Raichur,533,Busy
+Dr. Advika Gole,Calcification,Pulmonologist,17,4.5,Columbia Asia,Belgaum,1425,Available
+Dr. Yagnesh Kanda,Infiltration,Pulmonologist,24,3.5,Rainbow Hospital,Mandya,1374,Busy
+Dr. Warinder Mand,Lung Opacity,Pulmonologist,21,3.9,AIIMS,Tumkur,1068,Busy
+Dr. Hiral Mittal,No Finding,General Physician,6,4.7,Sparsh Hospital,Hassan,473,Available
+Dr. Oeshi Bava,Calcification,Pulmonologist,3,4.9,Narayana Health,Ramanagara,1489,Available
+Dr. Jagrati Pradhan,Calcification,Pulmonologist,11,4.0,Narayana Health,Bellary,915,Busy
+Dr. Neha Parsa,Pleural thickening,Pulmonologist,1,4.9,KMC Hospital,Dharwad,933,Available
+Dr. Saumya Mangal,Lung Opacity,Pulmonologist,20,4.7,Manipal Hospital,Chikkaballapur,1208,Busy
+Dr. Warhi Hegde,Nodule/Mass,Oncologist,24,4.9,Manipal Hospital,Gadag,1495,Busy
+Dr. Quincy Jha,Infiltration,Pulmonologist,8,3.8,AIIMS,Yadgir,829,Available
+Dr. Sathvik Sane,Atelectasis,Pulmonologist,22,4.9,Manipal Hospital,Chikkaballapur,1087,Busy
+Dr. Gaurika Subramanian,Other lesion,Pulmonologist,11,3.9,KMC Hospital,Shimoga,1333,Busy
+Dr. Luke Shere,Other lesion,Pulmonologist,20,4.9,Sparsh Hospital,Hubli,525,Busy
+Dr. Pallavi Kala,Pneumothorax,Pulmonologist,15,4.4,Sparsh Hospital,Chitradurga,1360,Available
+Dr. Yachana Baria,Calcification,Pulmonologist,16,4.7,Aster Hospital,Dharwad,1229,Busy
+Dr. Triya Boase,No Finding,General Physician,2,4.6,Aster Hospital,Tumkur,913,Busy
+Dr. Kiaan Devan,Calcification,Pulmonologist,5,4.0,Aster Hospital,Kolar,1470,Busy
+Dr. Ishita Mukherjee,Calcification,Pulmonologist,24,4.3,Fortis Hospital,Vijayapura,422,Available
+Dr. Rudra Ratta,Nodule/Mass,Oncologist,8,4.0,Manipal Hospital,Chikkaballapur,475,Busy
+Dr. Utkarsh Chaudry,Lung Opacity,Pulmonologist,21,3.5,Narayana Health,Raichur,1340,Available
+Dr. Ganga Shah,Aortic enlargement,Cardiologist,19,4.5,Columbia Asia,Bellary,768,Available
+Dr. Urmi Dave,Lung Opacity,Pulmonologist,7,4.2,Aster Hospital,Bidar,390,Available
+Dr. Yuvraj Doshi,No Finding,General Physician,3,3.6,Sparsh Hospital,Ramanagara,381,Available
+Dr. Kai Gera,Pleural thickening,Pulmonologist,1,3.7,AIIMS,Mysore,529,Available
+Dr. Pranav Nair,Infiltration,Pulmonologist,20,3.7,Apollo Hospital,Mysore,933,Available
+Dr. Shaurya Mammen,Nodule/Mass,Oncologist,8,3.9,Columbia Asia,Mysore,1184,Busy
+Dr. Pallavi Raj,Atelectasis,Pulmonologist,2,3.8,Apollo Hospital,Ramanagara,575,Available
+Dr. Onveer Rajagopalan,Aortic enlargement,Cardiologist,17,3.5,KMC Hospital,Gadag,1301,Available
+Dr. Januja Dugal,Calcification,Pulmonologist,25,3.6,Aster Hospital,Gadag,382,Busy
+Dr. Sai Mohan,ILD,Pulmonologist,25,4.4,Columbia Asia,Gadag,778,Busy
+Dr. Chandresh Sandhu,Pleural effusion,Pulmonologist,16,3.7,Manipal Hospital,Hubli,944,Busy
+Dr. Mahika Baria,Calcification,Pulmonologist,25,4.6,AIIMS,Bellary,505,Available
+Dr. Laban Sekhon,Consolidation,Pulmonologist,10,4.8,Fortis Hospital,Mysore,639,Available
+Dr. Elijah Shukla,Pleural thickening,Pulmonologist,9,3.6,Rainbow Hospital,Belgaum,613,Available
+Dr. Damyanti Hans,Pleural effusion,Pulmonologist,20,3.5,Fortis Hospital,Mangalore,733,Busy
+Dr. Baljiwan Rai,Aortic enlargement,Cardiologist,16,3.7,Fortis Hospital,Mysore,1495,Busy
+Dr. Bimala Cheema,No Finding,General Physician,18,3.5,Columbia Asia,Mandya,623,Busy
+Dr. Chaitaly Comar,No Finding,General Physician,21,4.6,Fortis Hospital,Dharwad,1084,Available
+Dr. Isaiah Badami,Cardiomegaly,Cardiologist,9,4.7,KMC Hospital,Dharwad,605,Available
+Dr. Xavier Subramaniam,Pleural effusion,Pulmonologist,23,4.6,Apollo Hospital,Mangalore,933,Available
+Dr. Mitesh Hari,Pleural effusion,Pulmonologist,21,4.2,Rainbow Hospital,Chikkaballapur,637,Available
+Dr. Udant Raja,Cardiomegaly,Cardiologist,24,3.6,Narayana Health,Tumkur,751,Busy
+Dr. Mahika Wagle,Infiltration,Pulmonologist,5,3.8,KMC Hospital,Mysore,938,Available
+Dr. Saksham Srivastava,Nodule/Mass,Oncologist,6,4.7,AIIMS,Shimoga,311,Busy
+Dr. Dalbir Bhatt,Other lesion,Pulmonologist,16,3.5,AIIMS,Mangalore,525,Available
+Dr. Ekavir Swamy,Nodule/Mass,Oncologist,14,3.9,Apollo Hospital,Karwar,1402,Available
+Dr. Wriddhish Kuruvilla,Pleural thickening,Pulmonologist,20,4.9,Sparsh Hospital,Bidar,1365,Available
+Dr. Finn Sha,Pneumothorax,Pulmonologist,8,3.6,AIIMS,Dharwad,1472,Busy
+Dr. Vansha Devi,Nodule/Mass,Oncologist,9,3.9,KMC Hospital,Davanagere,976,Available
+Dr. Manbir Mangal,Consolidation,Pulmonologist,2,4.2,Fortis Hospital,Bidar,1379,Busy
+Dr. Tejas Patla,Lung Opacity,Pulmonologist,16,4.6,AIIMS,Shimoga,370,Available
+Dr. Rishi Bassi,Pulmonary fibrosis,Pulmonologist,12,4.6,Aster Hospital,Bangalore,900,Available
+Dr. Rushil Mani,Aortic enlargement,Cardiologist,19,3.9,KMC Hospital,Karwar,787,Available
+Dr. Aadhya Krish,Infiltration,Pulmonologist,22,4.4,AIIMS,Belgaum,667,Busy
+Dr. Yashodhara Dua,Pneumothorax,Pulmonologist,1,4.0,Apollo Hospital,Vijayapura,1492,Available
+Dr. Panini Kakar,Pleural effusion,Pulmonologist,11,4.5,KMC Hospital,Hassan,855,Available
+Dr. Jeevika Sood,Calcification,Pulmonologist,25,3.6,KMC Hospital,Dharwad,1191,Busy
+Dr. Abha Nath,Pneumothorax,Pulmonologist,6,4.4,Narayana Health,Mangalore,1361,Busy
+Dr. Banjeet Buch,Atelectasis,Pulmonologist,13,3.6,Manipal Hospital,Hassan,584,Available
+Dr. Samarth Joshi,Other lesion,Pulmonologist,20,3.9,Rainbow Hospital,Bellary,1160,Available
+Dr. Madhav Baral,Other lesion,Pulmonologist,5,3.7,KMC Hospital,Chitradurga,752,Busy
+Dr. Azaan Ahuja,Pulmonary fibrosis,Pulmonologist,18,4.0,Rainbow Hospital,Karwar,698,Busy
+Dr. Tristan Suresh,Consolidation,Pulmonologist,9,4.4,Apollo Hospital,Mangalore,1165,Busy
+Dr. Kai Chakrabarti,ILD,Pulmonologist,15,4.6,Manipal Hospital,Haveri,300,Busy
+Dr. Bhavani Thakkar,Atelectasis,Pulmonologist,18,3.9,KMC Hospital,Chitradurga,1359,Available
+Dr. Aishani Gole,No Finding,General Physician,10,4.8,Fortis Hospital,Chitradurga,1198,Available
+Dr. Jagvi Gupta,Pleural thickening,Pulmonologist,23,4.9,Apollo Hospital,Tumkur,631,Busy
+Dr. Reyansh Murty,Other lesion,Pulmonologist,3,4.9,Narayana Health,Hassan,683,Busy
+Dr. Ekbal Mane,Calcification,Pulmonologist,24,3.6,Rainbow Hospital,Haveri,1158,Available
+Dr. Peter Ramachandran,Pneumothorax,Pulmonologist,9,4.1,Aster Hospital,Mysore,736,Busy
+Dr. Eesha Sawhney,Pulmonary fibrosis,Pulmonologist,16,4.4,KMC Hospital,Hubli,977,Available
+Dr. Siya Oak,Pneumothorax,Pulmonologist,8,4.7,Fortis Hospital,Chitradurga,869,Available
+Dr. Chaman Vala,Pulmonary fibrosis,Pulmonologist,22,4.3,Fortis Hospital,Mangalore,988,Busy
+Dr. Yagnesh Chauhan,No Finding,General Physician,23,3.7,AIIMS,Tumkur,419,Busy
+Dr. Neelima Pillay,Aortic enlargement,Cardiologist,6,4.3,Rainbow Hospital,Gadag,940,Available
+Dr. Ekapad Kapadia,Aortic enlargement,Cardiologist,22,4.8,Columbia Asia,Bagalkot,1381,Available
+Dr. Samaksh Kapadia,Nodule/Mass,Oncologist,23,3.5,Sparsh Hospital,Bangalore,526,Busy
+Dr. Avni Balakrishnan,Atelectasis,Pulmonologist,2,4.0,Fortis Hospital,Belgaum,1306,Available
+Dr. Yatin Parmar,ILD,Pulmonologist,25,4.7,Rainbow Hospital,Raichur,1300,Busy
+Dr. Ryan Swaminathan,Other lesion,Pulmonologist,14,3.7,Narayana Health,Bagalkot,814,Available
+Dr. Robert Sant,Pleural effusion,Pulmonologist,16,4.9,Rainbow Hospital,Bidar,537,Busy
+Dr. Lakshmi Nayar,Nodule/Mass,Oncologist,10,4.2,KMC Hospital,Belgaum,513,Available
+Dr. Ayush Sunder,Infiltration,Pulmonologist,19,4.9,Sparsh Hospital,Chitradurga,1069,Available
+Dr. Dayita Nagi,Calcification,Pulmonologist,16,3.7,Narayana Health,Udupi,974,Available
+Dr. Qushi Mohanty,Cardiomegaly,Cardiologist,11,4.7,KMC Hospital,Dharwad,1296,Available
+Dr. Aachal Acharya,Calcification,Pulmonologist,10,4.0,Columbia Asia,Mandya,838,Available
+Dr. Vamakshi Hegde,No Finding,General Physician,20,4.5,Aster Hospital,Belgaum,1089,Busy
+Dr. Frado Sarraf,Other lesion,Pulmonologist,1,4.8,Fortis Hospital,Mysore,1098,Busy
+Dr. Tanay Ahuja,Pulmonary fibrosis,Pulmonologist,24,3.6,Sparsh Hospital,Udupi,1395,Available
+Dr. Diya Dutta,Calcification,Pulmonologist,12,3.6,KMC Hospital,Ramanagara,408,Available
+Dr. Yashvi Chopra,Nodule/Mass,Oncologist,9,3.7,Rainbow Hospital,Vijayapura,337,Busy
+Dr. Tripti Kumar,Lung Opacity,Pulmonologist,11,4.7,AIIMS,Shimoga,838,Available
+Dr. Utkarsh Ganesh,Atelectasis,Pulmonologist,12,3.5,AIIMS,Udupi,693,Busy
+Dr. Keya Mammen,Pleural thickening,Pulmonologist,2,4.2,Apollo Hospital,Hubli,341,Busy
+Dr. Omya Kalla,Infiltration,Pulmonologist,17,3.8,Rainbow Hospital,Bellary,1162,Available
+Dr. Ekaraj Bawa,Nodule/Mass,Oncologist,23,3.9,KMC Hospital,Yadgir,713,Available
+Dr. Arjun Karan,Lung Opacity,Pulmonologist,2,4.8,AIIMS,Bagalkot,442,Available
+Dr. Pushti Parsa,Cardiomegaly,Cardiologist,25,3.5,Rainbow Hospital,Haveri,1003,Available
+Dr. Aishani Raval,Consolidation,Pulmonologist,6,3.5,Sparsh Hospital,Kolar,538,Busy
+Dr. Logan Shanker,ILD,Pulmonologist,11,4.8,Columbia Asia,Mandya,918,Busy
+Dr. Utkarsh Pingle,Pleural thickening,Pulmonologist,6,4.8,Columbia Asia,Bellary,1381,Available
+Dr. Shravya Thakkar,ILD,Pulmonologist,11,5.0,Columbia Asia,Dharwad,1150,Available
+Dr. Zansi Soni,Aortic enlargement,Cardiologist,18,4.9,KMC Hospital,Bagalkot,558,Available
+Dr. Gayathri Modi,Pneumothorax,Pulmonologist,1,4.8,Apollo Hospital,Hassan,1212,Available
+Dr. Rudra Rastogi,Aortic enlargement,Cardiologist,3,3.6,Aster Hospital,Bagalkot,570,Available
+Dr. Faqid Arora,Pulmonary fibrosis,Pulmonologist,22,3.9,Sparsh Hospital,Chamarajanagar,936,Busy
+Dr. Sarthak Khatri,Calcification,Pulmonologist,25,3.9,Rainbow Hospital,Kolar,1178,Busy
+Dr. Qadim Dasgupta,Calcification,Pulmonologist,20,4.9,Narayana Health,Gadag,644,Busy
+Dr. Upma Viswanathan,Nodule/Mass,Oncologist,17,4.9,Rainbow Hospital,Hubli,576,Available
+Dr. Rachit Mand,Aortic enlargement,Cardiologist,17,4.9,Narayana Health,Belgaum,913,Busy
+Dr. Aarnav Chad,No Finding,General Physician,18,4.4,Rainbow Hospital,Mysore,1267,Busy
+Dr. Vanya Mand,Consolidation,Pulmonologist,12,4.3,AIIMS,Chikkaballapur,544,Busy
+Dr. Tanish Mann,Calcification,Pulmonologist,17,4.9,Fortis Hospital,Mysore,677,Busy
+Dr. Oviya Garg,No Finding,General Physician,11,3.7,Fortis Hospital,Bidar,862,Busy
+Dr. Shravya Natt,Atelectasis,Pulmonologist,3,3.7,Aster Hospital,Davanagere,631,Busy
+Dr. Krisha Bail,Pneumothorax,Pulmonologist,18,4.7,AIIMS,Davanagere,1027,Available
+Dr. Bhavya Vaidya,Calcification,Pulmonologist,1,4.6,Manipal Hospital,Kolar,467,Busy
+Dr. Vihaan Walla,Consolidation,Pulmonologist,23,3.6,Narayana Health,Chamarajanagar,1235,Busy
+Dr. Joshua Shan,Pulmonary fibrosis,Pulmonologist,13,4.9,Sparsh Hospital,Mandya,506,Available
+Dr. Daniel Saran,Pleural thickening,Pulmonologist,16,3.8,Aster Hospital,Udupi,921,Busy
+Dr. Anmol Minhas,Pleural thickening,Pulmonologist,12,3.7,Apollo Hospital,Haveri,468,Busy
+Dr. Teerth Nadkarni,Lung Opacity,Pulmonologist,22,4.5,Columbia Asia,Davanagere,764,Busy
+Dr. Sara Sawhney,Other lesion,Pulmonologist,6,4.6,Apollo Hospital,Shimoga,1099,Busy
+Dr. Dalbir Mangat,Cardiomegaly,Cardiologist,10,3.5,Rainbow Hospital,Mysore,1190,Busy
+Dr. Sanaya Dhawan,Atelectasis,Pulmonologist,24,4.2,Apollo Hospital,Hubli,400,Busy
+Dr. Balendra Kalla,Pleural thickening,Pulmonologist,10,3.9,Fortis Hospital,Hassan,606,Available
+Dr. Ranveer Wali,Pulmonary fibrosis,Pulmonologist,19,4.6,Manipal Hospital,Bellary,1368,Busy
+Dr. Ryan Ramesh,Calcification,Pulmonologist,21,4.9,Aster Hospital,Bagalkot,1093,Available
+Dr. Chakradev Iyengar,No Finding,General Physician,19,3.9,Aster Hospital,Raichur,323,Busy
+Dr. Nicholas Raj,No Finding,General Physician,22,3.6,Narayana Health,Haveri,825,Available
+Dr. Amrita Sarma,Lung Opacity,Pulmonologist,18,4.6,Manipal Hospital,Davanagere,1251,Available
+Dr. Kevin Hayer,Pleural effusion,Pulmonologist,25,4.3,Aster Hospital,Bangalore,1399,Available
+Dr. Bhavya Keer,Aortic enlargement,Cardiologist,12,5.0,Columbia Asia,Bangalore,600,Busy
+Dr. Vedika Patil,Nodule/Mass,Oncologist,18,4.8,KMC Hospital,Ramanagara,617,Busy
+Dr. Pooja Kalla,Pleural effusion,Pulmonologist,22,3.8,Narayana Health,Udupi,1225,Busy
+Dr. Logan Ganesh,Aortic enlargement,Cardiologist,2,4.4,KMC Hospital,Haveri,635,Available
+Dr. Sanya Sane,Aortic enlargement,Cardiologist,4,4.4,Manipal Hospital,Dharwad,737,Busy
+Dr. Diya Lall,ILD,Pulmonologist,12,4.0,Manipal Hospital,Mysore,804,Busy
+Dr. Lajita Tara,ILD,Pulmonologist,1,4.6,Narayana Health,Gadag,895,Busy
+Dr. Aadi Solanki,Infiltration,Pulmonologist,5,3.6,Aster Hospital,Karwar,924,Available
+Dr. Balendra Magar,Other lesion,Pulmonologist,21,4.9,Narayana Health,Bellary,514,Busy
+Dr. Yochana Mody,Pleural thickening,Pulmonologist,24,3.6,Aster Hospital,Haveri,1484,Available
+Dr. Ekantika Kamdar,Pulmonary fibrosis,Pulmonologist,8,4.2,KMC Hospital,Karwar,453,Available
+Dr. Vihaan Mann,Calcification,Pulmonologist,18,4.3,Aster Hospital,Ramanagara,1333,Available
+Dr. Harita Bains,Aortic enlargement,Cardiologist,5,4.2,Sparsh Hospital,Bangalore,950,Available
+Dr. Nandini Basu,Calcification,Pulmonologist,24,3.6,Apollo Hospital,Udupi,1467,Busy
+Dr. Jeet Singh,Pleural effusion,Pulmonologist,1,3.9,Aster Hospital,Ramanagara,616,Busy
+Dr. George Modi,Consolidation,Pulmonologist,16,3.7,AIIMS,Vijayapura,980,Available
+Dr. Advay Rana,Pleural effusion,Pulmonologist,13,4.9,Narayana Health,Udupi,1025,Available
+Dr. Warinder Sekhon,Pneumothorax,Pulmonologist,25,4.1,AIIMS,Haveri,1175,Busy
+Dr. Rayaan Bains,Infiltration,Pulmonologist,15,4.7,Columbia Asia,Chitradurga,1045,Available
+Dr. Caleb Vala,Other lesion,Pulmonologist,17,5.0,Sparsh Hospital,Chamarajanagar,1392,Busy
+Dr. Tara Wagle,Infiltration,Pulmonologist,9,4.4,Manipal Hospital,Chitradurga,404,Available
+Dr. Ekansh Batta,Cardiomegaly,Cardiologist,15,3.8,AIIMS,Gadag,627,Busy
+Dr. Anvi Grewal,Pneumothorax,Pulmonologist,22,4.0,Manipal Hospital,Mangalore,1272,Busy
+Dr. Dominic Pandya,Atelectasis,Pulmonologist,14,4.9,Rainbow Hospital,Vijayapura,1193,Busy
+Dr. Veda Raj,ILD,Pulmonologist,23,3.5,Aster Hospital,Haveri,925,Busy
+Dr. Vamakshi Goyal,Infiltration,Pulmonologist,15,4.5,Apollo Hospital,Bagalkot,434,Available
+Dr. Tanmayi Bakshi,Pleural thickening,Pulmonologist,21,3.8,Sparsh Hospital,Dharwad,884,Available
+Dr. Ekansh Manne,Calcification,Pulmonologist,8,4.7,Aster Hospital,Udupi,920,Available
+Dr. Chavvi Nayak,Aortic enlargement,Cardiologist,13,4.7,Apollo Hospital,Bellary,350,Busy
+Dr. Reva Ganesh,Aortic enlargement,Cardiologist,13,3.8,KMC Hospital,Hubli,1132,Busy
+Dr. Yauvani Arora,Pulmonary fibrosis,Pulmonologist,18,4.6,Rainbow Hospital,Bangalore,1050,Available
+Dr. Nikita Dyal,Cardiomegaly,Cardiologist,6,4.4,Manipal Hospital,Bidar,923,Available
+Dr. Yashoda Sinha,Nodule/Mass,Oncologist,24,4.1,Columbia Asia,Mandya,814,Busy
+Dr. Nirja Keer,Nodule/Mass,Oncologist,1,4.5,AIIMS,Kolar,1278,Available
+Dr. Aashi Parikh,Consolidation,Pulmonologist,13,4.6,KMC Hospital,Gadag,610,Available
+Dr. Shravya Murthy,Infiltration,Pulmonologist,23,4.9,Sparsh Hospital,Yadgir,927,Busy
+Dr. Anay Rajan,Infiltration,Pulmonologist,16,3.9,Columbia Asia,Shimoga,1435,Available
+Dr. Chandresh Karpe,Lung Opacity,Pulmonologist,24,4.7,Columbia Asia,Ramanagara,395,Available
+Dr. Owen Sandal,Cardiomegaly,Cardiologist,7,4.1,Manipal Hospital,Chikkaballapur,387,Available
+Dr. Rachita Karpe,Other lesion,Pulmonologist,13,4.7,Rainbow Hospital,Haveri,654,Busy
+Dr. Manan Bail,Nodule/Mass,Oncologist,3,3.9,Aster Hospital,Bellary,839,Available
+Dr. Idika Raja,Nodule/Mass,Oncologist,6,4.9,Narayana Health,Raichur,1495,Busy
+Dr. Adweta Bhatia,Infiltration,Pulmonologist,2,4.2,AIIMS,Chikkaballapur,1157,Busy
+Dr. Sai Kala,Lung Opacity,Pulmonologist,25,4.9,KMC Hospital,Kolar,1445,Busy
+Dr. Henry Dada,Pleural effusion,Pulmonologist,23,4.9,Rainbow Hospital,Chamarajanagar,779,Available
+Dr. Rayaan Solanki,Aortic enlargement,Cardiologist,22,4.7,Columbia Asia,Kolar,780,Available
+Dr. Qushi Dhar,Pleural thickening,Pulmonologist,23,3.7,Apollo Hospital,Davanagere,550,Available
+Dr. Pranit Dua,Other lesion,Pulmonologist,14,3.5,Rainbow Hospital,Dharwad,1175,Busy
+Dr. Garima Dixit,Consolidation,Pulmonologist,21,4.9,Manipal Hospital,Udupi,1180,Busy
+Dr. Dominic Thaman,No Finding,General Physician,5,3.9,Columbia Asia,Haveri,450,Busy
+Dr. Nimrat Bath,Nodule/Mass,Oncologist,17,4.1,Fortis Hospital,Hassan,432,Available
+Dr. Ekansh Saraf,Atelectasis,Pulmonologist,6,4.5,Fortis Hospital,Davanagere,1473,Busy
+Dr. Charvi Sahota,Cardiomegaly,Cardiologist,19,4.4,Manipal Hospital,Mandya,1478,Busy
+Dr. Ishaan Arya,Calcification,Pulmonologist,17,3.6,KMC Hospital,Davanagere,1108,Available
+Dr. Manthan Mann,Aortic enlargement,Cardiologist,3,4.1,Apollo Hospital,Hassan,386,Busy
+Dr. Logan Kaul,Pleural effusion,Pulmonologist,20,4.0,Apollo Hospital,Davanagere,689,Busy
+Dr. Aishani Agate,Nodule/Mass,Oncologist,14,5.0,Apollo Hospital,Chikkaballapur,1374,Available
+Dr. Rishi Doshi,Aortic enlargement,Cardiologist,13,3.6,Rainbow Hospital,Hassan,456,Available
+Dr. Aahana Banerjee,Aortic enlargement,Cardiologist,7,4.6,Aster Hospital,Tumkur,448,Busy
+Dr. Praneel Garde,Pulmonary fibrosis,Pulmonologist,16,4.7,Rainbow Hospital,Kolar,653,Available
+Dr. Varenya Kapur,Pleural effusion,Pulmonologist,23,4.8,Apollo Hospital,Hassan,1247,Busy
+Dr. Yug Comar,Pneumothorax,Pulmonologist,15,3.9,Columbia Asia,Tumkur,929,Available
+Dr. Falak Tank,Calcification,Pulmonologist,23,4.9,KMC Hospital,Yadgir,1078,Busy
+Dr. Chasmum Chhabra,Consolidation,Pulmonologist,22,4.5,Manipal Hospital,Mangalore,542,Busy
+Dr. Gautam Chaudhuri,Pleural effusion,Pulmonologist,2,3.5,Sparsh Hospital,Vijayapura,1233,Available
+Dr. Ekaja Sathe,ILD,Pulmonologist,24,4.9,Fortis Hospital,Davanagere,401,Busy
+Dr. Tara Tripathi,Pleural thickening,Pulmonologist,6,3.8,Apollo Hospital,Vijayapura,1485,Available
+Dr. Guneet Mane,Pulmonary fibrosis,Pulmonologist,12,4.8,Fortis Hospital,Shimoga,1202,Busy
+Dr. Avni Sarin,No Finding,General Physician,16,4.6,Apollo Hospital,Yadgir,1382,Available
+Dr. Victor Manne,Nodule/Mass,Oncologist,14,4.6,AIIMS,Davanagere,358,Busy
+Dr. Rachit Kakar,Infiltration,Pulmonologist,11,3.7,Narayana Health,Chitradurga,540,Available
+Dr. Dipta Bahri,Lung Opacity,Pulmonologist,22,4.5,Narayana Health,Gadag,1298,Available
+Dr. Champak Guha,Pleural effusion,Pulmonologist,10,4.7,Rainbow Hospital,Mysore,1096,Available
+Dr. Darika Borah,Pleural effusion,Pulmonologist,15,3.6,Sparsh Hospital,Kolar,735,Busy
+Dr. Liam Zachariah,Infiltration,Pulmonologist,2,4.2,Sparsh Hospital,Gadag,1421,Available
+Dr. Chaman Pall,Cardiomegaly,Cardiologist,20,3.5,Rainbow Hospital,Ramanagara,1297,Available
+Dr. Oni Edwin,Calcification,Pulmonologist,3,4.9,Fortis Hospital,Dharwad,429,Available
+Dr. Ronith Reddy,Atelectasis,Pulmonologist,8,4.7,Sparsh Hospital,Dharwad,642,Busy
+Dr. Yuvraj Kale,Nodule/Mass,Oncologist,11,4.8,Columbia Asia,Dharwad,1154,Available
+Dr. Kashvi Shan,Pleural effusion,Pulmonologist,1,3.8,AIIMS,Bidar,1218,Available
+Dr. Ati Kaul,Atelectasis,Pulmonologist,5,4.6,AIIMS,Tumkur,1012,Busy
+Dr. Ekapad More,Pneumothorax,Pulmonologist,14,4.4,Columbia Asia,Mangalore,1255,Available
+Dr. Orinder Padmanabhan,ILD,Pulmonologist,16,4.8,Aster Hospital,Udupi,430,Available
+Dr. Yashoda Balay,ILD,Pulmonologist,4,3.7,Columbia Asia,Dharwad,435,Available
+Dr. Ishani Sharaf,Lung Opacity,Pulmonologist,14,4.7,Aster Hospital,Ramanagara,1436,Available
+Dr. Siya Keer,No Finding,General Physician,23,4.8,Aster Hospital,Mandya,820,Available
+Dr. Darsh Panchal,Pleural effusion,Pulmonologist,1,4.7,Aster Hospital,Hubli,987,Available
+Dr. Wishi Saxena,No Finding,General Physician,11,3.6,AIIMS,Mandya,338,Busy
+Dr. Ridhi Hayre,No Finding,General Physician,13,5.0,Manipal Hospital,Kolar,1160,Busy
+Dr. Faris Wali,Calcification,Pulmonologist,3,4.9,KMC Hospital,Udupi,490,Available
+Dr. Raghav Bedi,ILD,Pulmonologist,8,4.6,KMC Hospital,Mysore,1375,Busy
+Dr. Hamsini Nair,Pleural thickening,Pulmonologist,5,5.0,Rainbow Hospital,Vijayapura,540,Available
+Dr. Turvi Grover,Cardiomegaly,Cardiologist,2,4.6,Manipal Hospital,Yadgir,863,Available
+Dr. Waida Puri,Pneumothorax,Pulmonologist,13,4.9,Apollo Hospital,Haveri,1106,Available
+Dr. Manthan Jani,Pleural thickening,Pulmonologist,11,4.0,Fortis Hospital,Hubli,704,Busy
+Dr. Joshua Peri,Nodule/Mass,Oncologist,4,4.4,Fortis Hospital,Mangalore,1391,Busy
+Dr. Gavin Deol,Cardiomegaly,Cardiologist,20,4.2,KMC Hospital,Hubli,893,Available
+Dr. Veda Walla,Lung Opacity,Pulmonologist,8,3.9,Narayana Health,Dharwad,964,Available
+Dr. Praneel Arora,Atelectasis,Pulmonologist,22,3.7,KMC Hospital,Belgaum,804,Busy
+Dr. Sudiksha Grover,Other lesion,Pulmonologist,24,4.6,Rainbow Hospital,Udupi,546,Busy
+Dr. David Narayanan,Calcification,Pulmonologist,24,3.8,Rainbow Hospital,Hubli,648,Available
+Dr. Girik Gara,Calcification,Pulmonologist,5,4.8,Aster Hospital,Chikkaballapur,744,Busy
+Dr. Irya Rout,Pneumothorax,Pulmonologist,11,4.4,Narayana Health,Mangalore,414,Busy
+Dr. Aadhya Rastogi,Pulmonary fibrosis,Pulmonologist,20,4.9,Apollo Hospital,Ramanagara,1049,Available
+Dr. Rajeshri Ben,Infiltration,Pulmonologist,11,4.7,Fortis Hospital,Bangalore,344,Available
+Dr. Qushi Karan,Cardiomegaly,Cardiologist,20,4.8,Manipal Hospital,Tumkur,1118,Busy
+Dr. Aditya Natarajan,ILD,Pulmonologist,20,4.4,Columbia Asia,Gadag,640,Available
+Dr. Rachana Bahl,Atelectasis,Pulmonologist,25,3.5,Narayana Health,Gadag,1114,Available
+Dr. Forum Brar,Lung Opacity,Pulmonologist,9,4.5,Columbia Asia,Hubli,1118,Available
+Dr. Anthony Kala,Atelectasis,Pulmonologist,6,4.4,KMC Hospital,Mysore,1157,Available
+Dr. Ekaraj Bhagat,No Finding,General Physician,21,3.6,Rainbow Hospital,Tumkur,1338,Available
+Dr. Tanay Kuruvilla,Consolidation,Pulmonologist,17,4.2,Columbia Asia,Bangalore,812,Available
+Dr. Aarnav Jain,No Finding,General Physician,17,3.9,KMC Hospital,Gadag,1434,Busy
+Dr. Tara Bhat,Pulmonary fibrosis,Pulmonologist,18,4.7,KMC Hospital,Karwar,464,Available
+Dr. Meghana Divan,Pleural thickening,Pulmonologist,21,3.6,Manipal Hospital,Belgaum,693,Busy
+Dr. William Devi,Consolidation,Pulmonologist,16,4.1,Aster Hospital,Haveri,820,Busy
+Dr. Janya Keer,Calcification,Pulmonologist,22,4.1,Columbia Asia,Kolar,836,Available
+Dr. Abeer Borde,Consolidation,Pulmonologist,23,3.7,Columbia Asia,Chamarajanagar,1418,Available
+Dr. Chatresh Jaggi,Pneumothorax,Pulmonologist,9,3.9,Apollo Hospital,Haveri,544,Busy
+Dr. Ishwar Kala,ILD,Pulmonologist,25,4.3,KMC Hospital,Belgaum,1033,Busy
+Dr. Umang Rastogi,Pleural effusion,Pulmonologist,17,4.5,AIIMS,Haveri,890,Available
+Dr. Yug Sehgal,Pleural effusion,Pulmonologist,19,3.8,Columbia Asia,Hubli,401,Busy
+Dr. Meera Pai,Calcification,Pulmonologist,9,4.3,KMC Hospital,Vijayapura,832,Available
+Dr. Upadhriti Chadha,Cardiomegaly,Cardiologist,16,4.2,Fortis Hospital,Shimoga,1444,Busy
+Dr. Rishi Sanghvi,Nodule/Mass,Oncologist,24,4.3,Fortis Hospital,Karwar,940,Available
+Dr. Madhavi Sehgal,Atelectasis,Pulmonologist,16,4.3,AIIMS,Dharwad,510,Busy
+Dr. Vidhi Mohanty,Pneumothorax,Pulmonologist,15,4.8,Apollo Hospital,Shimoga,997,Busy
+Dr. Vaishnavi Modi,ILD,Pulmonologist,25,3.5,Rainbow Hospital,Raichur,629,Available
+Dr. Isha Chopra,Nodule/Mass,Oncologist,22,4.9,Manipal Hospital,Belgaum,836,Busy
+Dr. Charvi Tiwari,Consolidation,Pulmonologist,12,4.3,Aster Hospital,Hubli,525,Busy
+Dr. Chaitaly Doctor,Cardiomegaly,Cardiologist,6,4.1,AIIMS,Mandya,1390,Busy
+Dr. Simon Mittal,Pleural effusion,Pulmonologist,3,4.2,KMC Hospital,Mysore,1293,Available
+Dr. Nakul Devan,Other lesion,Pulmonologist,9,4.6,Apollo Hospital,Dharwad,657,Available
+Dr. Abhiram Sani,Pleural effusion,Pulmonologist,17,4.9,Apollo Hospital,Mangalore,790,Busy
+Dr. Siya Tara,Pulmonary fibrosis,Pulmonologist,18,4.2,Manipal Hospital,Mangalore,397,Available
+Dr. Lipika Tiwari,Infiltration,Pulmonologist,20,4.5,Manipal Hospital,Bidar,1081,Available
+Dr. Isaac Saini,Other lesion,Pulmonologist,24,3.8,Aster Hospital,Raichur,431,Busy
+Dr. Odika Bhat,No Finding,General Physician,25,3.5,Manipal Hospital,Vijayapura,364,Busy
+Dr. Chanakya Bajwa,Other lesion,Pulmonologist,4,4.4,Fortis Hospital,Vijayapura,382,Available
+Dr. Krish Lalla,No Finding,General Physician,25,3.7,Rainbow Hospital,Bangalore,664,Available
+Dr. Anirudh Arora,Infiltration,Pulmonologist,5,4.2,Sparsh Hospital,Shimoga,1374,Available
+Dr. Sarthak Bawa,Pleural effusion,Pulmonologist,15,3.6,Narayana Health,Tumkur,301,Available
+Dr. Upma Sabharwal,Aortic enlargement,Cardiologist,12,4.7,KMC Hospital,Dharwad,1241,Busy
+Dr. Ethan Nadig,Infiltration,Pulmonologist,23,3.9,Sparsh Hospital,Karwar,569,Available
+Dr. Thomas Kala,Pneumothorax,Pulmonologist,3,3.7,Apollo Hospital,Udupi,1287,Available
+Dr. Gagan Khosla,ILD,Pulmonologist,13,3.8,Sparsh Hospital,Tumkur,674,Busy
+Dr. Maanav Kadakia,Aortic enlargement,Cardiologist,8,3.7,Sparsh Hospital,Mandya,1054,Available
+Dr. Aahana Rajan,Pleural thickening,Pulmonologist,11,3.9,Sparsh Hospital,Yadgir,953,Busy
+Dr. Chakradev Sood,No Finding,General Physician,21,3.8,Columbia Asia,Bangalore,1330,Available
+Dr. Saanvi Palan,Pulmonary fibrosis,Pulmonologist,11,4.6,Manipal Hospital,Haveri,629,Busy
+Dr. Mitesh Ray,Calcification,Pulmonologist,3,4.1,Apollo Hospital,Tumkur,812,Available
+Dr. Urishilla Toor,Other lesion,Pulmonologist,7,3.9,Aster Hospital,Mangalore,679,Available
+Dr. Rohan Chander,Aortic enlargement,Cardiologist,5,4.1,Fortis Hospital,Yadgir,1025,Busy
+Dr. Kritika Iyengar,Pleural effusion,Pulmonologist,23,4.5,Manipal Hospital,Gadag,611,Available
+Dr. Gunbir Chadha,ILD,Pulmonologist,18,4.1,KMC Hospital,Hubli,584,Available
+Dr. Chakradev Pathak,Pleural effusion,Pulmonologist,21,3.7,Manipal Hospital,Chitradurga,1256,Busy
+Dr. Lucky Mall,Lung Opacity,Pulmonologist,8,3.8,Narayana Health,Kolar,846,Busy
+Dr. Januja Pillay,Aortic enlargement,Cardiologist,6,4.3,Rainbow Hospital,Belgaum,1354,Available
+Dr. Riya Sahni,Pneumothorax,Pulmonologist,13,4.5,Apollo Hospital,Hubli,1450,Busy
+Dr. Eta Arora,Other lesion,Pulmonologist,5,4.1,Manipal Hospital,Chikkaballapur,1174,Available
+Dr. Ojasvi Seth,Cardiomegaly,Cardiologist,20,3.9,Manipal Hospital,Raichur,718,Available
+Dr. Amara Rana,Pulmonary fibrosis,Pulmonologist,11,3.6,Rainbow Hospital,Raichur,1267,Available
+Dr. Faqid Nair,Other lesion,Pulmonologist,9,4.7,AIIMS,Vijayapura,342,Available
+Dr. Balhaar Dhingra,Atelectasis,Pulmonologist,3,4.6,Aster Hospital,Mangalore,485,Busy
+Dr. Chasmum Krishnamurthy,No Finding,General Physician,25,3.7,Narayana Health,Hubli,439,Available
+Dr. Yashasvi Minhas,Lung Opacity,Pulmonologist,3,4.2,KMC Hospital,Bellary,1081,Busy
+Dr. Ira Ranganathan,Infiltration,Pulmonologist,25,4.3,AIIMS,Udupi,1258,Available
+Dr. Warjas Naik,Infiltration,Pulmonologist,10,3.8,Columbia Asia,Davanagere,620,Available
+Dr. Thomas Sharaf,Infiltration,Pulmonologist,13,3.8,Fortis Hospital,Chamarajanagar,832,Available
+Dr. Imaran Garde,Pulmonary fibrosis,Pulmonologist,24,4.6,Aster Hospital,Davanagere,778,Available
+Dr. Jai Dutt,Pleural thickening,Pulmonologist,15,4.5,Fortis Hospital,Karwar,835,Available
+Dr. Dakshesh Anand,Pleural effusion,Pulmonologist,15,4.4,Manipal Hospital,Hubli,1211,Busy
+Dr. Wahab Choudhry,Nodule/Mass,Oncologist,25,3.6,Aster Hospital,Bellary,809,Busy
+Dr. Girish Borra,Infiltration,Pulmonologist,2,4.9,Apollo Hospital,Udupi,1113,Busy
+Dr. Bakhshi Jani,ILD,Pulmonologist,10,3.7,Columbia Asia,Hubli,1437,Available
+Dr. Hardik Aggarwal,Lung Opacity,Pulmonologist,14,4.9,AIIMS,Chamarajanagar,330,Busy
+Dr. Arin Kalla,Consolidation,Pulmonologist,4,4.5,KMC Hospital,Raichur,1073,Busy
+Dr. Zansi Sen,Atelectasis,Pulmonologist,23,3.6,Apollo Hospital,Shimoga,656,Busy
+Dr. Nakul Rama,Cardiomegaly,Cardiologist,15,4.6,Narayana Health,Raichur,840,Available
+Dr. Dakshesh Badami,No Finding,General Physician,16,4.9,Manipal Hospital,Haveri,1050,Available
+Dr. Yashvi Vala,Lung Opacity,Pulmonologist,25,4.8,Fortis Hospital,Gadag,1333,Available
+Dr. Shravya Bava,Nodule/Mass,Oncologist,6,3.9,Rainbow Hospital,Belgaum,1238,Available
+Dr. Jonathan Tandon,Pulmonary fibrosis,Pulmonologist,15,4.6,Manipal Hospital,Bangalore,1353,Busy
+Dr. Jasmit Goswami,Atelectasis,Pulmonologist,1,3.9,Narayana Health,Davanagere,907,Busy
+Dr. Xalak Halder,Pneumothorax,Pulmonologist,3,4.6,Aster Hospital,Mysore,847,Busy
+Dr. Advik Arya,Pulmonary fibrosis,Pulmonologist,25,3.8,AIIMS,Chikkaballapur,501,Busy
+Dr. Raagini Boase,Nodule/Mass,Oncologist,3,4.2,Sparsh Hospital,Raichur,968,Available
+Dr. Tanveer Bahri,Infiltration,Pulmonologist,20,4.0,Aster Hospital,Bidar,834,Available
+Dr. Janani Naidu,ILD,Pulmonologist,16,4.6,Manipal Hospital,Haveri,596,Busy
+Dr. Aradhana Ramachandran,Infiltration,Pulmonologist,9,3.9,Narayana Health,Gadag,1458,Available
+Dr. Meera Vala,Lung Opacity,Pulmonologist,21,4.0,Sparsh Hospital,Ramanagara,736,Available
+Dr. Bhanumati Arya,Nodule/Mass,Oncologist,24,4.2,Sparsh Hospital,Udupi,1474,Available
+Dr. Max Mitra,ILD,Pulmonologist,23,4.6,Manipal Hospital,Udupi,942,Busy
+Dr. Tarak Gole,Other lesion,Pulmonologist,19,4.1,Rainbow Hospital,Chitradurga,817,Busy
+Dr. Ati Bhardwaj,Pneumothorax,Pulmonologist,16,4.9,KMC Hospital,Ramanagara,1398,Busy
+Dr. Gaurika Ratti,No Finding,General Physician,1,4.6,KMC Hospital,Bangalore,941,Available
+Dr. Noah Kamdar,Nodule/Mass,Oncologist,4,3.5,AIIMS,Mandya,847,Available
+Dr. Pranit Bajwa,Aortic enlargement,Cardiologist,20,3.6,Apollo Hospital,Davanagere,714,Available
+Dr. Pranit Sen,No Finding,General Physician,6,4.6,Manipal Hospital,Mangalore,1293,Busy
+Dr. Nakul Sawhney,Pneumothorax,Pulmonologist,21,3.6,Apollo Hospital,Bidar,421,Busy
+Dr. Nachiket Nagarajan,Pneumothorax,Pulmonologist,14,3.5,Sparsh Hospital,Mysore,955,Busy
+Dr. Shravya Basak,Infiltration,Pulmonologist,18,4.3,AIIMS,Mysore,789,Available
+Dr. Jai Saran,Consolidation,Pulmonologist,3,3.9,Rainbow Hospital,Karwar,1316,Busy
+Dr. Manbir Rau,Pleural thickening,Pulmonologist,16,3.7,Apollo Hospital,Raichur,605,Available
+Dr. Vihaan Nagar,Cardiomegaly,Cardiologist,13,4.3,KMC Hospital,Hubli,471,Available
+Dr. Jyoti Dhar,Pleural effusion,Pulmonologist,14,4.9,KMC Hospital,Bagalkot,633,Available
+Dr. Janya Ganguly,Pneumothorax,Pulmonologist,12,4.9,KMC Hospital,Hubli,1338,Busy
+Dr. Raghav Borah,Pneumothorax,Pulmonologist,20,5.0,KMC Hospital,Gadag,1115,Busy
+Dr. Tripti Dubey,Atelectasis,Pulmonologist,21,3.5,Narayana Health,Chitradurga,486,Busy
+Dr. Zayyan Dora,Pleural thickening,Pulmonologist,8,4.4,AIIMS,Gadag,1319,Busy
+Dr. Vamakshi Hans,Pulmonary fibrosis,Pulmonologist,24,4.9,AIIMS,Hassan,616,Busy
+Dr. Bahadurjit Ravel,Consolidation,Pulmonologist,14,4.9,Aster Hospital,Ramanagara,783,Busy
+Dr. Lopa Tak,Pneumothorax,Pulmonologist,5,4.3,Fortis Hospital,Bellary,961,Busy
+Dr. Manan Thakkar,Nodule/Mass,Oncologist,19,3.9,Columbia Asia,Raichur,1205,Busy
+Dr. Yachana Saini,Aortic enlargement,Cardiologist,14,3.6,Fortis Hospital,Raichur,916,Available
+Dr. Vansha Garg,Calcification,Pulmonologist,20,4.9,Manipal Hospital,Haveri,758,Available
+Dr. Inaya Sem,Pleural effusion,Pulmonologist,15,4.0,Rainbow Hospital,Mysore,1012,Available
+Dr. Netra Patil,Atelectasis,Pulmonologist,12,4.7,Manipal Hospital,Kolar,982,Busy
+Dr. Isha Keer,ILD,Pulmonologist,24,3.8,Manipal Hospital,Chitradurga,458,Available
+Dr. Maanav Rege,ILD,Pulmonologist,17,4.9,Narayana Health,Davanagere,388,Available
+Dr. Anvi Bahri,Aortic enlargement,Cardiologist,17,4.1,Narayana Health,Shimoga,958,Available
+Dr. Indali Chana,Other lesion,Pulmonologist,2,4.9,Narayana Health,Shimoga,803,Available
+Dr. Garima Kar,Aortic enlargement,Cardiologist,3,3.5,Narayana Health,Vijayapura,511,Available
+Dr. Aditya Goyal,ILD,Pulmonologist,16,3.8,Columbia Asia,Belgaum,501,Available
+Dr. Qarin Kurian,No Finding,General Physician,4,4.9,Apollo Hospital,Gadag,1421,Busy
+Dr. Anthony Sampath,Pneumothorax,Pulmonologist,20,4.7,Manipal Hospital,Chikkaballapur,1391,Busy
+Dr. Nidra Mann,Pneumothorax,Pulmonologist,1,4.8,Apollo Hospital,Chitradurga,593,Busy
+Dr. Charvi Mander,Calcification,Pulmonologist,25,4.6,KMC Hospital,Mandya,555,Available
+Dr. Dipta Dugal,Cardiomegaly,Cardiologist,16,4.6,AIIMS,Vijayapura,1452,Busy
+Dr. Rachita Singh,Other lesion,Pulmonologist,3,4.6,Columbia Asia,Karwar,883,Available
+Dr. Gopal Sampath,Pleural thickening,Pulmonologist,14,3.6,Sparsh Hospital,Bellary,366,Busy
+Dr. Nandini Bail,No Finding,General Physician,3,4.9,Sparsh Hospital,Belgaum,442,Available
+Dr. Alexander Sathe,Cardiomegaly,Cardiologist,5,4.4,Rainbow Hospital,Haveri,359,Busy
+Dr. Saumya Pal,Pulmonary fibrosis,Pulmonologist,19,4.6,Sparsh Hospital,Vijayapura,1053,Busy
+Dr. Januja Nadig,Consolidation,Pulmonologist,9,4.2,Sparsh Hospital,Ramanagara,887,Available
+Dr. Zaid Chhabra,Nodule/Mass,Oncologist,5,3.5,Manipal Hospital,Ramanagara,828,Available
+Dr. Yashoda Madan,Pleural effusion,Pulmonologist,5,4.6,Sparsh Hospital,Belgaum,325,Busy
+Dr. Aadi Agate,Calcification,Pulmonologist,7,3.7,Narayana Health,Raichur,507,Available
+Dr. Ganga Ben,Lung Opacity,Pulmonologist,5,4.0,Narayana Health,Chamarajanagar,325,Available
+Dr. Tanay Bhatia,Pulmonary fibrosis,Pulmonologist,16,4.3,Rainbow Hospital,Mangalore,1115,Available
+Dr. Kashish Dada,Nodule/Mass,Oncologist,8,4.8,Rainbow Hospital,Hubli,810,Busy
+Dr. Widisha Jaggi,Infiltration,Pulmonologist,19,4.9,Narayana Health,Kolar,1026,Available
+Dr. Aarna Mann,Calcification,Pulmonologist,24,3.9,Sparsh Hospital,Shimoga,997,Busy
+Dr. Om Cherian,ILD,Pulmonologist,10,4.4,Narayana Health,Chikkaballapur,1369,Busy
+Dr. Ganga Mani,ILD,Pulmonologist,10,4.2,Rainbow Hospital,Mandya,1040,Available
+Dr. Vedhika Dua,Aortic enlargement,Cardiologist,21,3.7,Rainbow Hospital,Bidar,913,Busy
+Dr. Quincy De,Pneumothorax,Pulmonologist,15,3.8,Rainbow Hospital,Hubli,629,Busy
+Dr. Qadim Pant,Aortic enlargement,Cardiologist,17,3.7,Fortis Hospital,Chamarajanagar,645,Available
+Dr. Ekaja Bhatt,No Finding,General Physician,4,4.0,Sparsh Hospital,Ramanagara,1343,Busy
+Dr. Warinder Mani,Nodule/Mass,Oncologist,16,4.2,Fortis Hospital,Hubli,783,Busy
+Dr. Siya Bali,Pneumothorax,Pulmonologist,1,3.8,Columbia Asia,Chikkaballapur,464,Busy
+Dr. Utkarsh Raju,Lung Opacity,Pulmonologist,21,4.8,Aster Hospital,Hubli,1072,Available
+Dr. Victor Ramachandran,Atelectasis,Pulmonologist,13,4.4,Aster Hospital,Chamarajanagar,936,Available
+Dr. Quincy Murty,Pleural thickening,Pulmonologist,6,4.0,Narayana Health,Bangalore,826,Busy
+Dr. Aadhya Magar,Consolidation,Pulmonologist,16,3.6,Rainbow Hospital,Bagalkot,338,Available
+Dr. Vihaan Bose,Consolidation,Pulmonologist,15,3.7,Narayana Health,Gadag,1152,Busy
+Dr. Benjamin Mohanty,Consolidation,Pulmonologist,1,4.3,Apollo Hospital,Haveri,932,Available
+Dr. Yamini Gola,Pleural effusion,Pulmonologist,16,4.2,Manipal Hospital,Kolar,1303,Available
+Dr. Amara Raman,Lung Opacity,Pulmonologist,24,4.0,Manipal Hospital,Bellary,1091,Available
+Dr. Samaksh More,Pleural effusion,Pulmonologist,17,4.9,Manipal Hospital,Tumkur,1079,Available
+Dr. Upkaar Gala,Calcification,Pulmonologist,21,4.9,Narayana Health,Hassan,905,Available
+Dr. Triveni Koshy,Consolidation,Pulmonologist,21,4.5,Narayana Health,Belgaum,629,Busy
+Dr. Xavier Sood,Pneumothorax,Pulmonologist,14,4.7,Rainbow Hospital,Bellary,1240,Available
+Dr. Oscar Goyal,Nodule/Mass,Oncologist,12,4.6,Apollo Hospital,Haveri,1470,Busy
+Dr. Ekanta Venkatesh,Lung Opacity,Pulmonologist,13,4.3,Fortis Hospital,Chikkaballapur,694,Busy
+Dr. Devika Khosla,Nodule/Mass,Oncologist,22,4.1,Columbia Asia,Mysore,1415,Busy
+Dr. Zaitra Bahl,Cardiomegaly,Cardiologist,9,4.6,Sparsh Hospital,Chamarajanagar,1035,Available
+Dr. Kritika Pau,Other lesion,Pulmonologist,19,4.8,KMC Hospital,Hubli,1250,Available
+Dr. Gabriel Setty,Cardiomegaly,Cardiologist,22,4.6,Manipal Hospital,Chitradurga,827,Available
+Dr. Unni Morar,Infiltration,Pulmonologist,1,4.9,Fortis Hospital,Gadag,1369,Available
+Dr. Triya Som,Nodule/Mass,Oncologist,17,4.5,Fortis Hospital,Chikkaballapur,612,Busy
+Dr. Falan Patla,Nodule/Mass,Oncologist,9,4.2,Rainbow Hospital,Gadag,799,Available
+Dr. Vamakshi Deshpande,Cardiomegaly,Cardiologist,23,3.9,Narayana Health,Ramanagara,320,Busy
+Dr. Kalpit Garg,Pneumothorax,Pulmonologist,22,5.0,Columbia Asia,Gadag,782,Busy
+Dr. Ikshita Narayanan,Pneumothorax,Pulmonologist,2,4.0,Apollo Hospital,Bidar,715,Available
+Dr. Kamya Panchal,Atelectasis,Pulmonologist,4,4.8,Aster Hospital,Raichur,470,Available
+Dr. Upma Patla,Other lesion,Pulmonologist,3,4.0,Narayana Health,Bidar,922,Busy
+Dr. Daksh Pillai,Other lesion,Pulmonologist,16,4.4,Columbia Asia,Tumkur,1455,Busy
+Dr. Mitesh Wali,Infiltration,Pulmonologist,15,3.6,Sparsh Hospital,Yadgir,1266,Available
+Dr. Krisha Dar,Pleural thickening,Pulmonologist,21,4.5,KMC Hospital,Hubli,602,Busy
+Dr. Aahana Narang,Atelectasis,Pulmonologist,15,3.6,Fortis Hospital,Shimoga,566,Busy
+Dr. Krisha Cherian,ILD,Pulmonologist,13,4.8,AIIMS,Udupi,744,Available
+Dr. Liam Dhingra,ILD,Pulmonologist,9,3.5,Manipal Hospital,Hassan,1476,Busy
+Dr. Bimala Ramakrishnan,Pulmonary fibrosis,Pulmonologist,21,4.2,Manipal Hospital,Mangalore,823,Busy
+Dr. Eesha Lalla,Pneumothorax,Pulmonologist,14,4.4,Fortis Hospital,Mysore,531,Busy
+Dr. Upma Salvi,Atelectasis,Pulmonologist,25,3.6,Apollo Hospital,Vijayapura,1093,Busy
+Dr. Aarnav Divan,Consolidation,Pulmonologist,13,4.9,Manipal Hospital,Chitradurga,1316,Available
+Dr. Chanakya Halder,Aortic enlargement,Cardiologist,23,5.0,KMC Hospital,Mandya,370,Busy
+Dr. Dalaja Som,Consolidation,Pulmonologist,2,4.1,Fortis Hospital,Mysore,811,Busy
+Dr. Yamini Bali,Calcification,Pulmonologist,7,3.8,KMC Hospital,Bidar,1323,Available
+Dr. Wishi Tiwari,Other lesion,Pulmonologist,6,3.9,KMC Hospital,Bangalore,820,Busy
+Dr. Eshana Upadhyay,Infiltration,Pulmonologist,19,3.8,Fortis Hospital,Gadag,1040,Busy
+Dr. Aarav Sankar,Atelectasis,Pulmonologist,21,3.7,Manipal Hospital,Tumkur,990,Available
+Dr. Aditya Sinha,No Finding,General Physician,21,4.1,AIIMS,Chitradurga,1425,Busy
+Dr. Xiti Rajagopalan,Nodule/Mass,Oncologist,12,3.6,Manipal Hospital,Bangalore,1274,Available
+Dr. Yochana Kulkarni,Nodule/Mass,Oncologist,14,3.6,Apollo Hospital,Raichur,1227,Available
+Dr. Zehaan Dada,ILD,Pulmonologist,21,5.0,Apollo Hospital,Bagalkot,691,Available
+Dr. Saumya Mitra,Pleural thickening,Pulmonologist,9,4.3,Manipal Hospital,Bidar,1479,Busy
+Dr. Max Padmanabhan,Lung Opacity,Pulmonologist,1,4.4,Columbia Asia,Udupi,924,Busy
+Dr. Sanaya Thakur,ILD,Pulmonologist,16,4.0,Manipal Hospital,Hassan,517,Busy
+Dr. Eesha Vasa,Pulmonary fibrosis,Pulmonologist,23,4.0,Narayana Health,Davanagere,1484,Busy
+Dr. Libni Dora,Lung Opacity,Pulmonologist,21,3.6,Columbia Asia,Udupi,1284,Busy
+Dr. Ekani Munshi,ILD,Pulmonologist,13,3.6,Columbia Asia,Yadgir,1166,Available
+Dr. Upasna Ahuja,Aortic enlargement,Cardiologist,2,4.2,AIIMS,Chikkaballapur,1437,Busy
+Dr. Siya Hegde,Atelectasis,Pulmonologist,22,3.6,Manipal Hospital,Udupi,1316,Busy
+Dr. Bina Gaba,Pleural thickening,Pulmonologist,22,4.2,Apollo Hospital,Bagalkot,1430,Busy
+Dr. Laksh Narula,Other lesion,Pulmonologist,8,4.6,Sparsh Hospital,Hubli,1221,Busy
+Dr. Samar Vig,Lung Opacity,Pulmonologist,20,4.5,Apollo Hospital,Vijayapura,1068,Available
+Dr. Gayathri Srivastava,Pneumothorax,Pulmonologist,13,4.8,Apollo Hospital,Kolar,927,Busy
+Dr. Barkha D’Alia,No Finding,General Physician,18,4.2,Apollo Hospital,Bangalore,777,Available
+Dr. Anay Kunda,Lung Opacity,Pulmonologist,24,3.8,KMC Hospital,Bellary,1143,Available
+Dr. Eta Tata,Infiltration,Pulmonologist,9,4.2,KMC Hospital,Hassan,1076,Available
+Dr. Niharika Guha,Cardiomegaly,Cardiologist,12,4.3,Fortis Hospital,Chitradurga,302,Busy
+Dr. Ojasvi Vala,Atelectasis,Pulmonologist,20,4.8,Rainbow Hospital,Tumkur,954,Busy
+Dr. Lopa Solanki,Consolidation,Pulmonologist,23,4.4,AIIMS,Chamarajanagar,1072,Available
+Dr. Rayaan Anne,ILD,Pulmonologist,4,3.8,Aster Hospital,Dharwad,656,Available
+Dr. Shaurya Bera,Nodule/Mass,Oncologist,23,4.5,AIIMS,Hubli,614,Busy
+Dr. Nilima Dutt,Aortic enlargement,Cardiologist,5,4.8,Aster Hospital,Raichur,641,Available
+Dr. Oeshi Edwin,Pneumothorax,Pulmonologist,7,4.5,Columbia Asia,Udupi,1448,Available
+Dr. Robert Sandal,Infiltration,Pulmonologist,1,4.5,Narayana Health,Bellary,1256,Busy
+Dr. Anvi Char,Pleural thickening,Pulmonologist,10,4.3,Narayana Health,Haveri,612,Available
+Dr. Viraj Vala,Pleural thickening,Pulmonologist,24,4.9,Columbia Asia,Chikkaballapur,853,Available
+Dr. Faraj Srivastava,Aortic enlargement,Cardiologist,2,4.1,Aster Hospital,Shimoga,994,Busy
+Dr. Timothy Palla,Aortic enlargement,Cardiologist,14,4.5,Rainbow Hospital,Tumkur,982,Busy
+Dr. Lipika Dutt,Pulmonary fibrosis,Pulmonologist,4,4.9,Apollo Hospital,Bellary,1229,Available
+Dr. Theodore Mammen,Pleural thickening,Pulmonologist,1,4.5,AIIMS,Dharwad,895,Available
+Dr. Vansha Sachdeva,Aortic enlargement,Cardiologist,22,3.8,AIIMS,Belgaum,947,Available
+Dr. Charvi Tata,Pleural thickening,Pulmonologist,12,3.5,Sparsh Hospital,Tumkur,1068,Busy
+Dr. Ria Dugar,Pulmonary fibrosis,Pulmonologist,20,4.5,Sparsh Hospital,Raichur,368,Available
+Dr. Xiti Dixit,Nodule/Mass,Oncologist,20,4.4,Columbia Asia,Udupi,369,Available
+Dr. Zayan Mani,Pleural effusion,Pulmonologist,7,4.2,Sparsh Hospital,Dharwad,729,Busy
+Dr. Rushil D’Alia,Calcification,Pulmonologist,13,3.8,Columbia Asia,Shimoga,852,Busy
+Dr. Yashasvi Devi,Nodule/Mass,Oncologist,16,4.7,Sparsh Hospital,Hubli,786,Available
+Dr. Tripti Saran,Nodule/Mass,Oncologist,18,3.9,Aster Hospital,Tumkur,685,Available
+Dr. Aryan Purohit,Atelectasis,Pulmonologist,22,4.4,Aster Hospital,Yadgir,319,Available
+Dr. Chaitaly Mutti,Atelectasis,Pulmonologist,1,4.5,Rainbow Hospital,Kolar,342,Busy
+Dr. Mekhala Muni,Atelectasis,Pulmonologist,6,4.9,AIIMS,Shimoga,1412,Busy
+Dr. Zaitra Khalsa,No Finding,General Physician,18,3.9,Columbia Asia,Bellary,1358,Busy
+Dr. Anamika Bir,Infiltration,Pulmonologist,7,4.2,Aster Hospital,Mysore,928,Busy
+Dr. Onkar Khosla,ILD,Pulmonologist,24,4.9,Columbia Asia,Shimoga,1385,Busy
+Dr. Omya Uppal,Calcification,Pulmonologist,12,4.3,Aster Hospital,Raichur,1428,Available
+Dr. Saumya Bhatia,Other lesion,Pulmonologist,22,3.6,KMC Hospital,Yadgir,1341,Available
+Dr. Ekavir Koshy,Atelectasis,Pulmonologist,25,3.6,KMC Hospital,Mysore,776,Busy
+Dr. Umang Muni,Consolidation,Pulmonologist,3,3.7,Narayana Health,Chikkaballapur,376,Available
+Dr. Ranbir Kala,Pleural thickening,Pulmonologist,17,4.7,Aster Hospital,Chamarajanagar,1413,Busy
+Dr. Prisha Sehgal,Pleural effusion,Pulmonologist,2,4.7,Columbia Asia,Bellary,657,Busy
+Dr. Megha Sathe,Pneumothorax,Pulmonologist,13,4.8,Aster Hospital,Mangalore,1265,Busy
+Dr. Aarini Sahni,Infiltration,Pulmonologist,5,3.6,Rainbow Hospital,Yadgir,1369,Available
+Dr. Reyansh Ramanathan,ILD,Pulmonologist,20,3.7,Sparsh Hospital,Shimoga,1289,Busy
+Dr. Yuvraj Mody,Nodule/Mass,Oncologist,24,4.0,AIIMS,Bangalore,1131,Available
+Dr. Dhruv Kara,Other lesion,Pulmonologist,12,4.4,KMC Hospital,Bidar,1112,Available
+Dr. Farhan Sem,Aortic enlargement,Cardiologist,9,4.7,Columbia Asia,Chitradurga,306,Available
+Dr. Rohan Kala,Pleural effusion,Pulmonologist,17,3.8,Fortis Hospital,Raichur,767,Available
+Dr. Meghana Bawa,Aortic enlargement,Cardiologist,21,4.9,KMC Hospital,Bangalore,1137,Busy
+Dr. Leela Mand,ILD,Pulmonologist,6,4.3,Apollo Hospital,Udupi,1024,Available
+Dr. Jagdish Srivastava,Pleural effusion,Pulmonologist,22,4.6,Narayana Health,Raichur,840,Busy
+Dr. Dakshesh Dey,Aortic enlargement,Cardiologist,15,4.6,Apollo Hospital,Hassan,510,Busy
+Dr. Amruta Dewan,Pulmonary fibrosis,Pulmonologist,12,4.8,Aster Hospital,Hassan,1492,Available
+Dr. Lohit Virk,Pleural effusion,Pulmonologist,13,4.1,Apollo Hospital,Bangalore,919,Busy
+Dr. Yamini Mannan,No Finding,General Physician,21,3.9,Rainbow Hospital,Bagalkot,1303,Busy
+Dr. Jairaj Chahal,Pleural effusion,Pulmonologist,5,3.9,Rainbow Hospital,Mangalore,1279,Busy
+Dr. Vaishnavi Comar,Aortic enlargement,Cardiologist,5,4.1,Rainbow Hospital,Bagalkot,931,Busy
+Dr. Nitesh Balakrishnan,Cardiomegaly,Cardiologist,15,5.0,Apollo Hospital,Kolar,846,Available
+Dr. Kai Sha,Calcification,Pulmonologist,14,4.8,Narayana Health,Karwar,618,Available
+Dr. Rehaan Bhavsar,Other lesion,Pulmonologist,9,3.8,Manipal Hospital,Davanagere,1227,Available
+Dr. Nirja D’Alia,Cardiomegaly,Cardiologist,18,3.5,Apollo Hospital,Yadgir,704,Busy
+Dr. Nidra Venkataraman,Calcification,Pulmonologist,15,3.6,AIIMS,Bangalore,904,Available
+Dr. Umang Chahal,Lung Opacity,Pulmonologist,22,4.3,Aster Hospital,Haveri,620,Busy
+Dr. Aachal Narain,Consolidation,Pulmonologist,1,4.8,Manipal Hospital,Haveri,1319,Busy
+Dr. Pranav Pal,Nodule/Mass,Oncologist,24,3.6,Rainbow Hospital,Davanagere,1446,Busy
+Dr. Vasana Chawla,No Finding,General Physician,3,4.0,Narayana Health,Raichur,916,Available
+Dr. Bhavani Zachariah,Nodule/Mass,Oncologist,4,3.6,Fortis Hospital,Bellary,817,Available
+Dr. Zaitra Dutta,ILD,Pulmonologist,7,3.8,Sparsh Hospital,Karwar,333,Busy
+Dr. Veda Tak,ILD,Pulmonologist,2,5.0,Sparsh Hospital,Shimoga,333,Busy
+Dr. Ubika Taneja,Lung Opacity,Pulmonologist,12,4.3,Narayana Health,Bellary,651,Busy
+Dr. Triya Shah,Atelectasis,Pulmonologist,19,4.3,Fortis Hospital,Bagalkot,1048,Busy
+Dr. Jagat Om,Pleural thickening,Pulmonologist,10,4.0,KMC Hospital,Haveri,841,Busy
+Dr. Imaran Kothari,Atelectasis,Pulmonologist,14,4.7,Columbia Asia,Dharwad,1423,Available
+Dr. Saumya Thakur,Atelectasis,Pulmonologist,13,4.6,Rainbow Hospital,Vijayapura,1310,Available
+Dr. Bishakha Sarin,Other lesion,Pulmonologist,7,4.9,KMC Hospital,Kolar,888,Available
+Dr. Nitara Dar,No Finding,General Physician,3,4.5,Apollo Hospital,Haveri,670,Available
+Dr. Neelima Krishnan,Nodule/Mass,Oncologist,5,3.5,Narayana Health,Chamarajanagar,765,Busy
+Dr. Lucky Bansal,Lung Opacity,Pulmonologist,14,4.3,Columbia Asia,Karwar,933,Busy
+Dr. Lipika Sane,Pleural thickening,Pulmonologist,16,4.0,Narayana Health,Bidar,440,Busy
+Dr. Mitesh Khalsa,Calcification,Pulmonologist,13,4.9,Fortis Hospital,Dharwad,537,Available
+Dr. Yashica Sangha,Calcification,Pulmonologist,17,4.9,Narayana Health,Bidar,948,Available
+Dr. Tamanna Gade,Aortic enlargement,Cardiologist,24,4.8,Sparsh Hospital,Chikkaballapur,692,Available
+Dr. Ubika Chaudhary,No Finding,General Physician,21,4.7,Columbia Asia,Bellary,1282,Busy
+Dr. David Memon,ILD,Pulmonologist,3,4.8,Rainbow Hospital,Mysore,495,Busy
+Dr. Kamala Mandal,Pulmonary fibrosis,Pulmonologist,3,4.0,Fortis Hospital,Tumkur,697,Available
+Dr. Indira Bala,Pneumothorax,Pulmonologist,10,4.8,Sparsh Hospital,Bangalore,825,Busy
+Dr. Harish Amble,Infiltration,Pulmonologist,14,4.0,Narayana Health,Chikkaballapur,498,Busy
+Dr. Geetika Guha,Consolidation,Pulmonologist,20,4.2,Aster Hospital,Kolar,748,Available
+Dr. Lakshit Kata,No Finding,General Physician,23,3.6,AIIMS,Kolar,559,Busy
+Dr. Jairaj Bhakta,Aortic enlargement,Cardiologist,10,4.9,Sparsh Hospital,Mysore,918,Available
+Dr. Simon Butala,Pneumothorax,Pulmonologist,7,4.4,Narayana Health,Mysore,784,Busy
+Dr. Anamika Yogi,Infiltration,Pulmonologist,2,3.9,Sparsh Hospital,Mandya,907,Available
+Dr. Sathvik Dua,Lung Opacity,Pulmonologist,21,4.6,Apollo Hospital,Chitradurga,628,Busy
+Dr. Isaac Sachdev,Pleural thickening,Pulmonologist,2,4.7,Narayana Health,Gadag,1349,Busy
+Dr. Dayita Muni,Calcification,Pulmonologist,17,3.7,Rainbow Hospital,Bagalkot,577,Available
+Dr. Charles Sathe,Pneumothorax,Pulmonologist,15,4.7,Columbia Asia,Dharwad,1463,Available
+Dr. Vedika Mukhopadhyay,Aortic enlargement,Cardiologist,24,4.2,AIIMS,Bidar,1155,Busy
+Dr. Keya Upadhyay,Calcification,Pulmonologist,2,3.9,Manipal Hospital,Chikkaballapur,1318,Busy
+Dr. Rehaan Yohannan,Calcification,Pulmonologist,22,4.0,Narayana Health,Chikkaballapur,398,Available
+Dr. Rachana Sastry,Pleural thickening,Pulmonologist,3,3.6,KMC Hospital,Bidar,822,Available
+Dr. Jairaj Vohra,Other lesion,Pulmonologist,8,3.7,Rainbow Hospital,Udupi,959,Available
+Dr. Forum Sama,Pleural thickening,Pulmonologist,21,4.1,Rainbow Hospital,Karwar,1378,Available
+Dr. Dakshesh Sem,Pneumothorax,Pulmonologist,24,4.1,Manipal Hospital,Bidar,918,Available
+Dr. Ronith Saha,Cardiomegaly,Cardiologist,25,4.6,Narayana Health,Haveri,1014,Available
+Dr. Nitara Gaba,Infiltration,Pulmonologist,18,3.8,Fortis Hospital,Belgaum,475,Busy
+Dr. Samaksh Bhagat,Atelectasis,Pulmonologist,23,4.4,KMC Hospital,Hubli,970,Available
+Dr. Indira Halder,Pneumothorax,Pulmonologist,2,3.7,Sparsh Hospital,Chikkaballapur,707,Busy
+Dr. Jagdish Wable,Cardiomegaly,Cardiologist,8,4.7,Apollo Hospital,Hassan,1293,Busy
+Dr. Jasmit Lad,No Finding,General Physician,14,3.9,Narayana Health,Bagalkot,1424,Available
+Dr. Januja Ranganathan,Lung Opacity,Pulmonologist,4,3.7,Columbia Asia,Haveri,1398,Busy
+Dr. Advaith Natarajan,Infiltration,Pulmonologist,19,4.8,Fortis Hospital,Bagalkot,1414,Available
+Dr. Jackson Dar,Calcification,Pulmonologist,25,5.0,AIIMS,Tumkur,1100,Available
+Dr. Ekiya Garde,Atelectasis,Pulmonologist,6,4.7,KMC Hospital,Davanagere,616,Available
+Dr. Girik Dube,Pulmonary fibrosis,Pulmonologist,10,4.6,Fortis Hospital,Chikkaballapur,1115,Available
+Dr. Champak Wagle,Pleural effusion,Pulmonologist,5,5.0,Rainbow Hospital,Mandya,589,Busy
+Dr. Zaitra Chopra,Calcification,Pulmonologist,1,4.4,Aster Hospital,Davanagere,479,Busy
+Dr. Osha Nazareth,No Finding,General Physician,18,3.9,Columbia Asia,Dharwad,548,Available
+Dr. Kamala Bala,No Finding,General Physician,23,3.9,Rainbow Hospital,Gadag,328,Busy
+Dr. Mohammed Kaul,No Finding,General Physician,20,4.6,KMC Hospital,Karwar,322,Available
+Dr. Saumya Lall,No Finding,General Physician,1,4.4,Rainbow Hospital,Mysore,1447,Busy
+Dr. Januja Iyer,Pleural thickening,Pulmonologist,4,4.2,Fortis Hospital,Yadgir,596,Busy
+Dr. Ekta Tella,Cardiomegaly,Cardiologist,23,4.5,Fortis Hospital,Hassan,608,Busy
+Dr. Sara Biswas,Consolidation,Pulmonologist,11,3.8,Aster Hospital,Kolar,900,Busy
+Dr. Jairaj Chauhan,ILD,Pulmonologist,24,3.6,Sparsh Hospital,Davanagere,761,Busy
+Dr. Amol Viswanathan,Calcification,Pulmonologist,9,3.8,AIIMS,Vijayapura,406,Busy
+Dr. Zashil Mitter,Lung Opacity,Pulmonologist,5,4.7,Sparsh Hospital,Bangalore,784,Busy
+Dr. Dhriti Batta,ILD,Pulmonologist,1,4.5,Apollo Hospital,Mysore,592,Available
+Dr. Upadhriti Gole,Pleural effusion,Pulmonologist,4,4.0,Sparsh Hospital,Bellary,457,Available
+Dr. Brijesh Walla,Other lesion,Pulmonologist,2,4.8,Fortis Hospital,Gadag,411,Available
+Dr. Noah Ramanathan,ILD,Pulmonologist,24,3.9,Manipal Hospital,Yadgir,450,Available
+Dr. Agastya Manda,Other lesion,Pulmonologist,6,3.6,Columbia Asia,Udupi,1323,Busy
+Dr. Lajita Kohli,Aortic enlargement,Cardiologist,6,4.7,AIIMS,Hassan,393,Available
+Dr. Jalsa Goel,Other lesion,Pulmonologist,16,3.7,Rainbow Hospital,Yadgir,808,Busy
+Dr. Idika Pal,Atelectasis,Pulmonologist,15,4.8,Sparsh Hospital,Chitradurga,352,Available
+Dr. Meera Chanda,Atelectasis,Pulmonologist,23,4.9,KMC Hospital,Belgaum,364,Busy
+Dr. Jalsa Sathe,No Finding,General Physician,16,4.4,Aster Hospital,Bangalore,1444,Available
+Dr. Maanas Dhaliwal,Pleural effusion,Pulmonologist,4,4.6,Rainbow Hospital,Chamarajanagar,463,Available
+Dr. Darpan Nigam,Consolidation,Pulmonologist,16,4.8,Aster Hospital,Kolar,1038,Busy
+Dr. Ayaan Vasa,Cardiomegaly,Cardiologist,14,3.5,Aster Hospital,Shimoga,334,Available
+Dr. Ekaja Venkatesh,Aortic enlargement,Cardiologist,15,4.8,KMC Hospital,Hubli,1102,Busy
+Dr. Aarush Datta,Consolidation,Pulmonologist,23,4.9,Fortis Hospital,Mandya,498,Busy
+Dr. Jagat Kadakia,Infiltration,Pulmonologist,7,3.7,Rainbow Hospital,Tumkur,679,Available
+Dr. Chaman Bahl,Calcification,Pulmonologist,17,4.4,Apollo Hospital,Chamarajanagar,948,Busy
+Dr. Indira Dube,Aortic enlargement,Cardiologist,8,4.4,Rainbow Hospital,Ramanagara,777,Available
+Dr. Watika Hari,Nodule/Mass,Oncologist,2,4.0,KMC Hospital,Davanagere,323,Busy
+Dr. Anika Ramachandran,Pleural effusion,Pulmonologist,16,4.2,Narayana Health,Chamarajanagar,1210,Available
+Dr. Amol Saraf,Pleural effusion,Pulmonologist,8,3.7,Aster Hospital,Mangalore,661,Busy
+Dr. Gunbir Malhotra,Atelectasis,Pulmonologist,22,4.8,AIIMS,Mysore,479,Busy
+Dr. Dalaja Batta,Consolidation,Pulmonologist,17,4.8,KMC Hospital,Hubli,1333,Available
+Dr. Dakshesh Morar,ILD,Pulmonologist,22,4.8,Rainbow Hospital,Bidar,1005,Busy
+Dr. Manthan Shroff,ILD,Pulmonologist,21,4.2,Fortis Hospital,Shimoga,950,Available
+Dr. Nirja Dewan,Cardiomegaly,Cardiologist,14,4.9,Aster Hospital,Shimoga,488,Busy
+Dr. Arjun Kala,Calcification,Pulmonologist,13,4.3,Manipal Hospital,Bangalore,821,Available
+Dr. Jack Naik,Consolidation,Pulmonologist,11,3.8,KMC Hospital,Chikkaballapur,399,Available
+Dr. Lakshit Mukhopadhyay,No Finding,General Physician,19,3.6,Rainbow Hospital,Raichur,1231,Busy
+Dr. Anya Dyal,Infiltration,Pulmonologist,7,4.5,AIIMS,Mangalore,1328,Available
+Dr. Fitan Raghavan,Pulmonary fibrosis,Pulmonologist,9,3.7,KMC Hospital,Raichur,1199,Available
+Dr. Advik Tiwari,Other lesion,Pulmonologist,1,4.3,Fortis Hospital,Raichur,1142,Busy
+Dr. Parth Bawa,Pleural thickening,Pulmonologist,3,3.9,KMC Hospital,Bellary,1393,Available
+Dr. Ryan Khare,Consolidation,Pulmonologist,3,4.8,KMC Hospital,Chamarajanagar,1370,Available
+Dr. Vanya Buch,Other lesion,Pulmonologist,24,4.2,Manipal Hospital,Mangalore,329,Busy
+Dr. Girik Khosla,No Finding,General Physician,16,4.8,Narayana Health,Mandya,1017,Available
+Dr. Priya Sura,Pneumothorax,Pulmonologist,2,4.8,Rainbow Hospital,Hassan,301,Busy
+Dr. Arunima Dara,Pulmonary fibrosis,Pulmonologist,8,4.5,Fortis Hospital,Hassan,1286,Busy
+Dr. Bahadurjit Krishna,Cardiomegaly,Cardiologist,17,4.3,Apollo Hospital,Haveri,1362,Busy
+Dr. Harsh Sibal,ILD,Pulmonologist,5,3.5,Apollo Hospital,Mandya,1352,Busy
+Dr. Jonathan Desai,Consolidation,Pulmonologist,15,3.7,AIIMS,Ramanagara,1353,Available
+Dr. Advika Butala,Pneumothorax,Pulmonologist,2,4.6,Columbia Asia,Yadgir,519,Available
+Dr. Jeet Sachdeva,Calcification,Pulmonologist,20,4.4,Narayana Health,Davanagere,697,Busy
+Dr. Rehaan Vig,Consolidation,Pulmonologist,9,4.0,AIIMS,Ramanagara,906,Available
+Dr. Ekapad Bobal,Nodule/Mass,Oncologist,2,4.6,KMC Hospital,Raichur,1388,Available
+Dr. Gabriel Banik,Atelectasis,Pulmonologist,7,3.8,Fortis Hospital,Chitradurga,1046,Available
+Dr. Gautami Shanker,No Finding,General Physician,1,3.7,Narayana Health,Chikkaballapur,1320,Available
+Dr. Veda Goda,Pleural thickening,Pulmonologist,16,3.7,AIIMS,Dharwad,893,Busy
+Dr. Yash Balan,Lung Opacity,Pulmonologist,16,3.7,Narayana Health,Udupi,969,Available
+Dr. Yoshita Nazareth,Consolidation,Pulmonologist,14,4.4,Fortis Hospital,Raichur,980,Busy
+Dr. Edhitha Malhotra,Pneumothorax,Pulmonologist,25,4.1,KMC Hospital,Ramanagara,627,Available
+Dr. Lajita Sinha,No Finding,General Physician,15,4.9,KMC Hospital,Chamarajanagar,1119,Available
+Dr. Omaja Purohit,Other lesion,Pulmonologist,16,4.5,Rainbow Hospital,Mandya,1078,Busy
+Dr. Jagdish Gera,Infiltration,Pulmonologist,15,4.5,AIIMS,Kolar,872,Busy
+Dr. Aashi Wali,Infiltration,Pulmonologist,4,4.0,Manipal Hospital,Bellary,1478,Busy
+Dr. Ekalinga Mohanty,Infiltration,Pulmonologist,1,4.6,Fortis Hospital,Chikkaballapur,370,Busy
+Dr. Meera Cherian,Calcification,Pulmonologist,9,4.8,Sparsh Hospital,Karwar,1160,Available
+Dr. Kamala Sankar,ILD,Pulmonologist,2,4.3,AIIMS,Mandya,652,Busy
+Dr. Vihaan Munshi,Atelectasis,Pulmonologist,16,4.5,Rainbow Hospital,Bidar,1037,Available
+Dr. Chanchal Prashad,Aortic enlargement,Cardiologist,15,3.7,Sparsh Hospital,Udupi,951,Available
+Dr. Tara Pillai,Pleural thickening,Pulmonologist,24,4.4,Fortis Hospital,Mandya,964,Busy
+Dr. Vihaan Ray,Pleural effusion,Pulmonologist,8,4.4,Aster Hospital,Ramanagara,1209,Available
+Dr. Gagan Garg,Cardiomegaly,Cardiologist,12,3.7,Rainbow Hospital,Haveri,1265,Busy
+Dr. Dalaja Srivastava,Lung Opacity,Pulmonologist,24,4.8,Sparsh Hospital,Ramanagara,518,Busy
+Dr. Yug Deshmukh,Calcification,Pulmonologist,15,4.4,Aster Hospital,Vijayapura,1072,Available
+Dr. Bhavika Chauhan,Nodule/Mass,Oncologist,8,4.3,Sparsh Hospital,Raichur,880,Busy
+Dr. Qushi Dutt,Nodule/Mass,Oncologist,20,4.8,Columbia Asia,Chitradurga,614,Available
+Dr. Gautam Saran,Nodule/Mass,Oncologist,3,4.9,Aster Hospital,Bidar,1014,Available
+Dr. Sachi Parekh,Aortic enlargement,Cardiologist,6,4.4,KMC Hospital,Dharwad,557,Busy
+Dr. Tanveer Bali,Atelectasis,Pulmonologist,4,4.2,Manipal Hospital,Dharwad,711,Busy
+Dr. Baghyawati Oza,Pneumothorax,Pulmonologist,19,4.4,Sparsh Hospital,Hubli,457,Available
+Dr. Vasana Roy,No Finding,General Physician,8,3.7,KMC Hospital,Hassan,604,Available
+Dr. Geetika Dada,Cardiomegaly,Cardiologist,4,4.4,KMC Hospital,Raichur,868,Available
+Dr. Aarush Shere,Infiltration,Pulmonologist,11,4.0,Aster Hospital,Shimoga,833,Busy
+Dr. Tanish More,Aortic enlargement,Cardiologist,20,4.9,Apollo Hospital,Mangalore,729,Available
+Dr. Aarini Khatri,Cardiomegaly,Cardiologist,24,3.5,Fortis Hospital,Bangalore,1084,Available
+Dr. Niharika Konda,Other lesion,Pulmonologist,2,5.0,AIIMS,Mangalore,428,Busy
+Dr. Keya Pandit,ILD,Pulmonologist,3,3.9,Apollo Hospital,Yadgir,797,Available
+Dr. Panini Prabhu,Nodule/Mass,Oncologist,19,4.8,KMC Hospital,Bidar,694,Available
+Dr. Zaitra Mani,Cardiomegaly,Cardiologist,9,3.8,Rainbow Hospital,Karwar,1270,Available
+Dr. Bhavya Tata,Cardiomegaly,Cardiologist,15,4.8,Sparsh Hospital,Yadgir,506,Available
+Dr. Jeet Misra,Calcification,Pulmonologist,24,3.6,Sparsh Hospital,Belgaum,786,Available
+Dr. Baghyawati Soman,Lung Opacity,Pulmonologist,19,3.9,Narayana Health,Karwar,1144,Busy
+Dr. Ojasvi Bose,Pleural thickening,Pulmonologist,13,4.9,KMC Hospital,Tumkur,988,Available
+Dr. Gaurangi Andra,Nodule/Mass,Oncologist,19,3.6,Apollo Hospital,Shimoga,1315,Busy
+Dr. Osha Mammen,Consolidation,Pulmonologist,13,4.8,Columbia Asia,Dharwad,827,Available
+Dr. Finn Mahajan,ILD,Pulmonologist,12,4.4,Rainbow Hospital,Chikkaballapur,1264,Busy
+Dr. Kalpit Dhar,Nodule/Mass,Oncologist,15,4.2,Columbia Asia,Vijayapura,1073,Available
+Dr. Vritti Lad,Pleural effusion,Pulmonologist,4,4.8,Apollo Hospital,Shimoga,1477,Busy
+Dr. Chaitaly Rastogi,Pleural effusion,Pulmonologist,5,3.8,KMC Hospital,Bagalkot,641,Available
+Dr. Vidhi Bala,No Finding,General Physician,1,3.6,Sparsh Hospital,Tumkur,1263,Available
+Dr. Raksha Apte,Aortic enlargement,Cardiologist,22,4.5,Manipal Hospital,Mysore,1484,Busy
+Dr. Yatan Sarkar,Aortic enlargement,Cardiologist,13,3.9,Columbia Asia,Mangalore,586,Available
+Dr. Noah Palla,Atelectasis,Pulmonologist,14,3.8,Rainbow Hospital,Karwar,314,Busy
+Dr. Ekalinga Krishna,Aortic enlargement,Cardiologist,23,3.8,Rainbow Hospital,Chikkaballapur,1210,Available
+Dr. Alka Chad,Pneumothorax,Pulmonologist,25,4.3,Columbia Asia,Dharwad,331,Available
+Dr. Vincent Dayal,Pneumothorax,Pulmonologist,14,4.0,Rainbow Hospital,Shimoga,693,Busy
+Dr. Dhriti Ramakrishnan,ILD,Pulmonologist,11,4.5,Manipal Hospital,Belgaum,1301,Busy
+Dr. Xiti Bobal,Atelectasis,Pulmonologist,2,4.8,KMC Hospital,Belgaum,729,Available
+Dr. Jeevika Mane,Pleural thickening,Pulmonologist,2,4.4,KMC Hospital,Gadag,1436,Busy
+Dr. Advaith Natarajan,Pneumothorax,Pulmonologist,9,4.0,Narayana Health,Bagalkot,1095,Available
+Dr. Keya Jaggi,Pulmonary fibrosis,Pulmonologist,7,4.2,Fortis Hospital,Chamarajanagar,1145,Available
+Dr. Manbir Krish,Pneumothorax,Pulmonologist,4,4.6,Rainbow Hospital,Karwar,945,Busy
+Dr. Zilmil Chacko,ILD,Pulmonologist,19,3.9,Fortis Hospital,Vijayapura,598,Available
+Dr. Oni Yogi,Pulmonary fibrosis,Pulmonologist,23,4.4,Fortis Hospital,Hassan,458,Busy
+Dr. Gavin Chaudhari,Pleural thickening,Pulmonologist,8,3.7,Manipal Hospital,Mandya,1437,Busy
+Dr. Panini Brar,Lung Opacity,Pulmonologist,7,4.3,Rainbow Hospital,Raichur,328,Available
+Dr. Chakradev Shere,Pulmonary fibrosis,Pulmonologist,20,3.7,Rainbow Hospital,Haveri,1237,Available
+Dr. Chandani Ganesan,Infiltration,Pulmonologist,15,3.6,AIIMS,Kolar,1219,Busy
+Dr. Diya Bhandari,Atelectasis,Pulmonologist,23,4.5,Apollo Hospital,Tumkur,1462,Available
+Dr. Nicholas Oak,Atelectasis,Pulmonologist,9,3.6,Sparsh Hospital,Vijayapura,1389,Available
+Dr. Edhitha Buch,Pleural effusion,Pulmonologist,3,4.3,Fortis Hospital,Dharwad,831,Available
+Dr. Samarth Dara,Cardiomegaly,Cardiologist,3,4.9,Aster Hospital,Mandya,1365,Available
+Dr. Nitara Bora,Cardiomegaly,Cardiologist,7,4.5,Apollo Hospital,Bidar,1088,Available
+Dr. Mohammed Walia,Consolidation,Pulmonologist,2,3.8,Narayana Health,Chikkaballapur,607,Available
+Dr. Yadavi Barman,Atelectasis,Pulmonologist,17,3.7,Rainbow Hospital,Bidar,1290,Available
+Dr. Indrajit Bhalla,Pleural effusion,Pulmonologist,7,4.3,Apollo Hospital,Bangalore,331,Busy
+Dr. Dalaja Jaggi,Nodule/Mass,Oncologist,14,4.5,Apollo Hospital,Shimoga,812,Busy
+Dr. Urishilla Lanka,Calcification,Pulmonologist,6,3.7,Manipal Hospital,Karwar,888,Busy
+Dr. Darika Kanda,Lung Opacity,Pulmonologist,18,4.6,AIIMS,Bangalore,883,Available
+Dr. Ayush Walia,Consolidation,Pulmonologist,25,4.1,Manipal Hospital,Kolar,1391,Available
+Dr. Devansh Borah,Pneumothorax,Pulmonologist,15,3.8,Aster Hospital,Bidar,453,Busy
+Dr. Robert Mukherjee,Consolidation,Pulmonologist,21,4.7,KMC Hospital,Chitradurga,1318,Busy
+Dr. Yash Goswami,Consolidation,Pulmonologist,24,4.7,Columbia Asia,Yadgir,1019,Available
+Dr. Lajita Kibe,Cardiomegaly,Cardiologist,12,3.6,KMC Hospital,Hassan,1037,Busy
+Dr. Xiti Babu,Aortic enlargement,Cardiologist,23,3.6,Fortis Hospital,Yadgir,528,Busy
+Dr. Owen Johal,Pulmonary fibrosis,Pulmonologist,23,3.7,Narayana Health,Raichur,1369,Available
+Dr. Lekha Mahal,Consolidation,Pulmonologist,20,4.8,Columbia Asia,Chikkaballapur,1495,Busy
+Dr. Gaurang Sarna,Atelectasis,Pulmonologist,11,4.6,Manipal Hospital,Bangalore,884,Busy
+Dr. Oni Sood,No Finding,General Physician,10,3.7,AIIMS,Udupi,1108,Available
+Dr. Krishna Wali,Pulmonary fibrosis,Pulmonologist,10,3.9,Narayana Health,Karwar,1308,Busy
+Dr. Maya Mitter,Other lesion,Pulmonologist,24,4.8,Manipal Hospital,Vijayapura,495,Busy
+Dr. Hardik Oza,Pulmonary fibrosis,Pulmonologist,22,3.9,Aster Hospital,Udupi,1010,Available
+Dr. Falan Contractor,Other lesion,Pulmonologist,20,4.7,Aster Hospital,Chamarajanagar,565,Available
+Dr. Gagan Chhabra,Cardiomegaly,Cardiologist,13,3.9,Aster Hospital,Bangalore,1265,Busy
+Dr. Nihal Ravel,Nodule/Mass,Oncologist,20,4.8,Columbia Asia,Gadag,731,Busy
+Dr. Anay Ramakrishnan,No Finding,General Physician,3,4.6,Rainbow Hospital,Ramanagara,1131,Busy
+Dr. Chatresh Agrawal,Other lesion,Pulmonologist,18,3.7,AIIMS,Bagalkot,1229,Busy
+Dr. Wyatt Sood,Cardiomegaly,Cardiologist,12,3.6,Sparsh Hospital,Shimoga,1376,Busy
+Dr. Girik Kanda,Infiltration,Pulmonologist,4,4.8,Fortis Hospital,Ramanagara,661,Available
+Dr. Abha Lad,Pneumothorax,Pulmonologist,11,4.5,KMC Hospital,Mandya,1117,Available
+Dr. Mohini Kapadia,Pleural effusion,Pulmonologist,9,4.1,AIIMS,Bellary,941,Busy
+Dr. Imaran Venkatesh,Pulmonary fibrosis,Pulmonologist,18,3.8,Sparsh Hospital,Tumkur,1105,Available
+Dr. Frederick Om,Calcification,Pulmonologist,14,4.3,Rainbow Hospital,Hassan,652,Available
+Dr. Tamanna Ramachandran,Pneumothorax,Pulmonologist,23,4.1,Columbia Asia,Kolar,520,Busy
+Dr. Thomas Sachdeva,No Finding,General Physician,14,4.5,Rainbow Hospital,Mysore,760,Available
+Dr. Yoshita Naidu,Infiltration,Pulmonologist,10,4.6,Fortis Hospital,Bagalkot,1104,Busy
+Dr. Wishi Devi,Other lesion,Pulmonologist,15,4.0,Apollo Hospital,Hassan,387,Busy
+Dr. Krish Goyal,Infiltration,Pulmonologist,3,4.6,Narayana Health,Hassan,535,Available
+Dr. Vincent Kohli,Lung Opacity,Pulmonologist,6,4.0,Fortis Hospital,Vijayapura,1402,Available
+Dr. Chasmum Narayanan,Calcification,Pulmonologist,23,3.6,KMC Hospital,Chikkaballapur,1444,Available
+Dr. Darpan Gola,No Finding,General Physician,24,4.1,Aster Hospital,Hubli,1392,Available
+Dr. Azaan Merchant,Pleural thickening,Pulmonologist,19,4.1,Narayana Health,Mandya,1279,Busy
+Dr. Aditya Dhar,Calcification,Pulmonologist,21,5.0,Narayana Health,Hubli,1091,Busy
+Dr. Girindra Munshi,Cardiomegaly,Cardiologist,6,4.2,Sparsh Hospital,Hassan,1116,Busy
+Dr. Ryan Bera,Lung Opacity,Pulmonologist,9,3.8,Columbia Asia,Mandya,1113,Busy
+Dr. Osha Mall,Infiltration,Pulmonologist,25,4.8,Rainbow Hospital,Mangalore,562,Busy
+Dr. Aashi Mohanty,Consolidation,Pulmonologist,25,4.3,KMC Hospital,Mandya,851,Busy
+Dr. Vasana Kata,Infiltration,Pulmonologist,21,4.5,KMC Hospital,Bagalkot,789,Available
+Dr. Ishaan Rout,Pneumothorax,Pulmonologist,14,3.6,Manipal Hospital,Bangalore,1177,Available
+Dr. Chatresh Peri,Atelectasis,Pulmonologist,11,3.8,KMC Hospital,Tumkur,1290,Available
+Dr. Nihal Sarkar,Consolidation,Pulmonologist,3,4.2,Rainbow Hospital,Vijayapura,1359,Available
+Dr. William Hari,Calcification,Pulmonologist,18,4.9,Columbia Asia,Gadag,742,Busy
+Dr. Nakul Shankar,Lung Opacity,Pulmonologist,3,4.5,Narayana Health,Dharwad,1207,Available
+Dr. Maanas Chakraborty,ILD,Pulmonologist,8,4.8,KMC Hospital,Mysore,1065,Busy
+Dr. Anay Patla,Pleural effusion,Pulmonologist,5,4.9,Columbia Asia,Tumkur,900,Available
+Dr. Forum Bath,No Finding,General Physician,16,3.7,Rainbow Hospital,Mangalore,455,Busy
+Dr. Darpan Khare,Consolidation,Pulmonologist,11,4.6,Manipal Hospital,Ramanagara,871,Available
+Dr. Vrinda Dhaliwal,Pleural thickening,Pulmonologist,13,4.8,KMC Hospital,Haveri,795,Busy
+Dr. Nisha Oza,Pneumothorax,Pulmonologist,23,4.5,Columbia Asia,Bidar,1122,Busy
+Dr. Ryan Anand,Infiltration,Pulmonologist,4,4.6,AIIMS,Hubli,1462,Available
+Dr. Qarin Din,Pleural effusion,Pulmonologist,24,4.3,Columbia Asia,Yadgir,1476,Busy
+Dr. Dhruv Sundaram,Pneumothorax,Pulmonologist,13,3.7,AIIMS,Shimoga,1341,Available
+Dr. Tamanna Gokhale,Nodule/Mass,Oncologist,11,4.9,Manipal Hospital,Haveri,747,Available
+Dr. Jairaj Dani,ILD,Pulmonologist,4,4.3,Rainbow Hospital,Mangalore,774,Busy
+Dr. Umang Narula,Pleural thickening,Pulmonologist,19,4.1,KMC Hospital,Bellary,1128,Available
+Dr. Wahab Zachariah,Consolidation,Pulmonologist,22,4.1,Apollo Hospital,Belgaum,1462,Busy
+Dr. Diya Buch,Nodule/Mass,Oncologist,3,4.3,Aster Hospital,Chitradurga,1443,Available
+Dr. Charita Vora,ILD,Pulmonologist,12,4.9,Fortis Hospital,Udupi,1302,Busy
+Dr. Siddharth Yogi,Atelectasis,Pulmonologist,17,3.9,Fortis Hospital,Vijayapura,399,Busy
+Dr. Bakhshi Saran,Calcification,Pulmonologist,18,4.0,AIIMS,Raichur,877,Available
+Dr. Lakshit Ramachandran,Calcification,Pulmonologist,22,4.8,Sparsh Hospital,Haveri,1294,Available
+Dr. Vamakshi Pillay,ILD,Pulmonologist,7,4.2,Apollo Hospital,Haveri,620,Available
+Dr. Wriddhish Sankaran,No Finding,General Physician,4,3.7,Aster Hospital,Bagalkot,1178,Available
+Dr. Vrinda Srinivas,Aortic enlargement,Cardiologist,22,4.2,Aster Hospital,Gadag,1208,Busy
+Dr. Falak Balan,Pulmonary fibrosis,Pulmonologist,19,4.7,Columbia Asia,Ramanagara,906,Busy
+Dr. Chakrika Sani,Calcification,Pulmonologist,16,4.7,Apollo Hospital,Dharwad,835,Available
+Dr. Upasna Mangat,Consolidation,Pulmonologist,24,4.8,Fortis Hospital,Chikkaballapur,1348,Busy
+Dr. Ridhi Pandya,Pulmonary fibrosis,Pulmonologist,7,4.5,Manipal Hospital,Kolar,1080,Available
+Dr. Nimrat Bhatnagar,Pneumothorax,Pulmonologist,13,3.8,AIIMS,Chamarajanagar,328,Available
+Dr. Hema Narasimhan,Pleural effusion,Pulmonologist,7,4.7,Apollo Hospital,Chitradurga,704,Busy
+Dr. Timothy Sachar,Pleural effusion,Pulmonologist,4,4.8,Manipal Hospital,Mysore,1494,Available
+Dr. Daksh Lalla,Cardiomegaly,Cardiologist,1,4.5,AIIMS,Davanagere,969,Busy
+Dr. Gaurav Bera,Nodule/Mass,Oncologist,8,4.5,Rainbow Hospital,Belgaum,1093,Busy
+Dr. Neel Kale,Pleural thickening,Pulmonologist,11,4.4,Apollo Hospital,Bidar,842,Available
+Dr. Jeremiah Venkatesh,Atelectasis,Pulmonologist,14,4.0,Aster Hospital,Davanagere,468,Available
+Dr. Chavvi Madan,No Finding,General Physician,24,4.6,Manipal Hospital,Gadag,632,Busy
+Dr. Nirja Bala,Other lesion,Pulmonologist,21,3.9,Sparsh Hospital,Shimoga,980,Available
+Dr. Saanvi Basu,Pneumothorax,Pulmonologist,1,4.3,Manipal Hospital,Udupi,615,Available
+Dr. Urvi Bawa,Calcification,Pulmonologist,19,4.2,Rainbow Hospital,Chikkaballapur,1374,Available
+Dr. Teerth Wable,Other lesion,Pulmonologist,8,4.7,AIIMS,Davanagere,865,Busy
+Dr. Neha Master,Pleural effusion,Pulmonologist,22,4.8,AIIMS,Bangalore,1313,Available
+Dr. Balveer Pant,Calcification,Pulmonologist,20,4.8,Columbia Asia,Mandya,342,Busy
+Dr. Krisha Ben,ILD,Pulmonologist,25,4.3,Apollo Hospital,Tumkur,727,Available
+Dr. Balendra Narayan,Lung Opacity,Pulmonologist,2,4.9,Rainbow Hospital,Dharwad,1133,Available
+Dr. Bhavini Chaudhary,Pleural thickening,Pulmonologist,21,3.6,Aster Hospital,Udupi,949,Busy
+Dr. Niharika Chahal,Other lesion,Pulmonologist,7,3.9,AIIMS,Mysore,362,Busy
+Dr. Baghyawati Tiwari,Pleural effusion,Pulmonologist,14,4.6,Sparsh Hospital,Belgaum,534,Busy
+Dr. Mugdha Swaminathan,Nodule/Mass,Oncologist,10,3.5,Sparsh Hospital,Dharwad,434,Available
+Dr. Nicholas Keer,Cardiomegaly,Cardiologist,6,4.4,Fortis Hospital,Shimoga,446,Available
+Dr. Ati Boase,Other lesion,Pulmonologist,13,4.1,Manipal Hospital,Mangalore,390,Busy
+Dr. Ishwar Bedi,Pulmonary fibrosis,Pulmonologist,15,4.5,Manipal Hospital,Raichur,740,Available
+Dr. Tejas Sahni,Pleural thickening,Pulmonologist,1,3.8,Apollo Hospital,Bangalore,902,Busy
+Dr. Forum Warrior,No Finding,General Physician,4,3.8,Apollo Hospital,Dharwad,474,Available
+Dr. Jhalak Ramakrishnan,Consolidation,Pulmonologist,2,4.9,AIIMS,Bellary,955,Busy
+Dr. Yashodhara Subramaniam,Lung Opacity,Pulmonologist,22,4.4,Fortis Hospital,Ramanagara,938,Busy
+Dr. Lakshit Chahal,Atelectasis,Pulmonologist,10,3.9,Narayana Health,Shimoga,1388,Busy
+Dr. Pallavi Doctor,Nodule/Mass,Oncologist,17,4.1,AIIMS,Shimoga,1107,Busy
+Dr. Saksham Jani,Infiltration,Pulmonologist,14,3.7,Aster Hospital,Haveri,670,Busy
+Dr. Maanas Hegde,Aortic enlargement,Cardiologist,10,3.7,Narayana Health,Vijayapura,1353,Available
+Dr. Nikita Bal,Atelectasis,Pulmonologist,15,4.3,KMC Hospital,Tumkur,1205,Available
+Dr. Krisha Ramanathan,ILD,Pulmonologist,18,3.6,KMC Hospital,Bidar,391,Busy
+Dr. Tanish Johal,No Finding,General Physician,23,4.6,Manipal Hospital,Vijayapura,385,Busy
+Dr. Abdul Ramesh,Other lesion,Pulmonologist,21,4.4,Aster Hospital,Bellary,970,Available
+Dr. Darika Sahni,ILD,Pulmonologist,5,4.8,Rainbow Hospital,Haveri,823,Available
+Dr. Anika Sibal,Atelectasis,Pulmonologist,2,3.6,Manipal Hospital,Chitradurga,438,Busy
+Dr. Ishanvi Vyas,Pulmonary fibrosis,Pulmonologist,11,4.5,AIIMS,Udupi,1489,Available
+Dr. Eshana Raghavan,Cardiomegaly,Cardiologist,20,3.7,Narayana Health,Belgaum,472,Available
+Dr. Isaiah Palla,Aortic enlargement,Cardiologist,13,4.4,KMC Hospital,Raichur,1125,Busy
+Dr. Falak Sengupta,ILD,Pulmonologist,11,4.2,Sparsh Hospital,Bagalkot,1247,Busy
+Dr. Harita Anand,No Finding,General Physician,24,3.8,Sparsh Hospital,Vijayapura,1148,Available
+Dr. Chatresh Gulati,Pleural thickening,Pulmonologist,10,3.6,Columbia Asia,Chitradurga,903,Available
+Dr. Pavani Agate,Cardiomegaly,Cardiologist,19,4.1,Narayana Health,Kolar,883,Available
+Dr. Yug Vaidya,No Finding,General Physician,5,3.5,Aster Hospital,Bellary,628,Busy
+Dr. Lopa Lad,Pulmonary fibrosis,Pulmonologist,13,3.9,Sparsh Hospital,Bellary,1142,Available
+Dr. Veda Ganesan,Atelectasis,Pulmonologist,18,3.6,Sparsh Hospital,Chitradurga,555,Busy
+Dr. Lekha Chandra,Calcification,Pulmonologist,23,4.0,Columbia Asia,Mandya,691,Busy
+Dr. Deepa Kapur,Consolidation,Pulmonologist,25,4.1,Sparsh Hospital,Bangalore,562,Available
+Dr. Jeet Deep,Pleural thickening,Pulmonologist,9,3.6,Aster Hospital,Hubli,885,Busy
+Dr. Ishwar Sem,Atelectasis,Pulmonologist,14,4.3,Aster Hospital,Davanagere,755,Available
+Dr. Eshana Sachdeva,Pleural thickening,Pulmonologist,6,4.8,Aster Hospital,Bangalore,376,Available
+Dr. Eesha Shan,Calcification,Pulmonologist,4,3.9,Fortis Hospital,Shimoga,1075,Busy
+Dr. Shivansh Lall,Pneumothorax,Pulmonologist,17,4.2,Aster Hospital,Belgaum,968,Busy
+Dr. Bimala Ramesh,Pulmonary fibrosis,Pulmonologist,21,3.6,Aster Hospital,Mangalore,491,Busy
+Dr. Farhan Patel,Atelectasis,Pulmonologist,9,3.6,Manipal Hospital,Belgaum,1067,Busy
+Dr. Mekhala Bhakta,Pleural effusion,Pulmonologist,8,4.9,Apollo Hospital,Bidar,1326,Busy
+Dr. Zayyan Munshi,ILD,Pulmonologist,11,3.9,Apollo Hospital,Chikkaballapur,1031,Available
+Dr. Frederick Reddy,Cardiomegaly,Cardiologist,14,4.3,Columbia Asia,Mysore,1237,Available
+Dr. Adya Sami,Pulmonary fibrosis,Pulmonologist,1,4.9,Apollo Hospital,Haveri,1431,Available
+Dr. Udyati Sarin,Consolidation,Pulmonologist,22,4.8,Rainbow Hospital,Chitradurga,1473,Available
+Dr. Vyanjana Lalla,Pulmonary fibrosis,Pulmonologist,13,4.3,Fortis Hospital,Mandya,547,Busy
+Dr. Xavier Krishnan,Pulmonary fibrosis,Pulmonologist,25,4.8,Rainbow Hospital,Ramanagara,375,Busy
+Dr. Avni Goyal,Nodule/Mass,Oncologist,15,4.0,Manipal Hospital,Bidar,762,Busy
+Dr. Hitesh Ramanathan,Atelectasis,Pulmonologist,15,4.2,AIIMS,Udupi,1338,Busy
+Dr. Ishanvi Ahuja,Lung Opacity,Pulmonologist,19,4.9,Columbia Asia,Mangalore,619,Available
+Dr. Zarna Tara,Calcification,Pulmonologist,2,4.9,Columbia Asia,Bellary,1434,Available
+Dr. Qushi Nanda,Other lesion,Pulmonologist,15,4.8,Apollo Hospital,Bellary,1220,Busy
+Dr. Arya Aggarwal,Pleural effusion,Pulmonologist,13,4.4,Fortis Hospital,Gadag,1304,Available
+Dr. Pahal Muni,Nodule/Mass,Oncologist,15,4.1,Fortis Hospital,Mysore,1413,Busy
+Dr. Ishaan Balakrishnan,ILD,Pulmonologist,11,4.0,Columbia Asia,Bidar,419,Busy
+Dr. Gayathri Kala,Pleural thickening,Pulmonologist,15,4.3,Rainbow Hospital,Ramanagara,1247,Available
+Dr. Warda Bhatti,Pulmonary fibrosis,Pulmonologist,8,4.5,Narayana Health,Bellary,1312,Busy
+Dr. Vivaan Halder,Infiltration,Pulmonologist,22,3.8,KMC Hospital,Davanagere,1096,Busy
+Dr. Bhavna Chacko,Pleural thickening,Pulmonologist,17,3.6,Narayana Health,Bangalore,840,Busy
+Dr. Dev Mukherjee,Cardiomegaly,Cardiologist,13,3.8,Apollo Hospital,Gadag,608,Available
+Dr. Yauvani Patil,Atelectasis,Pulmonologist,10,4.3,Columbia Asia,Chamarajanagar,1280,Available
+Dr. Oni Mistry,Pulmonary fibrosis,Pulmonologist,4,4.6,Columbia Asia,Dharwad,629,Busy
+Dr. Hredhaan Amble,Pneumothorax,Pulmonologist,17,4.7,Apollo Hospital,Chitradurga,647,Available
+Dr. Kavya Parekh,ILD,Pulmonologist,12,4.1,Sparsh Hospital,Bidar,1201,Available
+Dr. Oeshi Narula,Cardiomegaly,Cardiologist,17,4.8,KMC Hospital,Chitradurga,1223,Available
+Dr. Mohini Koshy,Lung Opacity,Pulmonologist,13,4.4,AIIMS,Bagalkot,1359,Busy
+Dr. Faqid Lata,Lung Opacity,Pulmonologist,15,3.8,Columbia Asia,Mandya,870,Available
+Dr. Vincent Brar,Atelectasis,Pulmonologist,2,4.9,Sparsh Hospital,Belgaum,489,Busy
+Dr. Anjali Pau,Pneumothorax,Pulmonologist,24,3.6,KMC Hospital,Dharwad,908,Available
+Dr. Wyatt Sekhon,Pleural effusion,Pulmonologist,14,3.6,Fortis Hospital,Mandya,1342,Available
+Dr. Arjun Johal,No Finding,General Physician,23,4.7,Manipal Hospital,Gadag,802,Available
+Dr. Pratyush Borde,Atelectasis,Pulmonologist,22,5.0,Manipal Hospital,Mangalore,938,Busy
+Dr. Yash Wable,Consolidation,Pulmonologist,10,5.0,Manipal Hospital,Davanagere,1265,Available
+Dr. Farhan Golla,Lung Opacity,Pulmonologist,4,3.8,Columbia Asia,Bidar,644,Busy
+Dr. Reyansh Ramanathan,Aortic enlargement,Cardiologist,1,4.7,AIIMS,Hassan,1293,Available
+Dr. Jeet Raval,No Finding,General Physician,6,3.6,Aster Hospital,Chamarajanagar,878,Busy
+Dr. Chatresh Mall,Infiltration,Pulmonologist,19,4.7,Manipal Hospital,Bidar,1462,Available
+Dr. Ishita Hora,Atelectasis,Pulmonologist,17,4.0,AIIMS,Mandya,1278,Busy
+Dr. Vedika Bawa,Lung Opacity,Pulmonologist,11,4.9,Rainbow Hospital,Vijayapura,1467,Available
+Dr. Edhitha Gola,Nodule/Mass,Oncologist,18,3.8,Apollo Hospital,Mandya,1146,Available
+Dr. Garima Jain,Pleural effusion,Pulmonologist,18,3.6,Apollo Hospital,Bellary,400,Available
+Dr. Sanya Lanka,Pneumothorax,Pulmonologist,9,3.8,KMC Hospital,Kolar,589,Busy
+Dr. Yadavi Barman,No Finding,General Physician,20,4.2,Narayana Health,Raichur,586,Available
+Dr. Aashi Naik,Pleural effusion,Pulmonologist,21,4.5,Columbia Asia,Shimoga,1280,Busy
+Dr. Krishna Mahal,Lung Opacity,Pulmonologist,23,4.6,Manipal Hospital,Hassan,1275,Busy
+Dr. Gautami Dave,Cardiomegaly,Cardiologist,17,4.8,Rainbow Hospital,Mangalore,688,Busy
+Dr. Bachittar Prasad,Cardiomegaly,Cardiologist,17,4.3,Apollo Hospital,Chamarajanagar,735,Busy
+Dr. Janaki Agrawal,Lung Opacity,Pulmonologist,15,4.0,Manipal Hospital,Gadag,472,Available
+Dr. Girik Konda,Pneumothorax,Pulmonologist,13,3.9,KMC Hospital,Udupi,583,Busy
+Dr. Yashoda Krishnamurthy,Cardiomegaly,Cardiologist,6,4.0,KMC Hospital,Bidar,738,Busy
+Dr. Nathan Dara,Atelectasis,Pulmonologist,11,4.9,Apollo Hospital,Mysore,879,Busy
+Dr. Abha Sharaf,Atelectasis,Pulmonologist,16,4.4,Rainbow Hospital,Shimoga,870,Busy
+Dr. Brinda Puri,Pulmonary fibrosis,Pulmonologist,18,4.2,Narayana Health,Chamarajanagar,908,Busy
+Dr. Arin Arya,Pneumothorax,Pulmonologist,16,4.9,Narayana Health,Shimoga,825,Busy
+Dr. Chameli Panchal,Infiltration,Pulmonologist,3,3.9,Narayana Health,Tumkur,875,Busy
+Dr. Arya Basak,Pneumothorax,Pulmonologist,15,4.3,Fortis Hospital,Bidar,1426,Available
+Dr. Amara Wable,Other lesion,Pulmonologist,4,3.5,Narayana Health,Chikkaballapur,789,Available
+Dr. Dayamai Devan,Consolidation,Pulmonologist,6,4.5,Fortis Hospital,Chitradurga,751,Busy
+Dr. Girindra Devan,Other lesion,Pulmonologist,10,4.9,Aster Hospital,Chikkaballapur,351,Available
+Dr. Maya Nagar,ILD,Pulmonologist,9,3.6,Fortis Hospital,Gadag,1426,Available
+Dr. Ikshita Bajaj,Cardiomegaly,Cardiologist,7,4.6,Apollo Hospital,Vijayapura,1352,Busy
+Dr. Keya Ganguly,Pulmonary fibrosis,Pulmonologist,24,4.4,Columbia Asia,Raichur,704,Busy
+Dr. Aahana Kashyap,Nodule/Mass,Oncologist,8,3.6,Manipal Hospital,Mangalore,1215,Available
+Dr. Chatura Saraf,Nodule/Mass,Oncologist,25,4.8,KMC Hospital,Yadgir,1113,Available
+Dr. Daniel Dube,Aortic enlargement,Cardiologist,2,3.7,Apollo Hospital,Hubli,821,Busy
+Dr. Avi Rama,Nodule/Mass,Oncologist,8,4.6,Manipal Hospital,Bidar,430,Busy
+Dr. Nidhi Chaudhuri,Lung Opacity,Pulmonologist,6,5.0,KMC Hospital,Raichur,414,Available
+Dr. Upkaar Devan,Pleural effusion,Pulmonologist,16,3.8,AIIMS,Chamarajanagar,1045,Busy
+Dr. Guneet Chander,Consolidation,Pulmonologist,13,4.2,Manipal Hospital,Mysore,742,Busy
+Dr. Eiravati Uppal,Pulmonary fibrosis,Pulmonologist,25,4.9,AIIMS,Chamarajanagar,304,Busy
+Dr. Ekapad Ganguly,Calcification,Pulmonologist,18,3.5,Aster Hospital,Bagalkot,1467,Available
+Dr. Zayyan Murty,Pulmonary fibrosis,Pulmonologist,4,4.1,Narayana Health,Haveri,555,Available
+Dr. Yashoda Wable,Consolidation,Pulmonologist,9,4.0,Manipal Hospital,Karwar,1207,Available
+Dr. Jeet Ramaswamy,Cardiomegaly,Cardiologist,6,4.8,Manipal Hospital,Hubli,1321,Busy
+Dr. Nihal Singh,Infiltration,Pulmonologist,12,4.1,Sparsh Hospital,Davanagere,1345,Busy
+Dr. Januja Anne,Consolidation,Pulmonologist,18,4.2,AIIMS,Mandya,698,Busy
+Dr. Chanakya Acharya,Cardiomegaly,Cardiologist,21,3.6,Fortis Hospital,Dharwad,1211,Available
+Dr. Gautam Chakraborty,Nodule/Mass,Oncologist,11,4.3,Narayana Health,Bangalore,1484,Busy
+Dr. Eta Bumb,Aortic enlargement,Cardiologist,20,5.0,Rainbow Hospital,Belgaum,804,Busy
+Dr. Anusha Mand,Calcification,Pulmonologist,19,4.0,Sparsh Hospital,Chitradurga,1340,Available
+Dr. Ijaya Basu,Lung Opacity,Pulmonologist,25,3.8,Sparsh Hospital,Haveri,931,Busy
+Dr. Yutika Chauhan,Pneumothorax,Pulmonologist,19,4.7,KMC Hospital,Bangalore,925,Available
+Dr. Ishanvi Suri,Lung Opacity,Pulmonologist,12,4.4,Fortis Hospital,Bagalkot,950,Busy
+Dr. Ojasvi Bassi,Cardiomegaly,Cardiologist,8,4.8,Columbia Asia,Raichur,442,Busy
+Dr. Zarna Mohan,Aortic enlargement,Cardiologist,15,4.4,Rainbow Hospital,Raichur,307,Available
+Dr. Aryan Goswami,Pulmonary fibrosis,Pulmonologist,8,4.0,Aster Hospital,Raichur,1086,Available
+Dr. Adweta Sandal,Infiltration,Pulmonologist,16,4.0,Manipal Hospital,Chikkaballapur,962,Busy
+Dr. Banjeet Samra,ILD,Pulmonologist,13,4.5,Aster Hospital,Vijayapura,602,Available
+Dr. Quincy Kota,Calcification,Pulmonologist,14,4.4,Columbia Asia,Karwar,1459,Busy
+Dr. Oni Gupta,No Finding,General Physician,5,3.9,Rainbow Hospital,Hassan,679,Busy
+Dr. Yash Gupta,Aortic enlargement,Cardiologist,11,4.1,Aster Hospital,Karwar,339,Busy
+Dr. Abha Chander,Nodule/Mass,Oncologist,25,4.9,Aster Hospital,Karwar,660,Available
+Dr. Hritik Krishnamurthy,Pulmonary fibrosis,Pulmonologist,25,3.8,Fortis Hospital,Yadgir,828,Busy
+Dr. Kavya Rana,Atelectasis,Pulmonologist,19,4.6,Columbia Asia,Dharwad,912,Available
+Dr. Forum Misra,Infiltration,Pulmonologist,20,4.1,Narayana Health,Raichur,746,Busy
+Dr. Divya Ghosh,Nodule/Mass,Oncologist,17,4.7,Aster Hospital,Bellary,1149,Busy
+Dr. Oeshi Manne,Pulmonary fibrosis,Pulmonologist,9,4.9,KMC Hospital,Hassan,804,Busy
+Dr. Jason Mangal,Other lesion,Pulmonologist,18,4.5,KMC Hospital,Ramanagara,1390,Available
+Dr. Gautami Jayaraman,Other lesion,Pulmonologist,2,4.6,Apollo Hospital,Chitradurga,982,Busy
+Dr. Avi Pillai,Aortic enlargement,Cardiologist,18,3.9,Aster Hospital,Bellary,1379,Busy
+Dr. Wakeeta Cheema,Pleural thickening,Pulmonologist,3,4.4,Manipal Hospital,Mandya,1370,Busy
+Dr. Zashil Tiwari,Other lesion,Pulmonologist,23,3.5,Narayana Health,Yadgir,1241,Available
+Dr. Nathan Karan,Consolidation,Pulmonologist,17,4.0,Fortis Hospital,Tumkur,1423,Busy
+Dr. Aayush Gulati,Cardiomegaly,Cardiologist,19,4.5,Aster Hospital,Gadag,424,Available
+Dr. Abeer Kade,Pleural thickening,Pulmonologist,11,4.7,Manipal Hospital,Bagalkot,938,Busy
+Dr. Gaurangi Mannan,Consolidation,Pulmonologist,9,4.2,AIIMS,Udupi,598,Available
+Dr. Alka Sachdeva,Cardiomegaly,Cardiologist,13,4.6,Rainbow Hospital,Gadag,770,Busy
+Dr. Onkar Nath,Calcification,Pulmonologist,17,4.7,Fortis Hospital,Udupi,1258,Busy
+Dr. Samar Chacko,Pleural thickening,Pulmonologist,18,3.9,KMC Hospital,Hubli,442,Available
+Dr. Vihaan Taneja,Cardiomegaly,Cardiologist,13,4.3,Fortis Hospital,Bangalore,872,Available
+Dr. George Goswami,Other lesion,Pulmonologist,13,3.8,Rainbow Hospital,Udupi,896,Busy
+Dr. Eesha Ahluwalia,Infiltration,Pulmonologist,19,4.1,Fortis Hospital,Shimoga,1296,Available
+Dr. Eesha Pall,Pulmonary fibrosis,Pulmonologist,17,4.3,KMC Hospital,Belgaum,655,Available
+Dr. Netra Parmer,Infiltration,Pulmonologist,10,3.8,Narayana Health,Bangalore,1307,Available
+Dr. Akshay Butala,Pleural effusion,Pulmonologist,22,4.8,AIIMS,Davanagere,1315,Busy
+Dr. Zilmil Kari,Other lesion,Pulmonologist,8,4.3,KMC Hospital,Yadgir,935,Busy
+Dr. Saanvi Memon,Calcification,Pulmonologist,4,3.9,KMC Hospital,Chamarajanagar,767,Available
+Dr. Libni Tara,ILD,Pulmonologist,6,4.7,Fortis Hospital,Ramanagara,465,Busy
+Dr. Gaurangi Johal,Calcification,Pulmonologist,24,4.7,Manipal Hospital,Tumkur,701,Busy
+Dr. Neha Balasubramanian,Pulmonary fibrosis,Pulmonologist,6,3.8,Aster Hospital,Ramanagara,1367,Available
+Dr. Chandani Banerjee,Nodule/Mass,Oncologist,2,3.8,Fortis Hospital,Dharwad,1147,Busy
+Dr. Siddharth Vora,Infiltration,Pulmonologist,7,4.0,AIIMS,Mandya,938,Available
+Dr. Chatresh Vyas,Other lesion,Pulmonologist,1,4.9,AIIMS,Kolar,1343,Busy
+Dr. Janaki Varughese,Pleural thickening,Pulmonologist,2,4.8,Fortis Hospital,Bidar,1182,Busy
+Dr. Dakshesh Subramanian,Calcification,Pulmonologist,11,4.1,KMC Hospital,Tumkur,825,Busy
+Dr. Arin Mukherjee,ILD,Pulmonologist,7,4.9,Fortis Hospital,Hubli,816,Available
+Dr. Anika Kannan,Infiltration,Pulmonologist,13,3.7,Aster Hospital,Mysore,1298,Available
+Dr. Niharika Grover,Aortic enlargement,Cardiologist,12,3.8,Manipal Hospital,Dharwad,426,Available
+Dr. Aishani Halder,Lung Opacity,Pulmonologist,12,4.5,Columbia Asia,Ramanagara,792,Available
+Dr. Qadim Agarwal,Nodule/Mass,Oncologist,2,4.6,Apollo Hospital,Bellary,1002,Busy
+Dr. Frederick Seshadri,Cardiomegaly,Cardiologist,23,4.1,Manipal Hospital,Dharwad,1039,Available
+Dr. Kiaan Brahmbhatt,Cardiomegaly,Cardiologist,17,4.2,AIIMS,Gadag,372,Busy
+Dr. Zarna Ratti,Atelectasis,Pulmonologist,15,4.9,Rainbow Hospital,Belgaum,488,Available
+Dr. Yashasvi Malhotra,Nodule/Mass,Oncologist,24,4.0,Fortis Hospital,Bidar,844,Busy
+Dr. Qarin Maharaj,Calcification,Pulmonologist,20,4.0,KMC Hospital,Kolar,1331,Busy
+Dr. Rohan Memon,Pulmonary fibrosis,Pulmonologist,6,3.6,AIIMS,Shimoga,583,Available
+Dr. Meera Kota,Other lesion,Pulmonologist,18,3.8,Columbia Asia,Mangalore,566,Available
+Dr. Zaid Dugal,Consolidation,Pulmonologist,2,4.1,Apollo Hospital,Gadag,764,Busy
+Dr. Garima Sathe,Atelectasis,Pulmonologist,11,4.6,Rainbow Hospital,Tumkur,1315,Available
+Dr. Libni Sura,ILD,Pulmonologist,3,4.4,Sparsh Hospital,Dharwad,1395,Available
+Dr. Radhika Krishnan,Nodule/Mass,Oncologist,14,4.1,Aster Hospital,Mysore,1110,Busy
+Dr. Anita Atwal,Pleural effusion,Pulmonologist,20,4.2,Columbia Asia,Belgaum,1121,Available
+Dr. Vedika Aurora,No Finding,General Physician,20,4.8,Narayana Health,Bidar,591,Available
+Dr. Theodore Chada,Other lesion,Pulmonologist,12,4.0,Columbia Asia,Gadag,672,Available
+Dr. Kritika Sen,Nodule/Mass,Oncologist,3,4.3,KMC Hospital,Bagalkot,1391,Available
+Dr. Samaksh Johal,Other lesion,Pulmonologist,1,4.6,KMC Hospital,Bidar,1356,Busy
+Dr. Tripti Andra,No Finding,General Physician,6,4.2,KMC Hospital,Chitradurga,1492,Busy
+Dr. Jagvi Sunder,Lung Opacity,Pulmonologist,5,4.8,Narayana Health,Bangalore,1445,Available
+Dr. Eta Sachdeva,Nodule/Mass,Oncologist,5,3.9,KMC Hospital,Raichur,987,Busy
+Dr. Nimrat Madan,Lung Opacity,Pulmonologist,6,4.4,Narayana Health,Udupi,844,Available
+Dr. Meera De,Pleural effusion,Pulmonologist,16,4.4,Rainbow Hospital,Bidar,615,Available
+Dr. Advika Gala,Pneumothorax,Pulmonologist,3,4.7,Manipal Hospital,Yadgir,1290,Busy
+Dr. Isaac Rout,No Finding,General Physician,5,4.8,AIIMS,Chikkaballapur,345,Busy
+Dr. Vyanjana Agrawal,Pleural effusion,Pulmonologist,8,3.9,Manipal Hospital,Karwar,626,Busy
+Dr. Abeer Kadakia,ILD,Pulmonologist,23,3.5,Columbia Asia,Mangalore,990,Busy
+Dr. Gautami Lal,Lung Opacity,Pulmonologist,16,5.0,Columbia Asia,Chikkaballapur,822,Busy
+Dr. Vanya Tripathi,Aortic enlargement,Cardiologist,20,4.6,Narayana Health,Belgaum,1144,Available
+Dr. Gautami Bobal,Consolidation,Pulmonologist,23,3.9,Fortis Hospital,Hubli,593,Available
+Dr. Wriddhish Madan,No Finding,General Physician,16,4.7,Columbia Asia,Bangalore,993,Busy
+Dr. Dominic Singhal,Cardiomegaly,Cardiologist,25,4.8,Sparsh Hospital,Gadag,584,Busy
+Dr. Gagan Ghosh,Atelectasis,Pulmonologist,20,4.2,Sparsh Hospital,Bellary,778,Available
+Dr. Radhika Zacharia,Infiltration,Pulmonologist,6,4.2,Columbia Asia,Hubli,1347,Available
+Dr. Yutika Kara,Pleural effusion,Pulmonologist,7,3.7,Narayana Health,Kolar,1377,Available
+Dr. Netra Walia,Infiltration,Pulmonologist,4,4.3,KMC Hospital,Gadag,1308,Available
+Dr. Arin Kant,Consolidation,Pulmonologist,21,4.2,Sparsh Hospital,Davanagere,734,Available
+Dr. Laksh Baral,Pneumothorax,Pulmonologist,22,3.8,Manipal Hospital,Tumkur,302,Busy
+Dr. Ekaraj Bala,Atelectasis,Pulmonologist,18,4.1,Manipal Hospital,Chamarajanagar,1079,Available
+Dr. Lucky Arora,Pleural effusion,Pulmonologist,12,4.7,Columbia Asia,Bellary,731,Busy
+Dr. Ayaan Jha,Pleural thickening,Pulmonologist,12,3.6,KMC Hospital,Vijayapura,698,Available
+Dr. Udyati Wason,Consolidation,Pulmonologist,9,4.4,Sparsh Hospital,Mangalore,338,Busy
+Dr. Triya Randhawa,Pneumothorax,Pulmonologist,24,4.5,AIIMS,Hubli,795,Busy
+Dr. Inaya Mohanty,Pleural effusion,Pulmonologist,24,4.2,Aster Hospital,Belgaum,400,Available
+Dr. Praneel Lall,Pleural thickening,Pulmonologist,4,4.3,AIIMS,Hubli,1073,Available
+Dr. Urvashi Sawhney,Calcification,Pulmonologist,13,4.6,Fortis Hospital,Bidar,1022,Available
+Dr. Gautami Dube,Nodule/Mass,Oncologist,10,5.0,Narayana Health,Bellary,309,Available
+Dr. Bhanumati Shanker,Aortic enlargement,Cardiologist,11,4.8,Fortis Hospital,Mysore,667,Busy
+Dr. Yashodhara Konda,Lung Opacity,Pulmonologist,23,3.8,Fortis Hospital,Udupi,1070,Available
+Dr. Quincy Bobal,Pleural thickening,Pulmonologist,21,4.4,Aster Hospital,Bellary,309,Busy
+Dr. Wahab Kumer,Other lesion,Pulmonologist,24,3.7,Columbia Asia,Bidar,1027,Available
+Dr. Falguni Gole,Calcification,Pulmonologist,8,3.7,Aster Hospital,Ramanagara,1303,Busy
+Dr. Ekiya Mitter,ILD,Pulmonologist,2,4.9,Narayana Health,Bellary,1312,Available
+Dr. Arin Gokhale,Pleural effusion,Pulmonologist,12,4.5,Sparsh Hospital,Hubli,1293,Busy
+Dr. Chaitanya Pandey,Aortic enlargement,Cardiologist,20,4.0,Columbia Asia,Udupi,818,Busy
+Dr. Charles Hora,Infiltration,Pulmonologist,1,4.1,AIIMS,Chitradurga,301,Available
+Dr. Indira Tiwari,Pneumothorax,Pulmonologist,14,4.1,KMC Hospital,Haveri,1077,Busy
+Dr. Raagini Pandit,Infiltration,Pulmonologist,10,4.6,AIIMS,Shimoga,1436,Busy
+Dr. Gaurang Ghosh,Calcification,Pulmonologist,25,4.1,Apollo Hospital,Chitradurga,398,Busy
+Dr. Ubika Lanka,Pulmonary fibrosis,Pulmonologist,2,4.9,AIIMS,Vijayapura,1310,Available
+Dr. Ayaan Mitra,Pulmonary fibrosis,Pulmonologist,1,4.1,Columbia Asia,Davanagere,395,Available
+Dr. Manbir Mittal,Cardiomegaly,Cardiologist,21,4.0,Aster Hospital,Hubli,1347,Available
+Dr. Falguni Pingle,Calcification,Pulmonologist,8,4.3,Rainbow Hospital,Bidar,844,Available
+Dr. Hritik Bera,Nodule/Mass,Oncologist,11,4.8,KMC Hospital,Davanagere,513,Busy
+Dr. Nirja Roy,Cardiomegaly,Cardiologist,16,4.6,AIIMS,Hassan,649,Busy
+Dr. Peter Toor,Atelectasis,Pulmonologist,22,3.8,Fortis Hospital,Haveri,1376,Busy
+Dr. Zansi Taneja,Cardiomegaly,Cardiologist,14,3.8,Manipal Hospital,Mysore,791,Busy
+Dr. Ria Bobal,Cardiomegaly,Cardiologist,18,4.8,Columbia Asia,Bangalore,1263,Available
+Dr. Meera Sandal,Lung Opacity,Pulmonologist,25,4.8,Sparsh Hospital,Bangalore,536,Available
+Dr. Reva Patla,Other lesion,Pulmonologist,20,4.9,Aster Hospital,Hubli,961,Available
+Dr. Omisha Arya,Nodule/Mass,Oncologist,15,3.7,Apollo Hospital,Mysore,1041,Available
+Dr. Kashvi Mannan,Consolidation,Pulmonologist,10,5.0,KMC Hospital,Bellary,743,Busy
+Dr. Liam Shan,Infiltration,Pulmonologist,18,4.2,Manipal Hospital,Chamarajanagar,558,Busy
+Dr. Balhaar Kapoor,Pneumothorax,Pulmonologist,12,4.9,KMC Hospital,Chikkaballapur,655,Available
+Dr. Vedika Behl,No Finding,General Physician,22,3.9,Columbia Asia,Tumkur,1470,Busy
+Dr. Yagnesh Golla,ILD,Pulmonologist,12,3.8,Fortis Hospital,Gadag,1044,Available
+Dr. Saumya Cheema,Other lesion,Pulmonologist,8,3.7,Aster Hospital,Mysore,305,Available
+Dr. Ishita Choudhary,Atelectasis,Pulmonologist,10,4.4,KMC Hospital,Chikkaballapur,1115,Available
+Dr. Nathaniel Ramanathan,ILD,Pulmonologist,24,4.7,Columbia Asia,Mangalore,705,Busy
+Dr. Aarna Pradhan,Lung Opacity,Pulmonologist,23,4.7,Fortis Hospital,Shimoga,362,Busy
+Dr. Chatura Narasimhan,Cardiomegaly,Cardiologist,9,4.7,KMC Hospital,Chitradurga,933,Busy
+Dr. Ekavir Agarwal,Other lesion,Pulmonologist,15,4.2,Apollo Hospital,Tumkur,407,Available
+Dr. Harshil Wagle,Aortic enlargement,Cardiologist,14,3.7,KMC Hospital,Chamarajanagar,824,Busy
+Dr. Onkar Sibal,Pleural thickening,Pulmonologist,5,3.6,KMC Hospital,Davanagere,316,Busy
+Dr. Lopa Shenoy,Infiltration,Pulmonologist,13,4.9,Columbia Asia,Davanagere,652,Busy
+Dr. Azad Sampath,Pleural thickening,Pulmonologist,7,3.5,Narayana Health,Gadag,497,Busy
+Dr. Omya Desai,ILD,Pulmonologist,12,4.0,Rainbow Hospital,Karwar,493,Available
+Dr. Anika Seshadri,No Finding,General Physician,20,4.9,Manipal Hospital,Chikkaballapur,316,Available
+Dr. Yashica Padmanabhan,Lung Opacity,Pulmonologist,5,3.9,KMC Hospital,Bangalore,1226,Busy
+Dr. Gabriel Shetty,Nodule/Mass,Oncologist,16,4.6,Rainbow Hospital,Bellary,683,Busy
+Dr. William Kumar,Pulmonary fibrosis,Pulmonologist,2,3.7,KMC Hospital,Hassan,1164,Busy
+Dr. Nachiket Merchant,Calcification,Pulmonologist,1,4.1,Manipal Hospital,Bellary,861,Busy
+Dr. Warda Palla,Pleural thickening,Pulmonologist,5,4.4,Aster Hospital,Yadgir,1327,Available
+Dr. Jalsa Kibe,Calcification,Pulmonologist,7,5.0,Apollo Hospital,Hassan,1109,Available
+Dr. Hardik Patil,Pneumothorax,Pulmonologist,15,4.9,Columbia Asia,Ramanagara,956,Available
+Dr. Samar Bansal,Lung Opacity,Pulmonologist,25,4.0,Fortis Hospital,Udupi,1261,Available
+Dr. Falan Gara,ILD,Pulmonologist,11,4.4,Columbia Asia,Bangalore,1317,Available
+Dr. Isha Dhillon,Calcification,Pulmonologist,11,4.3,AIIMS,Chitradurga,780,Available
+Dr. Rohan Sheth,Lung Opacity,Pulmonologist,3,4.7,Sparsh Hospital,Chitradurga,800,Busy
+Dr. Jhalak Bala,Lung Opacity,Pulmonologist,2,4.9,Columbia Asia,Gadag,521,Busy
+Dr. Banjeet Bhatt,Cardiomegaly,Cardiologist,21,4.3,Aster Hospital,Vijayapura,1285,Busy
+Dr. Madhav Dass,Pneumothorax,Pulmonologist,21,3.8,Narayana Health,Udupi,390,Available
+Dr. Abha Bhatt,Aortic enlargement,Cardiologist,7,4.4,Rainbow Hospital,Bagalkot,1176,Available
+Dr. Widisha Agrawal,ILD,Pulmonologist,21,3.6,Fortis Hospital,Belgaum,1372,Available
+Dr. Sara Dass,Pleural effusion,Pulmonologist,11,4.6,Aster Hospital,Bangalore,918,Available
+Dr. Januja Choudhury,Pleural thickening,Pulmonologist,5,3.8,Apollo Hospital,Kolar,467,Available
+Dr. Urvi Menon,Pleural effusion,Pulmonologist,5,3.8,KMC Hospital,Chamarajanagar,1271,Available
+Dr. Warjas Nigam,Infiltration,Pulmonologist,18,4.5,Fortis Hospital,Davanagere,1074,Busy
+Dr. Ekalinga Mannan,Pleural thickening,Pulmonologist,22,4.1,Fortis Hospital,Bellary,924,Available
+Dr. Deepa Chand,Other lesion,Pulmonologist,20,4.8,AIIMS,Yadgir,509,Available
+Dr. Ekbal Ram,Pleural thickening,Pulmonologist,25,3.7,Narayana Health,Gadag,324,Available
+Dr. Ranveer Cherian,Consolidation,Pulmonologist,1,4.0,Apollo Hospital,Chamarajanagar,1436,Available
+Dr. Sanya Bora,Pleural effusion,Pulmonologist,10,3.5,Rainbow Hospital,Raichur,1079,Busy
+Dr. Radha Dhawan,Other lesion,Pulmonologist,5,5.0,Narayana Health,Bangalore,478,Busy
+Dr. Aachal Rout,Nodule/Mass,Oncologist,16,4.7,Columbia Asia,Davanagere,958,Available
+Dr. Radhika Reddy,ILD,Pulmonologist,19,3.6,AIIMS,Haveri,1200,Busy
+Dr. Dakshesh Roy,Infiltration,Pulmonologist,14,3.5,Apollo Hospital,Mandya,1230,Busy
+Dr. Rachana Borde,Calcification,Pulmonologist,15,4.5,Manipal Hospital,Mandya,1301,Busy
+Dr. Sathvik Kade,Other lesion,Pulmonologist,24,3.7,Manipal Hospital,Chamarajanagar,916,Available
+Dr. Vyanjana Dube,Lung Opacity,Pulmonologist,15,3.7,Narayana Health,Tumkur,1161,Available
+Dr. Zinal Basak,ILD,Pulmonologist,7,4.7,Sparsh Hospital,Hassan,323,Busy
+Dr. Bakhshi Bajaj,Pneumothorax,Pulmonologist,15,4.2,Narayana Health,Udupi,1500,Busy
+Dr. Ishwar Swamy,Pneumothorax,Pulmonologist,11,3.9,Aster Hospital,Hassan,1019,Available
+Dr. Ojasvi Mukherjee,Aortic enlargement,Cardiologist,18,4.0,Fortis Hospital,Bellary,316,Busy
+Dr. Oeshi Gopal,No Finding,General Physician,22,4.2,Sparsh Hospital,Chikkaballapur,342,Available
+Dr. Hamsini Sankaran,Lung Opacity,Pulmonologist,3,4.4,Fortis Hospital,Bagalkot,1339,Available
+Dr. Neha Ramanathan,Pneumothorax,Pulmonologist,7,3.7,Narayana Health,Davanagere,1253,Available
+Dr. Janani Khatri,Lung Opacity,Pulmonologist,14,4.3,KMC Hospital,Ramanagara,732,Busy
+Dr. Omkaar Barad,Pleural effusion,Pulmonologist,20,5.0,Columbia Asia,Tumkur,453,Available
+Dr. Warinder Bhalla,Atelectasis,Pulmonologist,23,3.7,Sparsh Hospital,Udupi,818,Busy
+Dr. Chatura Thaman,Infiltration,Pulmonologist,11,3.8,Manipal Hospital,Raichur,795,Available
+Dr. Ubika Kannan,ILD,Pulmonologist,18,4.4,Sparsh Hospital,Mangalore,727,Available
+Dr. Anusha Murty,Lung Opacity,Pulmonologist,18,4.4,Apollo Hospital,Bagalkot,1311,Available
+Dr. Balveer Sinha,Cardiomegaly,Cardiologist,1,5.0,Narayana Health,Chamarajanagar,849,Available
+Dr. Yatin Tank,Calcification,Pulmonologist,23,4.9,Sparsh Hospital,Yadgir,544,Available
+Dr. Ekbal Luthra,Cardiomegaly,Cardiologist,7,4.6,Manipal Hospital,Gadag,822,Busy
+Dr. Ayush Borra,ILD,Pulmonologist,11,4.0,AIIMS,Bellary,575,Available
+Dr. Maanas Dixit,Pleural thickening,Pulmonologist,24,4.4,KMC Hospital,Shimoga,775,Available
+Dr. Chakradhar Chander,Pneumothorax,Pulmonologist,16,3.8,Narayana Health,Yadgir,1245,Available
+Dr. Henry Tiwari,ILD,Pulmonologist,15,4.2,KMC Hospital,Ramanagara,788,Busy
+Dr. Kamala Kapur,Nodule/Mass,Oncologist,4,4.3,Columbia Asia,Mandya,1140,Busy
+Dr. Nihal Rajagopal,ILD,Pulmonologist,24,4.8,Fortis Hospital,Tumkur,765,Busy
+Dr. Idika Vasa,ILD,Pulmonologist,24,4.1,AIIMS,Mandya,411,Available
+Dr. Jalsa Kaur,Atelectasis,Pulmonologist,14,4.6,Sparsh Hospital,Mysore,730,Busy
+Dr. Mitesh Mohanty,Pulmonary fibrosis,Pulmonologist,3,4.3,Narayana Health,Yadgir,1109,Busy
+Dr. Vedant Dora,Other lesion,Pulmonologist,17,4.7,Sparsh Hospital,Mysore,518,Busy
+Dr. Baghyawati Thakur,Lung Opacity,Pulmonologist,23,3.8,Aster Hospital,Kolar,994,Busy
+Dr. Maanav Chad,Other lesion,Pulmonologist,18,3.7,Columbia Asia,Chitradurga,442,Available
+Dr. Jagat Sankar,Pleural thickening,Pulmonologist,12,4.8,Columbia Asia,Shimoga,1099,Busy
+Dr. Yashasvi Kuruvilla,Lung Opacity,Pulmonologist,6,4.0,Columbia Asia,Kolar,870,Busy
+Dr. Orinder Shah,Nodule/Mass,Oncologist,22,4.1,AIIMS,Dharwad,652,Busy
+Dr. Manan Varma,Consolidation,Pulmonologist,15,4.8,Rainbow Hospital,Bellary,414,Busy
+Dr. Jagat Trivedi,Other lesion,Pulmonologist,11,3.5,Apollo Hospital,Vijayapura,374,Busy
+Dr. Ranbir Mahal,Pleural thickening,Pulmonologist,13,4.3,Sparsh Hospital,Karwar,1181,Available
+Dr. Ojas Barman,Calcification,Pulmonologist,15,4.3,Columbia Asia,Karwar,941,Busy
+Dr. Raksha Vohra,Other lesion,Pulmonologist,1,4.7,Columbia Asia,Chamarajanagar,871,Available
+Dr. Udarsh Hari,Atelectasis,Pulmonologist,12,5.0,Rainbow Hospital,Mangalore,522,Busy
+Dr. Aarna Mukherjee,ILD,Pulmonologist,6,4.5,KMC Hospital,Yadgir,600,Busy
+Dr. Bahadurjit Batra,No Finding,General Physician,13,5.0,Fortis Hospital,Chitradurga,688,Available
+Dr. Pallavi Wali,ILD,Pulmonologist,18,4.5,Apollo Hospital,Bellary,331,Busy
+Dr. Anmol Goyal,Pneumothorax,Pulmonologist,21,4.6,KMC Hospital,Ramanagara,1418,Available
+Dr. Sanaya Lad,ILD,Pulmonologist,13,4.5,Aster Hospital,Shimoga,991,Busy
+Dr. Bhavna Goda,Cardiomegaly,Cardiologist,3,4.7,AIIMS,Hubli,1404,Available
+Dr. Upasna Uppal,Cardiomegaly,Cardiologist,15,4.2,Sparsh Hospital,Shimoga,1047,Busy
+Dr. Bhavna Varty,Pulmonary fibrosis,Pulmonologist,9,4.2,Sparsh Hospital,Mandya,1449,Available
+Dr. Lipika Dalal,Other lesion,Pulmonologist,17,4.9,AIIMS,Chitradurga,1030,Busy
+Dr. Yutika Bora,Infiltration,Pulmonologist,5,4.3,Aster Hospital,Davanagere,1182,Available
+Dr. Benjamin Issac,No Finding,General Physician,20,4.8,Narayana Health,Raichur,911,Available
+Dr. Chameli Lad,Infiltration,Pulmonologist,22,3.7,Rainbow Hospital,Bangalore,1054,Busy
+Dr. Saksham Aurora,Lung Opacity,Pulmonologist,18,4.2,Aster Hospital,Tumkur,1263,Busy
+Dr. Chaitanya Balan,Infiltration,Pulmonologist,9,4.7,AIIMS,Vijayapura,782,Available
+Dr. Unni Korpal,Infiltration,Pulmonologist,14,4.6,Fortis Hospital,Bagalkot,330,Available
+Dr. Krishna Venkatesh,Nodule/Mass,Oncologist,17,4.6,AIIMS,Mysore,461,Busy
+Dr. Neelima Ratta,Nodule/Mass,Oncologist,15,4.8,Sparsh Hospital,Mangalore,1291,Busy
+Dr. Eiravati Balasubramanian,Consolidation,Pulmonologist,12,3.8,Manipal Hospital,Belgaum,1292,Available
+Dr. Onveer Goyal,Pleural thickening,Pulmonologist,12,5.0,Rainbow Hospital,Gadag,909,Available
+Dr. Zehaan Saran,Atelectasis,Pulmonologist,23,3.6,AIIMS,Karwar,1234,Available
+Dr. Gavin Gour,Other lesion,Pulmonologist,20,4.7,AIIMS,Bangalore,507,Busy
+Dr. Kashish Narayan,Pleural effusion,Pulmonologist,3,3.8,Apollo Hospital,Bellary,1447,Available
+Dr. Manya Ahluwalia,Other lesion,Pulmonologist,23,3.6,Manipal Hospital,Bellary,1092,Available
+Dr. Victor Mohan,Lung Opacity,Pulmonologist,2,4.7,Apollo Hospital,Mangalore,1250,Busy
+Dr. Zayan Raju,Calcification,Pulmonologist,23,4.1,KMC Hospital,Chikkaballapur,1448,Available
+Dr. Benjamin Chawla,No Finding,General Physician,24,3.9,Columbia Asia,Hubli,415,Available
+Dr. Triveni Radhakrishnan,Pleural effusion,Pulmonologist,20,4.5,Sparsh Hospital,Raichur,439,Available
+Dr. Urishilla Raj,Cardiomegaly,Cardiologist,1,4.1,Columbia Asia,Hubli,1440,Busy
+Dr. Faraj Srinivasan,Atelectasis,Pulmonologist,15,3.8,Rainbow Hospital,Gadag,655,Busy
+Dr. Jagat Hari,Other lesion,Pulmonologist,17,4.6,Columbia Asia,Chitradurga,759,Busy
+Dr. Divya Ganesh,Calcification,Pulmonologist,23,3.9,Fortis Hospital,Bidar,933,Busy
+Dr. Matthew Ray,Pleural effusion,Pulmonologist,11,3.7,Apollo Hospital,Bagalkot,975,Busy
+Dr. Libni Baria,Nodule/Mass,Oncologist,10,3.7,Sparsh Hospital,Bagalkot,573,Busy
+Dr. Vyanjana Panchal,Aortic enlargement,Cardiologist,13,4.0,Rainbow Hospital,Kolar,644,Available
+Dr. Tristan Sawhney,Nodule/Mass,Oncologist,3,4.5,AIIMS,Hubli,1135,Available
+Dr. Triveni Banik,Pleural effusion,Pulmonologist,19,5.0,Apollo Hospital,Dharwad,1299,Busy
+Dr. Yug Chaudry,No Finding,General Physician,21,3.8,AIIMS,Tumkur,1167,Available
+Dr. Yashvi Sha,Nodule/Mass,Oncologist,3,4.1,Narayana Health,Mandya,1395,Available
+Dr. Jagat Pandya,Other lesion,Pulmonologist,4,3.9,Fortis Hospital,Ramanagara,890,Available
+Dr. Pratyush Ramesh,Infiltration,Pulmonologist,24,4.4,KMC Hospital,Udupi,822,Busy
+Dr. Chasmum Solanki,Pneumothorax,Pulmonologist,8,3.8,Aster Hospital,Udupi,1479,Available
+Dr. Fariq Agrawal,Calcification,Pulmonologist,4,3.9,Sparsh Hospital,Chitradurga,850,Busy
+Dr. Advik Mannan,Nodule/Mass,Oncologist,9,4.5,Columbia Asia,Vijayapura,1224,Available
+Dr. Gaurav Bala,Atelectasis,Pulmonologist,11,3.7,Fortis Hospital,Raichur,1016,Available
+Dr. Urvi Mandal,Pulmonary fibrosis,Pulmonologist,11,4.2,Narayana Health,Mysore,965,Available
+Dr. Finn Dhingra,No Finding,General Physician,22,3.7,Fortis Hospital,Ramanagara,402,Busy
+Dr. Vihaan Edwin,Atelectasis,Pulmonologist,5,4.2,Columbia Asia,Raichur,376,Busy
+Dr. Arin Chauhan,Pleural thickening,Pulmonologist,9,4.9,AIIMS,Yadgir,661,Busy
+Dr. Vyanjana Kapur,Nodule/Mass,Oncologist,12,4.6,Aster Hospital,Belgaum,455,Busy
+Dr. Netra Dhingra,Cardiomegaly,Cardiologist,10,4.3,Fortis Hospital,Ramanagara,953,Busy
+Dr. Urvi Mukhopadhyay,No Finding,General Physician,13,4.6,Columbia Asia,Bangalore,1214,Busy
+Dr. Benjamin Kalla,Lung Opacity,Pulmonologist,7,4.0,Rainbow Hospital,Mangalore,379,Available
+Dr. Atharv Muni,Other lesion,Pulmonologist,9,4.3,Sparsh Hospital,Udupi,1210,Busy
+Dr. Timothy Reddy,Aortic enlargement,Cardiologist,17,5.0,KMC Hospital,Tumkur,515,Available
+Dr. Girik Mani,Calcification,Pulmonologist,5,4.3,KMC Hospital,Chamarajanagar,1193,Busy
+Dr. Wyatt Rajagopalan,Consolidation,Pulmonologist,23,4.3,Columbia Asia,Yadgir,1228,Available
+Dr. Wakeeta Boase,Infiltration,Pulmonologist,2,4.4,Aster Hospital,Shimoga,1140,Available
+Dr. Jairaj Ramakrishnan,ILD,Pulmonologist,23,4.0,KMC Hospital,Mysore,399,Available
+Dr. Kamya Zacharia,No Finding,General Physician,19,4.9,Rainbow Hospital,Vijayapura,364,Busy
+Dr. Yatin Rastogi,Pulmonary fibrosis,Pulmonologist,6,3.6,Aster Hospital,Bangalore,955,Available
+Dr. Daniel Vora,Pleural thickening,Pulmonologist,6,3.9,Aster Hospital,Bidar,887,Available
+Dr. Yashoda Parikh,Lung Opacity,Pulmonologist,25,4.9,AIIMS,Gadag,523,Available
+Dr. Bimala Karan,Pulmonary fibrosis,Pulmonologist,2,3.7,Apollo Hospital,Hubli,800,Available
+Dr. Pranav Gokhale,Pleural effusion,Pulmonologist,8,4.6,Columbia Asia,Chikkaballapur,416,Available
+Dr. Luke Talwar,Atelectasis,Pulmonologist,6,3.8,Rainbow Hospital,Yadgir,909,Available
+Dr. Hemang Majumdar,Infiltration,Pulmonologist,17,3.8,Narayana Health,Chitradurga,1045,Busy
+Dr. Brinda Bala,Other lesion,Pulmonologist,18,4.9,Rainbow Hospital,Ramanagara,577,Available
+Dr. Omya Parmar,Atelectasis,Pulmonologist,10,4.8,Fortis Hospital,Bangalore,528,Busy
+Dr. Jack Ganesh,Consolidation,Pulmonologist,15,3.6,Fortis Hospital,Haveri,616,Busy
+Dr. Ucchal Sinha,Atelectasis,Pulmonologist,1,4.7,Sparsh Hospital,Bagalkot,1356,Busy
+Dr. Aahana Choudhry,Other lesion,Pulmonologist,20,5.0,AIIMS,Udupi,882,Available
+Dr. Charita Dube,Atelectasis,Pulmonologist,16,4.0,Rainbow Hospital,Bidar,475,Available
+Dr. Aashi Raja,Infiltration,Pulmonologist,25,4.3,AIIMS,Davanagere,1282,Busy
+Dr. Chatresh Ahuja,Infiltration,Pulmonologist,11,3.8,Aster Hospital,Bellary,850,Busy
+Dr. Benjamin Kumar,Other lesion,Pulmonologist,18,4.7,Apollo Hospital,Haveri,1127,Available
+Dr. Yoshita Bhandari,Calcification,Pulmonologist,23,3.9,AIIMS,Mandya,731,Busy
+Dr. Vivaan Nigam,Lung Opacity,Pulmonologist,6,3.5,Apollo Hospital,Bagalkot,939,Available
+Dr. Dalbir Khatri,Lung Opacity,Pulmonologist,18,4.2,AIIMS,Raichur,933,Busy
+Dr. Kai Rajagopal,Pleural effusion,Pulmonologist,19,4.8,Narayana Health,Dharwad,1350,Busy
+Dr. Ayushman Contractor,Nodule/Mass,Oncologist,19,4.1,Columbia Asia,Bagalkot,964,Busy
+Dr. Yuvraj Kaul,Other lesion,Pulmonologist,14,4.3,Manipal Hospital,Karwar,666,Available
+Dr. Ekta Prasad,Nodule/Mass,Oncologist,13,3.5,Rainbow Hospital,Gadag,806,Busy
+Dr. Atharv Kant,Aortic enlargement,Cardiologist,7,4.7,AIIMS,Raichur,1423,Busy
+Dr. Idika Subramaniam,Consolidation,Pulmonologist,25,3.8,Manipal Hospital,Belgaum,1082,Available
+Dr. Orinder Grover,Atelectasis,Pulmonologist,14,3.9,Rainbow Hospital,Haveri,1295,Available
+Dr. Turvi Das,Atelectasis,Pulmonologist,23,3.6,Columbia Asia,Gadag,769,Busy
+Dr. Widisha Mall,No Finding,General Physician,8,4.1,Apollo Hospital,Chamarajanagar,1397,Busy
+Dr. Odika Jani,Calcification,Pulmonologist,10,3.5,Manipal Hospital,Bellary,1409,Busy
+Dr. Upkaar Deshpande,ILD,Pulmonologist,7,4.0,Sparsh Hospital,Shimoga,667,Busy
+Dr. Simon Deshpande,Pneumothorax,Pulmonologist,12,4.8,Narayana Health,Bagalkot,1277,Available
+Dr. Nisha Chandra,Lung Opacity,Pulmonologist,9,4.4,Rainbow Hospital,Mangalore,1295,Busy
+Dr. Zayan Salvi,Other lesion,Pulmonologist,7,3.9,Apollo Hospital,Udupi,1362,Busy
+Dr. Kalpit Iyengar,Nodule/Mass,Oncologist,11,3.7,Narayana Health,Shimoga,732,Available
+Dr. Abhimanyu Walla,Other lesion,Pulmonologist,17,4.6,Columbia Asia,Chitradurga,539,Available
+Dr. Nathan Thaman,ILD,Pulmonologist,10,4.0,Sparsh Hospital,Kolar,575,Available
+Dr. Luke Shankar,Pleural effusion,Pulmonologist,23,4.3,AIIMS,Shimoga,1458,Available
+Dr. Bhavna Sankar,Nodule/Mass,Oncologist,18,4.6,AIIMS,Raichur,683,Available
+Dr. Jagat Ghosh,Other lesion,Pulmonologist,20,4.2,Sparsh Hospital,Chikkaballapur,1459,Available
+Dr. Upkaar Mandal,Lung Opacity,Pulmonologist,13,4.5,Fortis Hospital,Bagalkot,1477,Available
+Dr. Tarak Roy,Calcification,Pulmonologist,1,4.2,Narayana Health,Ramanagara,521,Available
+Dr. Qadim Seshadri,Infiltration,Pulmonologist,20,5.0,Columbia Asia,Hassan,434,Available
+Dr. Amrita Acharya,Consolidation,Pulmonologist,3,4.8,Narayana Health,Ramanagara,481,Available
+Dr. Upkaar Kurian,Other lesion,Pulmonologist,17,4.4,AIIMS,Bellary,1293,Available
+Dr. Kashish Som,Atelectasis,Pulmonologist,16,4.0,Apollo Hospital,Hassan,568,Available
+Dr. Balhaar Boase,No Finding,General Physician,18,4.0,Columbia Asia,Davanagere,432,Busy
+Dr. Wazir Karan,Infiltration,Pulmonologist,10,3.6,Aster Hospital,Yadgir,1203,Busy
+Dr. Ekapad Bali,Pulmonary fibrosis,Pulmonologist,19,4.0,Aster Hospital,Mandya,736,Available
+Dr. Jagat Kara,Other lesion,Pulmonologist,24,3.6,Sparsh Hospital,Bangalore,1152,Available
+Dr. Bahadurjit Kata,Atelectasis,Pulmonologist,14,4.3,Rainbow Hospital,Vijayapura,539,Busy
+Dr. Ria Tata,Consolidation,Pulmonologist,24,4.1,Fortis Hospital,Belgaum,978,Available
+Dr. Unnati Nagi,Atelectasis,Pulmonologist,24,4.2,Columbia Asia,Bagalkot,1421,Available
+Dr. Charan Baria,Cardiomegaly,Cardiologist,18,4.7,Apollo Hospital,Tumkur,907,Busy
+Dr. Omaja Rege,No Finding,General Physician,6,3.8,Manipal Hospital,Yadgir,1114,Available
+Dr. Krisha Patel,Pleural thickening,Pulmonologist,18,4.1,Aster Hospital,Haveri,431,Available
+Dr. Jonathan Basu,Pleural thickening,Pulmonologist,3,3.6,Narayana Health,Hassan,661,Busy
+Dr. Yashica Sethi,Calcification,Pulmonologist,14,4.4,AIIMS,Yadgir,1075,Available
+Dr. Tanay Bath,Pleural thickening,Pulmonologist,6,4.0,KMC Hospital,Dharwad,1489,Busy
+Dr. Chakrika Deep,Calcification,Pulmonologist,8,3.5,Fortis Hospital,Vijayapura,820,Available
+Dr. Ekansh Doshi,Other lesion,Pulmonologist,2,4.0,KMC Hospital,Vijayapura,1383,Busy
+Dr. Vasudha Hari,Lung Opacity,Pulmonologist,4,4.7,AIIMS,Mysore,458,Available
+Dr. Upma Ramachandran,No Finding,General Physician,14,4.3,Columbia Asia,Kolar,1045,Available
+Dr. Rohan Goda,Pulmonary fibrosis,Pulmonologist,7,3.8,Sparsh Hospital,Mandya,632,Busy
+Dr. Harini Patel,Nodule/Mass,Oncologist,21,3.5,Columbia Asia,Chikkaballapur,550,Available
+Dr. Warhi Nagy,Calcification,Pulmonologist,3,4.4,Sparsh Hospital,Udupi,1089,Available
+Dr. Sara Agrawal,Other lesion,Pulmonologist,22,4.9,Columbia Asia,Davanagere,675,Busy
+Dr. Kavya Hora,Pleural thickening,Pulmonologist,7,3.5,Manipal Hospital,Ramanagara,749,Available
+Dr. Chameli Sarraf,Pneumothorax,Pulmonologist,24,4.8,Manipal Hospital,Mysore,751,Busy
+Dr. Champak Kuruvilla,Aortic enlargement,Cardiologist,6,4.7,Columbia Asia,Gadag,1465,Busy
+Dr. Umang Kata,Other lesion,Pulmonologist,5,3.8,Columbia Asia,Yadgir,467,Busy
+Dr. Nathan Nadkarni,Nodule/Mass,Oncologist,9,4.6,Rainbow Hospital,Kolar,360,Busy
+Dr. Chakradev Zacharia,Calcification,Pulmonologist,1,4.6,KMC Hospital,Davanagere,435,Available
+Dr. Jhalak Setty,Nodule/Mass,Oncologist,25,4.4,Sparsh Hospital,Raichur,1445,Busy
+Dr. Timothy Patla,Pleural thickening,Pulmonologist,18,3.9,KMC Hospital,Hubli,466,Busy
+Dr. Triya Balan,Atelectasis,Pulmonologist,21,4.3,Manipal Hospital,Tumkur,1248,Available
+Dr. Rachita Prabhakar,Lung Opacity,Pulmonologist,3,4.8,Apollo Hospital,Shimoga,816,Busy
+Dr. Ishanvi Buch,ILD,Pulmonologist,10,5.0,Rainbow Hospital,Udupi,1349,Busy
+Dr. Chavvi Sridhar,Pneumothorax,Pulmonologist,4,4.3,Sparsh Hospital,Bidar,661,Available
+Dr. Ekaja Kala,Other lesion,Pulmonologist,11,4.1,Aster Hospital,Chitradurga,709,Available
+Dr. Neel Dada,Aortic enlargement,Cardiologist,18,3.8,Apollo Hospital,Mangalore,490,Available
+Dr. Xalak Sood,No Finding,General Physician,8,4.8,Apollo Hospital,Bagalkot,1429,Available
+Dr. Tejas Sampath,Lung Opacity,Pulmonologist,13,4.0,KMC Hospital,Dharwad,646,Busy
+Dr. Jagat Palla,Pulmonary fibrosis,Pulmonologist,12,4.4,Manipal Hospital,Karwar,1343,Available
+Dr. Adya Ramanathan,Nodule/Mass,Oncologist,11,4.1,KMC Hospital,Mangalore,1075,Busy
+Dr. Elijah Das,Pleural effusion,Pulmonologist,14,4.1,Apollo Hospital,Hubli,794,Busy
+Dr. Nirja Varughese,ILD,Pulmonologist,15,4.4,Apollo Hospital,Hubli,1256,Available
+Dr. Imaran Mall,Aortic enlargement,Cardiologist,16,4.3,Columbia Asia,Bagalkot,1159,Available
+Dr. Manya Sabharwal,No Finding,General Physician,14,4.4,Narayana Health,Davanagere,1341,Available
+Dr. Siddharth Jaggi,ILD,Pulmonologist,4,4.5,AIIMS,Bidar,950,Available
+Dr. Devika Toor,Nodule/Mass,Oncologist,21,3.9,Aster Hospital,Kolar,832,Available
+Dr. Dayamai Lata,Cardiomegaly,Cardiologist,14,3.9,Rainbow Hospital,Vijayapura,982,Busy
+Dr. Gopal Gandhi,Nodule/Mass,Oncologist,5,4.1,AIIMS,Davanagere,1381,Busy
+Dr. Yadavi Gupta,Infiltration,Pulmonologist,15,3.6,Columbia Asia,Davanagere,601,Available
+Dr. Bhavini Goda,Atelectasis,Pulmonologist,22,4.9,Aster Hospital,Shimoga,810,Busy
+Dr. Ridhi Bedi,Consolidation,Pulmonologist,16,4.5,KMC Hospital,Belgaum,842,Busy
+Dr. Vansha Suri,Pulmonary fibrosis,Pulmonologist,17,3.9,Narayana Health,Ramanagara,604,Available
+Dr. Gayathri Bhatia,Pulmonary fibrosis,Pulmonologist,8,3.6,Columbia Asia,Chamarajanagar,523,Available
+Dr. Bhavya Bhargava,Aortic enlargement,Cardiologist,5,4.0,Sparsh Hospital,Mandya,903,Available
+Dr. Abeer Tara,Pleural thickening,Pulmonologist,2,4.5,AIIMS,Vijayapura,1488,Busy
+Dr. Ubika Anand,Pulmonary fibrosis,Pulmonologist,2,4.8,AIIMS,Mandya,506,Available
+Dr. Geetika Kulkarni,Nodule/Mass,Oncologist,20,4.6,Apollo Hospital,Vijayapura,1311,Busy
+Dr. Zashil Chada,Pleural thickening,Pulmonologist,24,5.0,Fortis Hospital,Bidar,1005,Available
+Dr. Ekaja Ramakrishnan,Other lesion,Pulmonologist,3,4.1,Aster Hospital,Hassan,1284,Available
+Dr. Ucchal Natt,No Finding,General Physician,14,4.2,Columbia Asia,Mandya,1395,Busy
+Dr. Janani Mandal,Cardiomegaly,Cardiologist,15,4.9,Aster Hospital,Mysore,1400,Available
+Dr. Vivaan Keer,Other lesion,Pulmonologist,1,3.9,Narayana Health,Bagalkot,1392,Busy
+Dr. Zashil Ganesan,Other lesion,Pulmonologist,7,4.1,Narayana Health,Davanagere,373,Available
+Dr. Yashvi Rege,Pulmonary fibrosis,Pulmonologist,2,3.9,KMC Hospital,Shimoga,1369,Available
+Dr. Samaksh Rana,No Finding,General Physician,13,3.8,Rainbow Hospital,Davanagere,1496,Busy
+Dr. Dakshesh Kade,Pleural thickening,Pulmonologist,3,4.6,Fortis Hospital,Hassan,1144,Busy
+Dr. Viraj Kannan,Pneumothorax,Pulmonologist,23,4.3,Sparsh Hospital,Gadag,766,Busy
+Dr. Tripti Kota,Aortic enlargement,Cardiologist,13,4.1,Apollo Hospital,Udupi,600,Busy
+Dr. Azad Chandran,Other lesion,Pulmonologist,1,4.9,Apollo Hospital,Bidar,653,Busy
+Dr. Noah Agarwal,Consolidation,Pulmonologist,16,4.8,Narayana Health,Chamarajanagar,1010,Busy
+Dr. Yashawini Tella,No Finding,General Physician,15,4.2,Rainbow Hospital,Belgaum,1406,Busy
+Dr. Finn Thaman,Cardiomegaly,Cardiologist,7,3.9,Aster Hospital,Chitradurga,1347,Available
+Dr. Tamanna Hayer,No Finding,General Physician,17,4.1,AIIMS,Haveri,1387,Busy
+Dr. Hritik Nath,Cardiomegaly,Cardiologist,9,4.3,Columbia Asia,Dharwad,644,Available
+Dr. Mitesh Kohli,Nodule/Mass,Oncologist,8,3.8,Fortis Hospital,Karwar,367,Available
+Dr. Simon Bains,No Finding,General Physician,20,4.8,Fortis Hospital,Bidar,360,Busy
+Dr. Ayushman Tata,Consolidation,Pulmonologist,13,3.8,Manipal Hospital,Haveri,440,Available
+Dr. Zayyan Dhar,Consolidation,Pulmonologist,22,3.8,Narayana Health,Mangalore,1279,Busy
+Dr. Adweta Kale,Aortic enlargement,Cardiologist,25,3.9,KMC Hospital,Shimoga,1073,Available
+Dr. Girish Varma,Calcification,Pulmonologist,4,4.8,Narayana Health,Bidar,475,Available
+Dr. Ria Yogi,Lung Opacity,Pulmonologist,2,4.6,Sparsh Hospital,Udupi,1407,Busy
+Dr. Owen Lal,No Finding,General Physician,25,4.4,Sparsh Hospital,Haveri,451,Available
+Dr. Arunima Bal,Lung Opacity,Pulmonologist,3,4.4,Apollo Hospital,Shimoga,901,Busy
+Dr. Leena Sama,Aortic enlargement,Cardiologist,15,4.9,Fortis Hospital,Mysore,1195,Busy
+Dr. Banjeet Natarajan,No Finding,General Physician,11,3.9,Aster Hospital,Karwar,1494,Busy
+Dr. Yashodhara Padmanabhan,Infiltration,Pulmonologist,14,4.0,Fortis Hospital,Raichur,1371,Busy
+Dr. Dayamai Kumar,Lung Opacity,Pulmonologist,9,4.3,Manipal Hospital,Karwar,362,Busy
+Dr. Aadhya Bansal,ILD,Pulmonologist,22,4.6,Fortis Hospital,Shimoga,744,Available
+Dr. Ikbal Sem,Lung Opacity,Pulmonologist,5,3.6,Columbia Asia,Mandya,1363,Available
+Dr. Harrison Kuruvilla,No Finding,General Physician,24,4.9,Fortis Hospital,Tumkur,510,Busy
+Dr. Mitesh Mannan,Cardiomegaly,Cardiologist,1,4.5,Sparsh Hospital,Davanagere,1131,Busy
+Dr. Shivani Kari,Pleural effusion,Pulmonologist,19,3.9,Apollo Hospital,Haveri,968,Available
+Dr. Warjas Sehgal,Pulmonary fibrosis,Pulmonologist,6,4.5,KMC Hospital,Hubli,423,Busy
+Dr. Zaid Parmar,Atelectasis,Pulmonologist,22,4.2,Aster Hospital,Chikkaballapur,425,Available
+Dr. Rachana Balakrishnan,Calcification,Pulmonologist,23,3.9,Fortis Hospital,Haveri,1267,Available
+Dr. Geetika Bir,Nodule/Mass,Oncologist,24,4.1,Manipal Hospital,Bangalore,1081,Busy
+Dr. Charita Gala,Pulmonary fibrosis,Pulmonologist,13,3.9,Apollo Hospital,Belgaum,962,Available
+Dr. Yash Desai,Pulmonary fibrosis,Pulmonologist,3,3.9,Manipal Hospital,Hassan,758,Available
+Dr. Nidhi Mani,Pleural thickening,Pulmonologist,8,4.1,Sparsh Hospital,Shimoga,908,Busy
+Dr. Jasmit Sachdev,Pleural effusion,Pulmonologist,4,3.8,Narayana Health,Hassan,1019,Available
+Dr. Rachit Sha,Lung Opacity,Pulmonologist,19,4.9,Columbia Asia,Ramanagara,1470,Busy
+Dr. Chaaya Acharya,Pneumothorax,Pulmonologist,11,4.7,Apollo Hospital,Yadgir,451,Busy
+Dr. Vasana Nanda,Pleural thickening,Pulmonologist,17,3.7,Sparsh Hospital,Hassan,953,Available
+Dr. Aahana Tella,Lung Opacity,Pulmonologist,1,4.2,Columbia Asia,Dharwad,748,Busy
+Dr. Leela Raman,ILD,Pulmonologist,8,4.4,Fortis Hospital,Tumkur,720,Busy
+Dr. Qabil Vala,Infiltration,Pulmonologist,13,4.5,Columbia Asia,Mysore,1092,Busy
+Dr. Vrishti Manda,Consolidation,Pulmonologist,18,4.7,Columbia Asia,Raichur,733,Busy
+Dr. Gaurav Sha,Pulmonary fibrosis,Pulmonologist,25,4.6,Aster Hospital,Gadag,1226,Available
+Dr. Harsh Barman,Cardiomegaly,Cardiologist,16,4.8,AIIMS,Ramanagara,1466,Available
+Dr. Aarini Bera,ILD,Pulmonologist,21,3.7,Fortis Hospital,Raichur,982,Busy
+Dr. Nisha Chacko,Nodule/Mass,Oncologist,3,3.6,Apollo Hospital,Chitradurga,418,Available
+Dr. Kabir Golla,ILD,Pulmonologist,13,3.6,Apollo Hospital,Haveri,535,Busy
+Dr. Avi Atwal,Calcification,Pulmonologist,18,4.0,AIIMS,Kolar,879,Available
+Dr. Anita Kuruvilla,Consolidation,Pulmonologist,17,4.6,Apollo Hospital,Davanagere,1360,Busy
+Dr. Gabriel Lad,ILD,Pulmonologist,5,3.7,Narayana Health,Ramanagara,402,Busy
+Dr. Rachit Dewan,Pleural thickening,Pulmonologist,10,4.1,Narayana Health,Udupi,935,Busy
+Dr. Tarak Sengupta,Atelectasis,Pulmonologist,18,4.0,AIIMS,Bangalore,1277,Busy
+Dr. Jalsa Sampath,Calcification,Pulmonologist,14,4.5,Sparsh Hospital,Hassan,1191,Available
+Dr. Warhi Dass,Consolidation,Pulmonologist,4,3.9,Rainbow Hospital,Bagalkot,1446,Busy
+Dr. Krishna Sethi,Aortic enlargement,Cardiologist,6,4.7,Manipal Hospital,Hassan,1431,Busy
+Dr. Yadavi Sandal,Other lesion,Pulmonologist,3,4.4,Narayana Health,Udupi,1206,Busy
+Dr. Advaith Kanda,Other lesion,Pulmonologist,15,4.0,Manipal Hospital,Kolar,768,Busy
+Dr. Champak Chauhan,Infiltration,Pulmonologist,7,3.8,Sparsh Hospital,Udupi,639,Busy
+Dr. Bhanumati Baria,Other lesion,Pulmonologist,21,4.0,KMC Hospital,Chitradurga,731,Busy
+Dr. Vinaya Mand,Atelectasis,Pulmonologist,5,4.7,Fortis Hospital,Chitradurga,717,Available
+Dr. Hiral Sarraf,Infiltration,Pulmonologist,3,4.3,Narayana Health,Dharwad,768,Available
+Dr. Harsh Narayan,Calcification,Pulmonologist,1,4.7,Sparsh Hospital,Mandya,406,Busy
+Dr. George Keer,ILD,Pulmonologist,17,4.7,AIIMS,Bangalore,935,Busy
+Dr. Vasana Banerjee,Atelectasis,Pulmonologist,1,4.6,Narayana Health,Raichur,1281,Available
+Dr. Yashawini Ray,Calcification,Pulmonologist,22,4.3,Aster Hospital,Vijayapura,793,Available
+Dr. Ucchal Chacko,Pleural effusion,Pulmonologist,17,4.5,AIIMS,Shimoga,1073,Available
+Dr. Peter Bajwa,No Finding,General Physician,23,5.0,Columbia Asia,Belgaum,398,Available
+Dr. Kashish Iyer,Infiltration,Pulmonologist,4,3.6,Rainbow Hospital,Belgaum,1336,Available
+Dr. Bhavika Doctor,Consolidation,Pulmonologist,14,4.8,Narayana Health,Hassan,1001,Busy
+Dr. Dipta Wason,Lung Opacity,Pulmonologist,16,3.5,Columbia Asia,Mysore,1118,Busy
+Dr. Kavya Trivedi,Pneumothorax,Pulmonologist,15,4.7,AIIMS,Yadgir,1066,Available
+Dr. Pavani Behl,Other lesion,Pulmonologist,10,4.4,Fortis Hospital,Shimoga,516,Available
+Dr. Saksham Venkataraman,Infiltration,Pulmonologist,7,4.8,AIIMS,Haveri,1383,Available
+Dr. Raagini Chauhan,Consolidation,Pulmonologist,21,4.7,Columbia Asia,Davanagere,1235,Busy
+Dr. Pranit Dar,Pleural effusion,Pulmonologist,7,5.0,KMC Hospital,Mysore,1353,Available
+Dr. Osha Balasubramanian,ILD,Pulmonologist,5,4.7,Aster Hospital,Karwar,412,Busy
+Dr. Christopher Palan,Pulmonary fibrosis,Pulmonologist,20,3.7,Apollo Hospital,Yadgir,1116,Busy
+Dr. Zansi Jha,ILD,Pulmonologist,3,3.5,Apollo Hospital,Karwar,775,Busy
+Dr. Yashoda Yohannan,Lung Opacity,Pulmonologist,6,4.2,Manipal Hospital,Bagalkot,1256,Available
+Dr. Gopal Sharaf,Calcification,Pulmonologist,5,4.0,AIIMS,Davanagere,1464,Available
+Dr. Ucchal Varty,Atelectasis,Pulmonologist,15,4.6,Rainbow Hospital,Dharwad,394,Available
+Dr. Abdul Shetty,Infiltration,Pulmonologist,12,3.8,KMC Hospital,Hassan,755,Busy
+Dr. Onveer Pandit,Pleural effusion,Pulmonologist,12,3.7,KMC Hospital,Mandya,401,Busy
+Dr. Anjali Garde,Aortic enlargement,Cardiologist,8,4.8,Aster Hospital,Dharwad,1141,Available
+Dr. Krisha Oommen,Calcification,Pulmonologist,11,3.5,KMC Hospital,Gadag,729,Busy
+Dr. Ronith Sengupta,Lung Opacity,Pulmonologist,19,4.2,Sparsh Hospital,Mandya,811,Available
+Dr. Utkarsh Ramanathan,Calcification,Pulmonologist,5,4.6,KMC Hospital,Ramanagara,1357,Busy
+Dr. Yoshita Narayan,Pulmonary fibrosis,Pulmonologist,3,4.2,Rainbow Hospital,Bidar,1251,Busy
+Dr. Udyati Balan,Infiltration,Pulmonologist,18,4.9,AIIMS,Udupi,334,Busy
+Dr. Anvi Tara,ILD,Pulmonologist,1,3.9,KMC Hospital,Bangalore,1198,Busy
+Dr. Pratyush Sankar,ILD,Pulmonologist,11,4.4,Fortis Hospital,Chamarajanagar,1266,Available
+Dr. Yauvani Bawa,Aortic enlargement,Cardiologist,14,3.9,AIIMS,Mangalore,572,Available
+Dr. Balvan Gulati,Pleural effusion,Pulmonologist,12,3.5,Aster Hospital,Hassan,488,Available
+Dr. Tejas Raval,Calcification,Pulmonologist,22,3.8,Manipal Hospital,Bangalore,772,Available
+Dr. Ekalinga Tara,Consolidation,Pulmonologist,8,4.0,AIIMS,Shimoga,1144,Busy
+Dr. Vrinda Mahal,Cardiomegaly,Cardiologist,14,4.9,AIIMS,Kolar,1104,Busy
+Dr. Aradhana Mukherjee,Nodule/Mass,Oncologist,24,3.8,Apollo Hospital,Bidar,1412,Busy
+Dr. Mason Anne,Pulmonary fibrosis,Pulmonologist,7,3.8,Narayana Health,Gadag,1157,Available
+Dr. Yatin Dugal,Pleural thickening,Pulmonologist,20,4.7,Narayana Health,Kolar,1106,Available
+Dr. Oliver Devi,Aortic enlargement,Cardiologist,17,4.4,Aster Hospital,Kolar,473,Available
+Dr. Vrinda Sama,No Finding,General Physician,21,3.6,Apollo Hospital,Dharwad,1401,Busy
+Dr. Widisha Sinha,Aortic enlargement,Cardiologist,14,4.9,Rainbow Hospital,Bellary,973,Available
+Dr. Nakul Kalla,Other lesion,Pulmonologist,12,4.4,Manipal Hospital,Udupi,1074,Available
+Dr. David Rao,Pleural effusion,Pulmonologist,4,4.7,Apollo Hospital,Karwar,1121,Busy
+Dr. Dalaja Shenoy,ILD,Pulmonologist,14,3.7,Rainbow Hospital,Dharwad,639,Available
+Dr. Zehaan Reddy,Pulmonary fibrosis,Pulmonologist,19,4.9,Sparsh Hospital,Mandya,1499,Busy
+Dr. Chanakya Gola,Pneumothorax,Pulmonologist,20,4.3,Columbia Asia,Tumkur,1247,Available
+Dr. Hamsini Dua,ILD,Pulmonologist,21,3.9,KMC Hospital,Mysore,1010,Available
+Dr. Jairaj Rana,ILD,Pulmonologist,19,3.9,KMC Hospital,Shimoga,461,Busy
+Dr. Nihal Sarraf,Pleural effusion,Pulmonologist,11,4.2,KMC Hospital,Mandya,511,Busy
+Dr. Aahana Jani,ILD,Pulmonologist,23,4.1,Columbia Asia,Chitradurga,600,Available
+Dr. Zehaan Shetty,ILD,Pulmonologist,25,4.8,Sparsh Hospital,Raichur,1043,Busy
+Dr. Samar Bhagat,Pleural effusion,Pulmonologist,1,4.0,Columbia Asia,Chamarajanagar,1130,Busy
+Dr. Chakradev Mittal,Lung Opacity,Pulmonologist,11,4.1,Sparsh Hospital,Chamarajanagar,635,Busy
+Dr. Tarak Saxena,Infiltration,Pulmonologist,19,4.1,Manipal Hospital,Udupi,1084,Busy
+Dr. Divya Mammen,Nodule/Mass,Oncologist,2,3.8,KMC Hospital,Mandya,653,Busy
+Dr. Veda Pillay,Cardiomegaly,Cardiologist,21,4.5,Aster Hospital,Vijayapura,1119,Busy
+Dr. Kai Chaudhari,ILD,Pulmonologist,12,3.9,AIIMS,Gadag,677,Available
+Dr. Zashil Rastogi,Other lesion,Pulmonologist,11,3.7,Apollo Hospital,Bellary,1118,Available
+Dr. Krish Ratti,ILD,Pulmonologist,15,4.0,Apollo Hospital,Belgaum,394,Busy
+Dr. Lipika Puri,Cardiomegaly,Cardiologist,12,4.3,AIIMS,Bagalkot,677,Busy
+Dr. Urmi Mittal,Atelectasis,Pulmonologist,19,3.5,Apollo Hospital,Raichur,813,Available
+Dr. Widisha Shanker,Infiltration,Pulmonologist,23,4.4,Rainbow Hospital,Hassan,1429,Busy
+Dr. Wyatt Kumar,Pleural effusion,Pulmonologist,18,4.5,Fortis Hospital,Kolar,1446,Available
+Dr. Eta Mody,Pneumothorax,Pulmonologist,5,3.9,Sparsh Hospital,Chitradurga,1435,Busy
+Dr. Vasatika Chahal,Pleural effusion,Pulmonologist,15,3.6,Apollo Hospital,Tumkur,1094,Busy
+Dr. Warjas Narasimhan,Pneumothorax,Pulmonologist,13,4.7,Apollo Hospital,Karwar,1453,Available
+Dr. Samarth Natarajan,Pulmonary fibrosis,Pulmonologist,12,3.7,Columbia Asia,Tumkur,1461,Busy
+Dr. Sathvik Menon,ILD,Pulmonologist,18,4.7,Apollo Hospital,Mandya,1274,Available
+Dr. Veer Sibal,Pleural thickening,Pulmonologist,22,3.6,Apollo Hospital,Bidar,995,Busy
+Dr. Kashvi Roy,Consolidation,Pulmonologist,8,3.8,Rainbow Hospital,Chikkaballapur,652,Busy
+Dr. Jeremiah Pant,Calcification,Pulmonologist,20,4.3,Rainbow Hospital,Davanagere,822,Available
+Dr. Wyatt Contractor,Other lesion,Pulmonologist,1,4.6,Manipal Hospital,Bagalkot,850,Busy
+Dr. Vrishti Gaba,Nodule/Mass,Oncologist,22,4.0,Sparsh Hospital,Udupi,1022,Busy
+Dr. Mitesh Sheth,Calcification,Pulmonologist,19,4.1,Aster Hospital,Karwar,426,Available
+Dr. Januja Ranganathan,Cardiomegaly,Cardiologist,21,3.6,Apollo Hospital,Bidar,1348,Available
+Dr. Ryan Dutt,Calcification,Pulmonologist,20,4.5,Manipal Hospital,Bellary,1191,Busy
+Dr. Yashodhara Sankaran,Other lesion,Pulmonologist,17,4.2,Aster Hospital,Karwar,344,Busy
+Dr. Adweta Ravel,No Finding,General Physician,2,4.6,Narayana Health,Udupi,510,Busy
+Dr. Laksh Sarkar,ILD,Pulmonologist,14,3.8,Narayana Health,Karwar,1252,Busy
+Dr. Omisha Venkatesh,ILD,Pulmonologist,11,4.6,KMC Hospital,Mangalore,969,Available
+Dr. Azaan Choudhury,Pulmonary fibrosis,Pulmonologist,1,4.5,Aster Hospital,Vijayapura,338,Busy
+Dr. Vamakshi Mutti,Aortic enlargement,Cardiologist,8,3.6,Apollo Hospital,Hassan,573,Busy
+Dr. Aarini Biswas,Nodule/Mass,Oncologist,1,3.8,Narayana Health,Haveri,1076,Available
+Dr. Wishi Jhaveri,No Finding,General Physician,11,3.9,Sparsh Hospital,Gadag,815,Busy
+Dr. Madhavi Goel,Pleural effusion,Pulmonologist,18,3.9,Sparsh Hospital,Yadgir,616,Busy
+Dr. Hemang Sandhu,Pneumothorax,Pulmonologist,21,4.9,Columbia Asia,Haveri,344,Available
+Dr. Neel Mohanty,Atelectasis,Pulmonologist,1,4.2,Rainbow Hospital,Ramanagara,755,Busy
+Dr. Chasmum Sethi,No Finding,General Physician,14,4.5,Fortis Hospital,Gadag,1057,Available
+Dr. Aditya Gera,Other lesion,Pulmonologist,19,4.1,Fortis Hospital,Gadag,1465,Available
+Dr. Tanay Nayak,Lung Opacity,Pulmonologist,25,4.3,Rainbow Hospital,Shimoga,487,Busy
+Dr. Indali Kumer,Aortic enlargement,Cardiologist,13,4.5,AIIMS,Udupi,1168,Available
+Dr. Chaitanya Dutt,Infiltration,Pulmonologist,8,4.3,Columbia Asia,Dharwad,513,Busy
+Dr. Samesh Bhargava,Cardiomegaly,Cardiologist,23,3.7,Aster Hospital,Yadgir,1357,Busy
+Dr. Chanchal Sidhu,Atelectasis,Pulmonologist,22,3.6,Aster Hospital,Davanagere,876,Available
+Dr. Ishwar Dubey,Atelectasis,Pulmonologist,10,4.9,Fortis Hospital,Haveri,1175,Available
+Dr. Faras Cherian,Other lesion,Pulmonologist,13,4.0,Manipal Hospital,Mandya,341,Available
+Dr. Samarth Chaudhuri,Pleural effusion,Pulmonologist,6,4.2,Apollo Hospital,Bagalkot,349,Busy
+Dr. Jagvi Raja,No Finding,General Physician,12,4.7,Apollo Hospital,Raichur,522,Busy
+Dr. Bakhshi Doctor,Aortic enlargement,Cardiologist,17,4.1,Columbia Asia,Chikkaballapur,955,Busy
+Dr. Tanay Dhar,ILD,Pulmonologist,2,4.0,Apollo Hospital,Gadag,347,Available
+Dr. Balvan Narayan,No Finding,General Physician,2,3.5,Fortis Hospital,Chitradurga,997,Available
+Dr. Zansi Dutta,Pleural thickening,Pulmonologist,25,4.4,Manipal Hospital,Dharwad,1406,Available
+Dr. Jeet Agarwal,Nodule/Mass,Oncologist,24,4.4,AIIMS,Bagalkot,1314,Busy
+Dr. Zaitra Baria,Pleural thickening,Pulmonologist,25,4.6,AIIMS,Bidar,1093,Available
+Dr. Umang Bhavsar,No Finding,General Physician,17,4.0,Aster Hospital,Mangalore,1472,Busy
+Dr. Matthew Nagarajan,Calcification,Pulmonologist,5,3.8,Manipal Hospital,Chamarajanagar,1480,Available
+Dr. Pallavi Chaudhuri,Calcification,Pulmonologist,13,3.9,Sparsh Hospital,Raichur,388,Busy
+Dr. Naveen Thaman,Consolidation,Pulmonologist,10,4.3,Columbia Asia,Davanagere,1381,Available
+Dr. Eshana Kala,Lung Opacity,Pulmonologist,7,3.7,Columbia Asia,Haveri,1500,Available
+Dr. Lavanya Dayal,Pleural effusion,Pulmonologist,1,3.5,Rainbow Hospital,Mandya,456,Busy
+Dr. Aarav Viswanathan,Lung Opacity,Pulmonologist,1,3.6,KMC Hospital,Bidar,1359,Available
+Dr. Edhitha Garde,Lung Opacity,Pulmonologist,18,3.9,Sparsh Hospital,Hassan,754,Busy
+Dr. Manya Sant,No Finding,General Physician,4,4.8,Rainbow Hospital,Shimoga,375,Available
+Dr. Rajata Suri,Atelectasis,Pulmonologist,12,3.6,Narayana Health,Chamarajanagar,1058,Busy
+Dr. Chaman Dara,Calcification,Pulmonologist,9,3.9,AIIMS,Haveri,752,Busy
+Dr. Siddharth Tripathi,Cardiomegaly,Cardiologist,4,4.7,Aster Hospital,Hassan,1477,Busy
+Dr. Qasim Gokhale,Pulmonary fibrosis,Pulmonologist,10,4.0,Fortis Hospital,Chikkaballapur,394,Busy
+Dr. Yochana Dash,Calcification,Pulmonologist,10,4.5,Apollo Hospital,Tumkur,526,Available
+Dr. Lucky Chakrabarti,Atelectasis,Pulmonologist,5,4.2,KMC Hospital,Mangalore,940,Busy
+Dr. Udyati Chandra,Lung Opacity,Pulmonologist,4,4.4,Narayana Health,Mandya,1376,Available
+Dr. Neha Sandal,Nodule/Mass,Oncologist,5,4.3,KMC Hospital,Bangalore,557,Available
+Dr. Luke Shenoy,Calcification,Pulmonologist,5,3.7,Sparsh Hospital,Yadgir,521,Available
+Dr. Zayan Ben,Pleural effusion,Pulmonologist,20,5.0,Fortis Hospital,Mandya,1060,Available
+Dr. Viraj Sur,Aortic enlargement,Cardiologist,8,4.8,Sparsh Hospital,Hubli,1154,Busy
+Dr. Wakeeta Kibe,Nodule/Mass,Oncologist,17,4.5,AIIMS,Gadag,785,Busy
+Dr. Matthew Jayaraman,Calcification,Pulmonologist,16,4.3,Columbia Asia,Gadag,698,Busy
+Dr. Mitesh Dayal,Other lesion,Pulmonologist,19,4.5,Rainbow Hospital,Gadag,906,Busy
+Dr. Rushil Badami,Atelectasis,Pulmonologist,20,4.3,KMC Hospital,Chamarajanagar,1197,Busy
+Dr. Hemangini Korpal,Lung Opacity,Pulmonologist,9,3.8,Manipal Hospital,Ramanagara,585,Available
+Dr. Ojas D’Alia,Pneumothorax,Pulmonologist,15,4.3,Columbia Asia,Haveri,1131,Available
+Dr. Tara Sahni,Pulmonary fibrosis,Pulmonologist,16,4.6,Fortis Hospital,Chamarajanagar,1043,Busy
+Dr. Falak Raju,Consolidation,Pulmonologist,20,4.5,Columbia Asia,Tumkur,592,Available
+Dr. Nilima Prabhu,Other lesion,Pulmonologist,24,3.5,Narayana Health,Chamarajanagar,1005,Available
+Dr. Lohit Bhatt,No Finding,General Physician,8,3.5,Sparsh Hospital,Vijayapura,1405,Available
+Dr. Andrew Sule,Pulmonary fibrosis,Pulmonologist,25,3.8,Rainbow Hospital,Chikkaballapur,806,Available
+Dr. Andrew Master,Pleural effusion,Pulmonologist,3,4.7,Apollo Hospital,Bidar,932,Busy
+Dr. Devansh Thaman,No Finding,General Physician,25,4.0,Manipal Hospital,Gadag,414,Busy
+Dr. Hitesh Lala,Lung Opacity,Pulmonologist,25,4.7,Aster Hospital,Chikkaballapur,899,Busy
+Dr. Amrita Magar,Atelectasis,Pulmonologist,3,4.8,Narayana Health,Bagalkot,656,Busy
+Dr. Guneet Varughese,Cardiomegaly,Cardiologist,4,4.5,AIIMS,Yadgir,984,Available
+Dr. Bachittar Sekhon,Cardiomegaly,Cardiologist,15,4.2,Apollo Hospital,Mandya,1309,Available
+Dr. Frederick Reddy,Pleural thickening,Pulmonologist,7,4.2,Sparsh Hospital,Haveri,1079,Available
+Dr. Kiaan Ganesan,Infiltration,Pulmonologist,2,4.6,AIIMS,Vijayapura,747,Available
+Dr. Chandresh Halder,ILD,Pulmonologist,25,3.6,AIIMS,Raichur,1406,Available
+Dr. Chaaya Balakrishnan,Atelectasis,Pulmonologist,22,3.8,Columbia Asia,Yadgir,860,Busy
+Dr. Patrick Sampath,Other lesion,Pulmonologist,5,4.6,Apollo Hospital,Yadgir,972,Available
+Dr. Kashish Keer,Cardiomegaly,Cardiologist,7,4.6,Manipal Hospital,Karwar,955,Busy
+Dr. Ekta Peri,Lung Opacity,Pulmonologist,20,3.9,Apollo Hospital,Udupi,1175,Available
+Dr. Daksha Atwal,Calcification,Pulmonologist,13,4.0,Fortis Hospital,Bellary,1390,Available
+Dr. Ojas Salvi,Pulmonary fibrosis,Pulmonologist,15,5.0,Apollo Hospital,Chitradurga,1486,Available
+Dr. Pratyush Morar,Cardiomegaly,Cardiologist,9,4.3,Rainbow Hospital,Karwar,693,Available
+Dr. Arin Lall,Cardiomegaly,Cardiologist,20,4.3,AIIMS,Dharwad,544,Busy
+Dr. Barkha Wason,Pleural effusion,Pulmonologist,24,5.0,Sparsh Hospital,Vijayapura,1204,Available
+Dr. Gautami Minhas,Consolidation,Pulmonologist,13,4.4,KMC Hospital,Ramanagara,1491,Busy
+Dr. Sai Palla,Aortic enlargement,Cardiologist,24,3.9,Apollo Hospital,Raichur,397,Available
+Dr. Isaiah Murty,Consolidation,Pulmonologist,16,3.7,AIIMS,Mysore,1461,Busy
+Dr. Shivansh Mammen,Cardiomegaly,Cardiologist,17,4.7,Columbia Asia,Chikkaballapur,925,Busy
+Dr. Balhaar Palla,Aortic enlargement,Cardiologist,1,4.8,Apollo Hospital,Chikkaballapur,1119,Available
+Dr. Alexander Basak,Pleural thickening,Pulmonologist,4,4.1,Columbia Asia,Udupi,704,Busy
+Dr. Balendra Rana,Pleural effusion,Pulmonologist,8,3.6,Rainbow Hospital,Gadag,1041,Available
+Dr. Vivaan Shenoy,Infiltration,Pulmonologist,9,4.0,Apollo Hospital,Davanagere,790,Available
+Dr. George Sane,Pneumothorax,Pulmonologist,18,4.5,Rainbow Hospital,Raichur,1390,Available
+Dr. Pratyush Chatterjee,Nodule/Mass,Oncologist,18,4.2,Rainbow Hospital,Chamarajanagar,459,Busy
+Dr. Saanvi Randhawa,Lung Opacity,Pulmonologist,8,3.8,Apollo Hospital,Bangalore,1478,Available
+Dr. Lakshit Behl,Nodule/Mass,Oncologist,5,4.1,Aster Hospital,Mandya,736,Available
+Dr. Pavani Soman,Other lesion,Pulmonologist,6,4.0,Apollo Hospital,Mandya,387,Busy
+Dr. Ojas Wagle,No Finding,General Physician,20,4.5,Manipal Hospital,Tumkur,437,Busy
+Dr. Robert Kant,Calcification,Pulmonologist,19,4.4,Rainbow Hospital,Bidar,1253,Available
+Dr. Shivani Thakkar,Lung Opacity,Pulmonologist,20,3.9,AIIMS,Vijayapura,1162,Busy
+Dr. Warda Choudhury,Lung Opacity,Pulmonologist,7,4.6,Narayana Health,Mangalore,496,Busy
+Dr. Vivaan Goel,Infiltration,Pulmonologist,7,4.1,KMC Hospital,Chitradurga,711,Busy
+Dr. Jeet Swaminathan,Lung Opacity,Pulmonologist,4,4.3,Columbia Asia,Bagalkot,1364,Busy
+Dr. Dakshesh Shah,Pulmonary fibrosis,Pulmonologist,24,5.0,Fortis Hospital,Chitradurga,1037,Busy
+Dr. Anvi Mallick,ILD,Pulmonologist,11,3.6,Apollo Hospital,Bidar,1249,Busy
+Dr. Lucky Menon,Infiltration,Pulmonologist,25,4.6,Aster Hospital,Chikkaballapur,442,Busy
+Dr. Ayush Ramanathan,Calcification,Pulmonologist,10,4.3,Columbia Asia,Mandya,1427,Available
+Dr. Faris Goyal,Pleural effusion,Pulmonologist,10,4.2,Rainbow Hospital,Chamarajanagar,360,Busy
+Dr. Mahika Dubey,Cardiomegaly,Cardiologist,3,3.7,Aster Hospital,Davanagere,768,Busy
+Dr. Dalbir Rana,Cardiomegaly,Cardiologist,16,4.3,Aster Hospital,Mangalore,873,Available
+Dr. Charvi Hora,Atelectasis,Pulmonologist,6,4.9,Columbia Asia,Mandya,1093,Available
+Dr. Owen Roy,Other lesion,Pulmonologist,16,4.9,Manipal Hospital,Hubli,341,Available
+Dr. Vanya Rattan,Other lesion,Pulmonologist,2,3.9,Columbia Asia,Shimoga,1149,Busy
+Dr. Ryan Batta,Nodule/Mass,Oncologist,12,4.2,Fortis Hospital,Mysore,880,Busy
+Dr. Aahana Manda,ILD,Pulmonologist,6,3.6,Fortis Hospital,Hubli,772,Available
+Dr. Upkaar Sahni,Aortic enlargement,Cardiologist,18,4.7,Narayana Health,Bidar,1020,Available
+Dr. Sarthak Date,Pulmonary fibrosis,Pulmonologist,2,4.3,Rainbow Hospital,Mangalore,641,Available
+Dr. Leena Som,Pneumothorax,Pulmonologist,20,3.8,KMC Hospital,Bellary,1282,Available
+Dr. Jai Banerjee,Pleural thickening,Pulmonologist,3,4.8,Apollo Hospital,Bagalkot,1371,Available
+Dr. Bhavini Goel,Pulmonary fibrosis,Pulmonologist,16,4.4,Narayana Health,Bangalore,515,Busy
+Dr. Tejas Narain,Pleural effusion,Pulmonologist,21,4.9,Columbia Asia,Tumkur,1345,Busy
+Dr. Vedant Balakrishnan,Pneumothorax,Pulmonologist,20,4.0,KMC Hospital,Ramanagara,496,Busy
+Dr. Lekha Mital,Pleural effusion,Pulmonologist,1,4.4,KMC Hospital,Chitradurga,1053,Available
+Dr. Zayyan Bhatt,Pleural effusion,Pulmonologist,10,5.0,AIIMS,Mangalore,741,Available
+Dr. Yoshita More,Atelectasis,Pulmonologist,7,4.7,Aster Hospital,Udupi,740,Busy
+Dr. Nandini Bail,No Finding,General Physician,18,4.2,Apollo Hospital,Bagalkot,1342,Available
+Dr. Urvashi Bhatnagar,Other lesion,Pulmonologist,23,4.4,Sparsh Hospital,Chitradurga,644,Available
+Dr. Chatresh Rout,Lung Opacity,Pulmonologist,11,3.7,Rainbow Hospital,Bellary,787,Busy
+Dr. Yug Khare,Aortic enlargement,Cardiologist,15,4.3,Sparsh Hospital,Chamarajanagar,1190,Busy
+Dr. Nimrat Aurora,Lung Opacity,Pulmonologist,8,4.1,Fortis Hospital,Davanagere,318,Available
+Dr. Jonathan Wason,Other lesion,Pulmonologist,21,4.5,AIIMS,Mysore,599,Available
+Dr. Champak Arora,Cardiomegaly,Cardiologist,25,4.5,Rainbow Hospital,Tumkur,438,Busy
+Dr. Anay Pandya,Calcification,Pulmonologist,13,4.8,AIIMS,Mangalore,1487,Busy
+Dr. Abha Agrawal,Pleural thickening,Pulmonologist,25,3.7,KMC Hospital,Davanagere,1247,Available
+Dr. Nitara Bhandari,Consolidation,Pulmonologist,21,4.4,KMC Hospital,Chamarajanagar,346,Available
+Dr. Bina Sharma,Pleural thickening,Pulmonologist,17,4.8,Sparsh Hospital,Ramanagara,315,Busy
+
+Dr. Vikram Sethi,Pneumothorax,Pulmonologist,22,5.0,AIIMS,Bangalore,850,Available
+Dr. Vikram Sethi,Pneumothorax,Pulmonologist,22,5.0,AIIMS,Bangalore,850,Available
+Dr. Ananya Ray,Cardiomegaly,Cardiologist,18,4.9,Fortis Hospital,Mysore,900,Available
+Dr. Yudhil Krishna,Pleural Effusion,General Physician,15,5.0,AIIMS,Bangalore,1000,Available
+Dr. Dr.Rishika Sharma,Pleural effusion,Pulmonologist,15,5.0,KMC Hospital,Hassan,850,Available
+Dr. Sarah Johnson (Senior),Pulmonary fibrosis,Pulmonologist,18,5.0,Manipal Hospital,Bangalore,1200,Available
+Dr. Harish Chandra,Pulmonary fibrosis,Pulmonologist,19,5.0,AIIMS,Bangalore,950,Available
+Dr. Harish Chandra,Pulmonary fibrosis,Pulmonologist,19,5.0,AIIMS,Bangalore,950,Available

@@ -1,0 +1,9 @@
+{
+  "model_variant": "yolo11n.pt",
+  "epochs": 50,
+  "batch_size": 16,
+  "img_size": 640,
+  "device": "0",
+  "best_weights_path": "d:\\main pr\\models\\cliniscan_yolo11n_best.pt",
+  "experiment_dir": "d:\\main pr\\results\\training\\cliniscan_yolo11n"
+}

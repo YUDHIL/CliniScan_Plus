@@ -1,0 +1,19 @@
+# CliniScan+ YOLO11 Dataset Configuration
+# VinBigData Chest X-ray - 10 Selected Lung Abnormality Classes
+
+path: d:/main pr/data/processed
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: Atelectasis
+  1: ILD
+  2: Pulmonary fibrosis
+  3: Pneumothorax
+  4: Pleural effusion
+  5: Pleural thickening
+  6: Consolidation
+  7: Lung Opacity
+  8: Nodule/Mass
+  9: Infiltration

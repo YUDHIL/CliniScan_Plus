@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# IDE / Editor configs
+.idea/
+.vscode/
+*.swp
+*.swo
+.gemini/
+
+# Heavy Datasets (VinBigData Raw ~25GB & Processed ~6GB)
+vinbigdata/
+data/processed/
+data/raw/
+
+# Large database backup files containing scan base64 blobs
+data/cliniscan_db_backup.json
+
+# Large validation sample image overlays (plots & metrics are preserved)
+results/validation_samples/*.jpg
+
+# Intermediate Model Checkpoints & Pretrained Base Weights
+# (models/cliniscan_yolo11n_best.pt is tracked!)
+results/training/*/weights/
+runs/
+yolo11n.pt
+yolo26n.pt
+app/yolo11n.pt
+
+# System / OS files
+.DS_Store
+Thumbs.db
+
+# Local secrets & environment files
+.env

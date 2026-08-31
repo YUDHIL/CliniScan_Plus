@@ -1,0 +1,18 @@
+[
+  {
+    "patient_username": "patient_demo",
+    "patient_name": "Eleanor Vance (Updated)",
+    "patient_phone": "+91 99999 88888",
+    "doctor_name": "Dr. Jairaj Ramakrishnan",
+    "specialization": "Pulmonologist",
+    "hospital": "KMC Hospital",
+    "city": "Mysore",
+    "clinical_indication": "AI Detected: ILD, Pleural effusion, Pleural thickening",
+    "appointment_slot": "Tomorrow (09:30 AM - 10:30 AM)",
+    "scan_id": "SCN-811234",
+    "status": "Pending",
+    "appointment_id": "APT-838417",
+    "created_at": "2026-08-20T13:13:58.417897",
+    "doctor_confirmed_at": null,
+    "doctor_notes": "",
+    "_id": 

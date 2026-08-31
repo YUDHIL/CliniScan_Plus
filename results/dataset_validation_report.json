@@ -1,0 +1,78 @@
+{
+  "splits": {
+    "train": {
+      "images": 2769,
+      "labels": 2769,
+      "annotations": 10804,
+      "negatives": 462,
+      "class_counts": {
+        "Atelectasis": 175,
+        "ILD": 526,
+        "Pulmonary fibrosis": 2376,
+        "Pneumothorax": 95,
+        "Pleural effusion": 1201,
+        "Pleural thickening": 2804,
+        "Consolidation": 291,
+        "Lung Opacity": 1390,
+        "Nodule/Mass": 1264,
+        "Infiltration": 682
+      }
+    },
+    "val": {
+      "images": 593,
+      "labels": 593,
+      "annotations": 2412,
+      "negatives": 98,
+      "class_counts": {
+        "Atelectasis": 31,
+        "ILD": 118,
+        "Pulmonary fibrosis": 506,
+        "Pneumothorax": 23,
+        "Pleural effusion": 299,
+        "Pleural thickening": 622,
+        "Consolidation": 84,
+        "Lung Opacity": 320,
+        "Nodule/Mass": 276,
+        "Infiltration": 133
+      }
+    },
+    "test": {
+      "images": 594,
+      "labels": 594,
+      "annotations": 2393,
+      "negatives": 99,
+      "class_counts": {
+        "Atelectasis": 26,
+        "ILD": 86,
+        "Pulmonary fibrosis": 498,
+        "Pneumothorax": 15,
+        "Pleural effusion": 283,
+        "Pleural thickening": 644,
+        "Consolidation": 61,
+        "Lung Opacity": 310,
+        "Nodule/Mass": 325,
+        "Infiltration": 145
+      }
+    }
+  },
+  "overall": {
+    "total_images": 3956,
+    "total_annotations": 15609,
+    "negative_images": 659,
+    "corrupted_images": 0,
+    "invalid_boxes": 0,
+    "out_of_bounds_boxes": 0,
+    "class_counts": {
+      "Atelectasis": 232,
+      "ILD": 730,
+      "Pulmonary fibrosis": 3380,
+      "Pneumothorax": 133,
+      "Pleural effusion": 1783,
+      "Pleural thickening": 4070,
+      "Consolidation": 436,
+      "Lung Opacity": 2020,
+      "Nodule/Mass": 1865,
+      "Infiltration": 960
+    }
+  }
+}
