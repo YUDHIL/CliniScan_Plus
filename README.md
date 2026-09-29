@@ -136,20 +136,51 @@ python src/evaluate.py --model models/cliniscan_yolo11n_best.pt --split val
 python src/inference.py --image "vinbigdata/train/0005e8e3701dfb1dd93d53e2ff537b6e.jpg" --conf 0.20
 ```
 
-### Step 6: Launch the CliniScan+ Clinical Dashboard
+### Step 6: Launch CliniScan+ (FastAPI Backend + Next.js Frontend)
+
+#### Terminal 1: Start FastAPI REST API Backend
 ```bash
-streamlit run app/streamlit_app.py
+python run_backend.py
+# Backend API available at: http://localhost:8000
+# Interactive API Docs: http://localhost:8000/docs
+```
+
+#### Terminal 2: Start Next.js React Web Application
+```bash
+cd frontend
+npm install
+npm run dev
+# Open Web Application in Browser: http://localhost:3000
 ```
 
 ---
 
-## 🖥️ 5. Streamlit Application Modules
+## 🖥️ 5. Next.js Clinical Web Application Modules
 
-1. **🏠 Home & Overview**: System purpose, 10 supported pathologies, and clinical disclaimer.
-2. **🔍 X-ray Analysis**: Interactive radiograph upload/sample selector, real-time confidence sliders, side-by-side radiograph comparisons, and localized finding cards.
-3. **📄 Patient Clinical Report**: Comprehensive diagnostic report compilation, printable HTML generator, and PDF export.
-4. **👨‍⚕️ Doctor Review Dashboard**: Triage queue, AI confirmation/rejection workflow, and physician recommendations.
-5. **📊 Model & Research Insights**: Dataset distribution, per-class mAP tables, confusion matrices, and error analysis suitable for IEEE publication.
+1. **🧑‍🦱 Patient Portal**:
+   - **Interactive X-ray Scanner**: Drag-and-drop file upload & VinBigData sample selector with real-time confidence sliders.
+   - **YOLO11 Localization**: Sub-second bounding boxes, class probability %, anatomical quadrant localization, and clinical severity indicators.
+   - **Specialist Matching**: Automatic matching of detected findings to recommended medical specialists.
+   - **My Appointments**: Live tracking of doctor confirmations and downloadable referral passes.
+   - **Scan History**: Full diagnostic report vault with standalone printable HTML/PDF export.
+
+2. **👨‍⚕️ Doctor Review Dashboard**:
+   - **Triage Queue**: Triage incoming patient requests across the hospital network.
+   - **1-Click Confirmation**: Direct confirmation and custom clinical prescription advice.
+   - **Diagnostic Studio Lab**: High-resolution radiograph triage with doctor-signed certificate generation.
+   - **Practice Profile**: Real-time management of doctor specialization, hospital network, fees, and availability.
+
+3. **🔬 Laboratory Diagnostic Portal**:
+   - **Patient Intake**: MRN registration, age, gender, and clinical history intake.
+   - **Automated Triage**: Instant YOLO11 detection execution and official lab certificate generation.
+   - **Specialist Routing**: Direct routing of laboratory findings to verified hospital specialists.
+   - **Registry & Accreditation**: Processed tests registry and facility credentials.
+
+4. **🔍 2,000-Doctor Directory**:
+   - Multi-filter explorer across 26 cities and 10 hospital networks with live search and appointment scheduling.
+
+5. **📊 Model & Research Insights**:
+   - Supported 10 target pathologies, severity mapping, YOLO11 architecture specs, and dataset split details.
 
 ---
 

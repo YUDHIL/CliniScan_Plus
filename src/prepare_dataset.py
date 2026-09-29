@@ -174,14 +174,13 @@ def prepare_yolo_dataset(
 ) -> Dict:
     """
     Filter, merge, and split VinBigData Chest X-ray dataset into YOLO format.
+    Main function to process VinBigData CSV and images into standard YOLO structure.
     """
     _root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     if data_dir is None:
         data_dir = os.path.join(_root, "vinbigdata")
     if output_dir is None:
         output_dir = os.path.join(_root, "data", "processed")
-    Main function to process VinBigData CSV and images into standard YOLO structure.
-    """
     logger.info("Starting CliniScan+ YOLO11 dataset preparation...")
     logger.info(f"Source Directory: {data_dir}")
     logger.info(f"Target Directory: {output_dir}")

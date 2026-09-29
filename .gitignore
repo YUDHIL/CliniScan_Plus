@@ -44,3 +44,56 @@ Thumbs.db
 
 # Local secrets & environment files
 .env
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Frontend dependencies
+frontend/node_modules/
+
+# Next.js build/cache
+frontend/.next/
+frontend/out/
+
+# YOLO training outputs
+runs/
+results/training/
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
+
+# Temporary/cache files
+*.cache
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Database backups
+data/*_backup.*

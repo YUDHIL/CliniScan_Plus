@@ -11,7 +11,7 @@ import argparse
 import random
 import cv2
 import numpy as np
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from tqdm import tqdm
 
 TARGET_CLASSES = [

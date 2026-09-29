@@ -280,15 +280,21 @@ class CliniScanDatabase:
             return True, "Account created successfully! You can now sign in."
         return False, "Database unavailable."
 
-    def authenticate_user(self, username: str, password: str, role: Optional[str] = None) -> Optional[Dict]:
+    def authenticate_user(self, username_or_email: str, password: str, role: Optional[str] = None) -> Optional[Dict]:
         """
-        Authenticate user credentials and role.
+        Authenticate user credentials and role (supports either username or email).
         """
-        username = username.strip().lower()
+        identifier = username_or_email.strip().lower()
         p_hash = hash_password(password)
 
         if self.db is not None:
-            query = {"username": username, "password_hash": p_hash}
+            query = {
+                "$or": [
+                    {"username": identifier},
+                    {"email": identifier}
+                ],
+                "password_hash": p_hash
+            }
             if role:
                 query["role"] = role
             user = self.db.users.find_one(query, {"_id": 0, "password_hash": 0})

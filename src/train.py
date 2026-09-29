@@ -10,6 +10,7 @@ import json
 import argparse
 import logging
 import torch
+from typing import Optional
 from ultralytics import YOLO
 
 logging.basicConfig(
