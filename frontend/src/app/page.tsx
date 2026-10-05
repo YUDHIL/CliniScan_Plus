@@ -18,6 +18,7 @@ import { DoctorRegistrationModal } from '../components/DoctorRegistrationModal';
 import { ProfileSettings } from '../components/ProfileSettings';
 import { ModelInsights } from '../components/ModelInsights';
 import { ReportViewerModal } from '../components/ReportViewerModal';
+import { ClinicalChatbot } from '../components/ClinicalChatbot';
 import { 
   Activity, 
   Crosshair, 
@@ -162,8 +163,8 @@ export default function Home() {
         allDoctors={allRegisteredDoctors}
       />
 
-      {/* Main Content Area (Full Wide Container) */}
-      <div className="flex-1 w-full max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-10 py-8">
+      {/* Main Content Area (Full-Width Fluid Workspace) */}
+      <div className="flex-1 w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-6 sm:py-8">
         {!user ? (
           /* FRONT PAGE: Dedicated Landing, Hero, Login & Registration */
           <LandingHeroAuth
@@ -174,9 +175,9 @@ export default function Home() {
           />
         ) : (
           /* LOGGED IN: Wide Clinical Dashboard */
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            {/* Left Sidebar (3 Cols on Wide Screen) */}
-            <aside className="lg:col-span-3 space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 xl:gap-8 items-start w-full">
+            {/* Left Sidebar */}
+            <aside className="lg:col-span-4 xl:col-span-3 2xl:col-span-2 space-y-6">
               {/* Main Navigation Card */}
               <div className="bg-white rounded-3xl p-6 border-2 border-slate-200/90 shadow-lg space-y-5">
                 <div className="flex justify-between items-center pb-3 border-b border-slate-100">
@@ -276,8 +277,8 @@ export default function Home() {
               </div>
             </aside>
 
-            {/* Main Content Workspace (9 Cols on Wide Screen) */}
-            <main className="lg:col-span-9 space-y-8">
+            {/* Main Content Workspace (Full Width Responsive Workspace) */}
+            <main className="lg:col-span-8 xl:col-span-9 2xl:col-span-10 space-y-8 w-full min-w-0">
               {/* PATIENT VIEWS */}
               {activeTab === 'scanner' && (
                 <XrayScanner
@@ -402,6 +403,9 @@ export default function Home() {
         reportData={activeReportData}
         onClose={() => setActiveReportData(null)}
       />
+
+      {/* PERSISTENT CLINICAL AI CHATBOT (Always docked in bottom-right corner across all tabs) */}
+      <ClinicalChatbot user={user} />
     </div>
   );
 }

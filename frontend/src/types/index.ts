@@ -38,15 +38,22 @@ export interface Detection {
 export interface Doctor {
   doctor_name: string;
   specialization: string;
-  disease_expertise: string;
+  disease_expertise?: string;
   experience_years: number;
   rating: number;
+  rating_reviews?: string;
   hospital: string;
   city: string;
+  address?: string;
   fees_inr: number;
   availability: string;
   is_registered?: boolean;
   is_exact_match?: boolean;
+  is_real_doctor?: boolean;
+  maps_url?: string;
+  practo_url?: string;
+  booking_url?: string;
+  ai_match_reason?: string;
 }
 
 export interface RecommendationResponse {

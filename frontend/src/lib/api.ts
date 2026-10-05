@@ -98,21 +98,30 @@ class ApiClient {
   }
 
   async detectXray(formData: FormData): Promise<InferenceResult> {
-    const res = await fetch(`${API_BASE}/inference/detect`, {
-      method: 'POST',
-      body: formData,
-    });
+    try {
+      const res = await fetch(`${API_BASE}/inference/detect`, {
+        method: 'POST',
+        body: formData,
+      });
 
-    if (!res.ok) {
-      let errorMsg = 'Inference failed';
-      try {
-        const errJson = await res.json();
-        if (errJson.detail) errorMsg = errJson.detail;
-      } catch (e) {}
-      throw new Error(errorMsg);
+      if (!res.ok) {
+        let errorMsg = `Inference failed (HTTP ${res.status})`;
+        try {
+          const errJson = await res.json();
+          if (errJson.detail) {
+            errorMsg = typeof errJson.detail === 'string' ? errJson.detail : JSON.stringify(errJson.detail);
+          }
+        } catch (e) {}
+        throw new Error(errorMsg);
+      }
+
+      return res.json();
+    } catch (err: any) {
+      if (err.message && !err.message.includes('Inference failed')) {
+        throw new Error(`Connection to backend failed: ${err.message}. Please ensure the server on port 8000 is running.`);
+      }
+      throw err;
     }
-
-    return res.json();
   }
 
   // --- 3. Doctors & Recommendations ---
@@ -258,6 +267,20 @@ class ApiClient {
   async getMetadata(): Promise<FilterMetadata> {
     return this.request('/meta/filters');
   }
+
+  // --- 7. Clinical AI Chatbot ---
+  async sendChatMessage(params: {
+    message: string;
+    history?: Array<{ role: string; content: string }>;
+    context?: Record<string, any>;
+  }): Promise<{ status: string; reply: string; timestamp: string }> {
+    return this.request('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(params),
+    });
+  }
 }
 
 export const api = new ApiClient();
+

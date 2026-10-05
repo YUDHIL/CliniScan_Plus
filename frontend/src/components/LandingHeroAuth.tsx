@@ -239,8 +239,8 @@ export const LandingHeroAuth: React.FC<LandingHeroAuthProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Side: Interactive Auth Form (7 Cols) */}
         <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl space-y-6">
-          <div className="flex justify-between items-center pb-4 border-b border-slate-200">
-            <div>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
+            <div className="flex-1 min-w-0">
               <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Hospital Clinical Gateway
               </h2>
@@ -248,14 +248,14 @@ export const LandingHeroAuth: React.FC<LandingHeroAuthProps> = ({
                 Select your role and sign in to access tailored clinical tools
               </p>
             </div>
-            <div className="flex bg-slate-100 p-1.5 rounded-2xl border border-slate-200 text-sm font-bold">
+            <div className="flex bg-slate-100 p-1.5 rounded-2xl border border-slate-200 text-sm font-bold shrink-0 self-start sm:self-auto shadow-inner">
               <button
                 type="button"
                 onClick={() => setTab('signin')}
-                className={`px-5 py-2.5 rounded-xl transition ${
+                className={`px-5 py-2.5 rounded-xl transition cursor-pointer ${
                   tab === 'signin'
                     ? 'bg-sky-600 text-white shadow-md'
-                    : 'text-slate-600 hover:text-slate-900'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
                 }`}
               >
                 Sign In
@@ -263,10 +263,10 @@ export const LandingHeroAuth: React.FC<LandingHeroAuthProps> = ({
               <button
                 type="button"
                 onClick={() => setTab('signup')}
-                className={`px-5 py-2.5 rounded-xl transition ${
+                className={`px-5 py-2.5 rounded-xl transition cursor-pointer ${
                   tab === 'signup'
                     ? 'bg-sky-600 text-white shadow-md'
-                    : 'text-slate-600 hover:text-slate-900'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
                 }`}
               >
                 Register

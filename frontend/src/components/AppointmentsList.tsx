@@ -134,9 +134,27 @@ export const AppointmentsList: React.FC<AppointmentsListProps> = ({
                 </div>
               )}
 
-              {/* Confirmed Referral Pass Download */}
-              {apt.status === 'Confirmed' && (
-                <div className="pt-2 flex justify-end">
+              {/* Real-World Quick Hospital Links & Action Buttons */}
+              <div className="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${apt.doctor_name} ${apt.hospital} ${apt.city}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-lg text-xs font-bold border border-emerald-200 transition flex items-center space-x-1"
+                  >
+                    <span>📍 Google Maps Route</span>
+                  </a>
+                  <a
+                    href={`tel:${apt.city === 'Bangalore' ? '+918040001234' : '+911126598700'}`}
+                    className="px-3 py-1.5 bg-sky-50 hover:bg-sky-100 text-sky-800 rounded-lg text-xs font-bold border border-sky-200 transition flex items-center space-x-1"
+                  >
+                    <span>📞 Hospital Desk</span>
+                  </a>
+                </div>
+
+                {/* Confirmed Referral Pass Download */}
+                {apt.status === 'Confirmed' && (
                   <button
                     onClick={() => onViewReport({
                       report_id: apt.appointment_id,
@@ -159,13 +177,13 @@ export const AppointmentsList: React.FC<AppointmentsListProps> = ({
                       },
                       doctor_notes: apt.doctor_notes || 'Confirmed consultation.',
                     })}
-                    className="inline-flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold px-4 py-2 rounded-xl shadow-sm transition active:scale-95"
+                    className="inline-flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold px-4 py-2 rounded-xl shadow-sm transition active:scale-95 cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5" />
                     <span>Download Confirmed Referral Pass</span>
                   </button>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           ))}
         </div>

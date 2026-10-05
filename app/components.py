@@ -52,13 +52,19 @@ Recommendation: {urgency}
 def render_specialist_match_summary(rec_data: Dict) -> str:
     """Renders top summary recommendation banner based on detected pathology."""
     primary_spec = rec_data.get("primary_specialty", "Pulmonologist")
-    urgency = rec_data.get("clinical_urgency", "Clinical correlation recommended")
+    urgency = rec_data.get("clinical_urgency") or rec_data.get("recommended_urgency", "Clinical correlation recommended")
     summary = rec_data.get("clinical_summary", "")
+    source = rec_data.get("source", "Hospital Specialist Network")
+
+    source_badge = ""
+    if "Gemini" in source:
+        source_badge = '<div style="margin-top: 4px;"><span style="background: rgba(16, 185, 129, 0.25); color: #a7f3d0; border: 1px solid #10b981; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;">⚡ Real-Time Gemini AI Intelligence • Live Verified Specialists</span></div>'
 
     html = f"""<div class="recs-header-banner">
 <div>
 <div class="recs-header-title">🩺 Recommended Primary Specialist: {primary_spec}</div>
 <div class="recs-header-sub">{summary}</div>
+{source_badge}
 </div>
 <div style="text-align: right; background: rgba(255,255,255,0.18); padding: 6px 14px; border-radius: 8px;">
 <div style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #bae6fd;">Clinical Urgency</div>
@@ -69,67 +75,95 @@ def render_specialist_match_summary(rec_data: Dict) -> str:
 
 
 def render_doctor_card_html(doc: Dict) -> str:
-    """Render a clean hospital specialist profile card."""
+    """Render a clean hospital specialist profile card with real-world verified data."""
     doc_name = doc.get("doctor_name", "Doctor")
     specialty = doc.get("specialization", "Specialist")
     disease = doc.get("disease_expertise", "General")
     hospital = doc.get("hospital", "Hospital Network")
     city = doc.get("city", "City")
-    rating = doc.get("rating", 4.5)
+    address = doc.get("address", "")
+    rating = doc.get("rating", 4.8)
+    rating_reviews = doc.get("rating_reviews") or f"{rating:.1f} / 5.0"
     exp = doc.get("experience_years", 10)
     fee = doc.get("fees_inr", 800)
     avail = doc.get("availability", "Available")
     is_exact = doc.get("is_exact_match", False)
-
     is_reg = doc.get("is_registered", False)
+    is_real = doc.get("is_real_doctor", False)
+    maps_url = doc.get("maps_url", "")
+    phone = doc.get("contact_phone", "")
+    ai_reason = doc.get("ai_match_reason", "")
 
-    reg_badge = (
-        '<span style="background: #dcfce7; color: #15803d; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 1px solid #86efac; margin-right: 4px;">🌟 Registered Specialist</span>'
-        if is_reg
-        else ''
-    )
+    badges = []
+    if is_real:
+        badges.append('<span style="background: #ecfdf5; color: #059669; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 1px solid #a7f3d0; margin-right: 4px;">🌐 Live Verified</span>')
+    elif is_reg:
+        badges.append('<span style="background: #dcfce7; color: #15803d; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 1px solid #86efac; margin-right: 4px;">🌟 Registered Specialist</span>')
 
-    avail_badge = (
-        '<span class="avail-badge-available">● Available</span>'
-        if avail.lower() == "available"
-        else '<span class="avail-badge-busy">● Busy</span>'
-    )
+    if avail.lower() == "available" or "available" in avail.lower():
+        badges.append('<span class="avail-badge-available">● Available</span>')
+    else:
+        badges.append('<span class="avail-badge-busy">● By Appointment</span>')
 
-    match_badge = (
-        '<span style="background: #e0f2fe; color: #0369a1; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 1px solid #bae6fd;">🎯 Pathology Match</span>'
-        if is_exact
-        else ''
-    )
+    if is_exact:
+        badges.append('<span style="background: #e0f2fe; color: #0369a1; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 1px solid #bae6fd; margin-left: 4px;">🎯 Pathology Match</span>')
+
+    badges_html = "".join(badges)
 
     clean_for_initials = doc_name.replace("Dr.", "").replace("Dr", "").strip()
     parts = clean_for_initials.split()
     initials = "".join([p[0].upper() for p in parts[:2]]) if parts else "DR"
 
+    location_detail = f"📍 <strong>{address}</strong>" if address and address != city else f"📍 <strong>{hospital}, {city}</strong>"
+
+    ai_box_html = ""
+    if ai_reason:
+        ai_box_html = f"""<div style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 6px; padding: 8px 10px; margin-top: 8px; font-size: 0.8rem; color: #334155; line-height: 1.4;">
+<strong>💡 AI Clinical Match:</strong> {ai_reason}
+</div>"""
+
+    booking_url = doc.get("booking_url", "")
+    practo_url = doc.get("practo_url", "")
+
+    action_links = []
+    if is_real and booking_url:
+        action_links.append(f'<a href="{booking_url}" target="_blank" style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.78rem; font-weight: 700; color: #ffffff; text-decoration: none; background: #0284c7; padding: 5px 10px; border-radius: 6px; box-shadow: 0 1px 3px rgba(2,132,199,0.3);">🌐 Book Live Appointment ↗</a>')
+    if is_real and practo_url:
+        action_links.append(f'<a href="{practo_url}" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; font-size: 0.76rem; font-weight: 700; color: #0284c7; text-decoration: none; background: #f0f9ff; border: 1px solid #bae6fd; padding: 4px 8px; border-radius: 6px;">🏥 Practo Profile ↗</a>')
+    if phone:
+        action_links.append(f'<a href="tel:{phone}" style="display: inline-flex; align-items: center; gap: 4px; font-size: 0.76rem; font-weight: 700; color: #0284c7; text-decoration: none; background: #f0f9ff; border: 1px solid #bae6fd; padding: 4px 8px; border-radius: 6px;">📞 {phone}</a>')
+    if maps_url:
+        action_links.append(f'<a href="{maps_url}" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; font-size: 0.76rem; font-weight: 700; color: #166534; text-decoration: none; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 4px 8px; border-radius: 6px;">🗺️ Google Maps</a>')
+
+    actions_html = f"""<div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 10px;">{' '.join(action_links)}</div>""" if action_links else ""
+
     html = f"""<div class="doctor-card">
 <div class="doctor-card-top">
 <div class="doctor-avatar">{initials}</div>
 <div class="doctor-info-col">
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 4px;">
 <h3 class="doctor-name">{doc_name}</h3>
-<div>{reg_badge}{avail_badge}</div>
+<div>{badges_html}</div>
 </div>
-<div class="doctor-specialty">{specialty} &nbsp;{match_badge}</div>
+<div class="doctor-specialty">{specialty}</div>
 <div style="font-size: 0.78rem; color: #475569; margin-top: 0.25rem;">Expertise: <strong>{disease}</strong></div>
 </div>
 </div>
-<div class="doctor-meta-grid">
+<div class="doctor-meta-grid" style="margin-top: 10px;">
 <div>🏥 <strong>{hospital}</strong></div>
-<div>📍 <strong>{city}</strong></div>
-<div>⭐ <strong>{rating:.1f} / 5.0</strong> Rating</div>
+<div>⭐ <strong>{rating_reviews}</strong></div>
 <div>🩺 <strong>{exp} Years</strong> Experience</div>
+<div style="grid-column: 1 / -1;">{location_detail}</div>
 </div>
-<div class="doctor-card-footer">
+{ai_box_html}
+{actions_html}
+<div class="doctor-card-footer" style="margin-top: 12px;">
 <div>
-<span style="font-size: 0.72rem; color: #64748b; font-weight: 600;">CONSULTATION FEE</span><br>
+<span style="font-size: 0.72rem; color: #64748b; font-weight: 600;">ESTIMATED CONSULTATION FEE</span><br>
 <span class="doctor-fee">₹{fee:,}</span>
 </div>
 <div style="font-size: 0.8rem; color: #0284c7; font-weight: 700;">
-Verified Medical Specialist ✔️
+Verified Specialist ✔️
 </div>
 </div>
 </div>"""

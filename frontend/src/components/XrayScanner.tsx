@@ -173,34 +173,55 @@ export const XrayScanner: React.FC<XrayScannerProps> = ({
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start w-full">
         {/* Left Column: Upload Controls (6 Cols) */}
         <div className="xl:col-span-6 bg-white rounded-3xl p-8 sm:p-10 border-2 border-slate-200 shadow-xl space-y-7">
-          <div className="flex justify-between items-center pb-4 border-b border-slate-200">
-            <div>
-              <h3 className="font-heading font-black text-slate-900 text-xl sm:text-2xl flex items-center space-x-3">
-                <Crosshair className="w-7 h-7 text-sky-600" />
-                <span>1. Select Radiograph Source</span>
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-500 mt-0.5">Upload a patient radiograph or select a sample image</p>
+          <div className="space-y-4 pb-5 border-b border-slate-200">
+            {/* 1. Header Title & Subtitle */}
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center shrink-0 shadow-sm border border-sky-200">
+                <Crosshair className="w-6 h-6" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-heading font-black text-slate-900 text-xl sm:text-2xl leading-tight">
+                  1. Select Radiograph Source
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
+                  Upload a patient radiograph or select a pre-loaded sample image
+                </p>
+              </div>
             </div>
 
-            {/* Mode Switcher */}
-            <div className="flex bg-slate-100 p-1.5 rounded-2xl border border-slate-300 text-xs sm:text-sm font-black">
+            {/* 2. Mode Switcher Tabs (Full-Width Responsive 2-Segment Control) */}
+            <div className="grid grid-cols-2 gap-2 p-1.5 bg-slate-100 rounded-2xl border border-slate-200 text-xs sm:text-sm font-black shadow-inner">
               <button
                 type="button"
-                onClick={() => setInputMode('upload')}
-                className={`px-5 py-2.5 rounded-xl transition ${
-                  inputMode === 'upload' ? 'bg-sky-600 text-white shadow-md' : 'text-slate-600 hover:text-slate-900'
+                onClick={() => {
+                  setInputMode('upload');
+                  setResult(null);
+                  setError('');
+                }}
+                className={`py-2.5 px-3 sm:px-4 rounded-xl transition cursor-pointer flex items-center justify-center gap-2 ${
+                  inputMode === 'upload'
+                    ? 'bg-sky-600 text-white shadow-md font-black'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
                 }`}
               >
-                📂 Upload File
+                <span>📂</span>
+                <span>Upload File</span>
               </button>
               <button
                 type="button"
-                onClick={() => setInputMode('sample')}
-                className={`px-5 py-2.5 rounded-xl transition ${
-                  inputMode === 'sample' ? 'bg-sky-600 text-white shadow-md' : 'text-slate-600 hover:text-slate-900'
+                onClick={() => {
+                  setInputMode('sample');
+                  setResult(null);
+                  setError('');
+                }}
+                className={`py-2.5 px-3 sm:px-4 rounded-xl transition cursor-pointer flex items-center justify-center gap-2 ${
+                  inputMode === 'sample'
+                    ? 'bg-sky-600 text-white shadow-md font-black'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
                 }`}
               >
-                🔬 VinBigData Samples
+                <span>🔬</span>
+                <span>VinBigData Samples</span>
               </button>
             </div>
           </div>
@@ -415,41 +436,41 @@ export const XrayScanner: React.FC<XrayScannerProps> = ({
         {/* Right Column: Visual Radiograph Canvas (6 Cols) */}
         <div className="xl:col-span-6 bg-white rounded-3xl p-8 sm:p-10 border-2 border-slate-200 shadow-xl flex flex-col justify-between space-y-6">
           <div>
-            <div className="flex justify-between items-center mb-4">
-              <div>
-                <h3 className="font-heading font-black text-slate-900 text-xl sm:text-2xl flex items-center space-x-3">
-                  <Eye className="w-7 h-7 text-sky-600" />
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+              <div className="flex-1 min-w-0">
+                <h3 className="font-heading font-black text-slate-900 text-lg sm:text-xl md:text-2xl flex items-center gap-2.5">
+                  <Eye className="w-6 h-6 sm:w-7 sm:h-7 text-sky-600 shrink-0" />
                   <span>Diagnostic Radiograph View</span>
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 mt-0.5">High-resolution bounding box localization & canvas</p>
+                <p className="text-xs sm:text-sm text-slate-500 mt-1">High-resolution bounding box localization & canvas</p>
               </div>
 
               {result && (
-                <span className="bg-slate-900 text-white text-xs sm:text-sm font-mono font-black px-4 py-1.5 rounded-full shadow-md">
+                <span className="self-start sm:self-auto bg-slate-900 text-white text-xs sm:text-sm font-mono font-black px-4 py-1.5 rounded-full shadow-md shrink-0">
                   ⚡ {result.inference_time_ms} ms
                 </span>
               )}
             </div>
 
-            {/* High-Res Radiograph Canvas View (Large & High Visibility) */}
-            <div className="min-h-[480px] aspect-[4/3] bg-slate-950 rounded-3xl overflow-hidden flex items-center justify-center border-4 border-slate-800 relative group shadow-2xl">
+            {/* High-Res Radiograph Canvas View (Responsive & Fully Contained) */}
+            <div className="w-full aspect-[4/3] max-h-[520px] bg-slate-950 rounded-3xl overflow-hidden flex items-center justify-center border-4 border-slate-800 relative group shadow-2xl">
               {result ? (
                 <img
                   src={result.annotated_image_b64}
                   alt="YOLO11 Annotated Chest Radiograph"
                   className="w-full h-full object-contain"
                 />
-              ) : previewUrl ? (
+              ) : (inputMode === 'upload' && previewUrl) ? (
                 <img src={previewUrl} alt="Preview" className="w-full h-full object-contain" />
-              ) : selectedSample && inputMode === 'sample' ? (
+              ) : (inputMode === 'sample' && selectedSample) ? (
                 <img
                   src={api.getSampleImageUrl(selectedSample)}
                   alt="Sample Preview"
                   className="w-full h-full object-contain"
                 />
               ) : (
-                <div className="text-center p-12 text-slate-500 space-y-4">
-                  <Activity className="w-20 h-20 text-slate-700 mx-auto" />
+                <div className="text-center p-8 sm:p-12 text-slate-500 space-y-4">
+                  <Activity className="w-16 h-16 sm:w-20 sm:h-20 text-slate-700 mx-auto" />
                   <div>
                     <p className="text-base sm:text-lg font-black text-slate-300">Awaiting Radiograph Input</p>
                     <p className="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Select or upload a radiograph on the left to begin visual inspection</p>
@@ -608,11 +629,11 @@ export const XrayScanner: React.FC<XrayScannerProps> = ({
 
                         <div className="space-y-2 text-xs sm:text-sm text-slate-600">
                           <div className="flex items-center space-x-2">
-                            <Building className="w-4 h-4 text-slate-400" />
-                            <span>{doc.hospital}, {doc.city}</span>
+                            <Building className="w-4 h-4 text-slate-400 shrink-0" />
+                            <span className="truncate">{doc.hospital}, {doc.city}</span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <Clock className="w-4 h-4 text-slate-400" />
+                            <Clock className="w-4 h-4 text-slate-400 shrink-0" />
                             <span>{doc.experience_years} Years Clinical Experience</span>
                           </div>
                           <div className="font-black text-slate-900 text-sm">
@@ -621,13 +642,29 @@ export const XrayScanner: React.FC<XrayScannerProps> = ({
                         </div>
                       </div>
 
-                      <button
-                        onClick={() => onBookDoctor(doc, `AI Finding: ${result.recommendations.target_findings.join(', ')}`)}
-                        className="w-full py-4 bg-sky-600 hover:bg-sky-700 text-white font-heading font-black text-sm rounded-2xl shadow-md shadow-sky-600/20 transition active:scale-95 flex items-center justify-center space-x-2 cursor-pointer"
-                      >
-                        <Calendar className="w-5 h-5" />
-                        <span>Schedule Consultation ➔</span>
-                      </button>
+                      {/* Action Row: Schedule Consultation + Google Maps Navigation Block */}
+                      <div className="pt-2 flex items-center gap-2 w-full">
+                        <button
+                          type="button"
+                          onClick={() => onBookDoctor(doc, `AI Finding: ${result.recommendations.target_findings.join(', ')}`)}
+                          className="flex-1 py-3.5 px-3 bg-sky-600 hover:bg-sky-700 text-white font-heading font-black text-xs sm:text-sm rounded-2xl shadow-md shadow-sky-600/20 transition active:scale-95 flex items-center justify-center space-x-1.5 cursor-pointer"
+                        >
+                          <Calendar className="w-4 h-4 shrink-0" />
+                          <span className="truncate">Schedule Consultation ➔</span>
+                        </button>
+
+                        {/* Small Google Maps Navigation Block */}
+                        <a
+                          href={doc.maps_url || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${doc.doctor_name} ${doc.hospital} ${doc.city}`)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3.5 py-3.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 hover:text-emerald-950 font-bold text-xs rounded-2xl border border-emerald-300 shadow-sm transition active:scale-95 flex items-center space-x-1.5 cursor-pointer shrink-0"
+                          title={`Navigate to ${doc.hospital} on Google Maps`}
+                        >
+                          <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
+                          <span className="font-extrabold">Maps</span>
+                        </a>
+                      </div>
                     </div>
                   ))}
                 </div>

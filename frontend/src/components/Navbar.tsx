@@ -35,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-sm w-full">
-      <div className="w-full max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="flex justify-between items-center h-24">
           {/* Brand Logo & Hospital Title */}
           <div className="flex items-center space-x-4 cursor-pointer" onClick={() => !user && onOpenAuth()}>

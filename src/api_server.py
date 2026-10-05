@@ -36,6 +36,7 @@ if PROJECT_ROOT not in sys.path:
 from src.inference import CliniScanDetector, TARGET_CLASSES, SEVERITY_MAPPING
 from src.recommendation import doctor_engine
 from src.database import db_instance
+from src.gemini_chatbot import chatbot_engine
 from app.components import generate_printable_referral_report_html, image_to_base64
 
 logging.basicConfig(level=logging.INFO)
@@ -103,6 +104,7 @@ class RecommendationRequest(BaseModel):
     availability_only: bool = True
     max_fee: Optional[int] = None
     top_k: int = 6
+    use_gemini_live: Optional[bool] = True
 
 
 class AppointmentCreateRequest(BaseModel):
@@ -143,6 +145,18 @@ class ReportGenerateRequest(BaseModel):
     referred_doctor: Optional[Dict[str, Any]] = None
     annotated_img_b64: Optional[str] = None
     doctor_notes: Optional[str] = None
+
+
+class ChatMessage(BaseModel):
+    role: str
+    content: str
+
+
+class ChatRequest(BaseModel):
+    message: str
+    history: Optional[List[ChatMessage]] = []
+    context: Optional[Dict[str, Any]] = None
+
 
 
 # ==============================================================================
@@ -313,12 +327,22 @@ async def run_detection(
     annotated_pil = Image.fromarray(results["annotated_image_rgb"])
     annotated_b64 = image_to_base64(annotated_pil)
 
-    # Get matched doctor recommendation summary automatically
-    recs = doctor_engine.recommend_doctors(
-        detected_findings=results["detections"],
-        city_filter=None,
-        top_k=6
-    )
+    # Get matched doctor recommendation summary automatically (robust fallback)
+    try:
+        recs = doctor_engine.recommend_doctors(
+            detected_findings=results["detections"],
+            city_filter=None,
+            top_k=6,
+            use_gemini_live=True
+        )
+    except Exception as e:
+        logger.warning(f"Live recommendation failed, using local directory fallback: {e}")
+        recs = doctor_engine.recommend_doctors(
+            detected_findings=results["detections"],
+            city_filter=None,
+            top_k=6,
+            use_gemini_live=False
+        )
 
     return {
         "model_version": results["model_version"],
@@ -396,7 +420,8 @@ def get_recommendations(req: RecommendationRequest):
         hospital_filter=req.hospital_filter,
         availability_only=req.availability_only,
         max_fee=req.max_fee,
-        top_k=req.top_k
+        top_k=req.top_k,
+        use_gemini_live=req.use_gemini_live if req.use_gemini_live is not None else True
     )
     return recs
 
@@ -493,6 +518,30 @@ def get_metadata_filters():
         "storage_mode": db_instance.storage_mode,
         "total_doctors": len(doctor_engine.df)
     }
+
+
+@app.post("/api/chat")
+def chat_endpoint(req: ChatRequest):
+    """Conversational Clinical AI Assistant powered by Google Gemini."""
+    try:
+        history_dicts = [{"role": h.role, "content": h.content} for h in (req.history or [])]
+        reply = chatbot_engine.generate_response(
+            message=req.message,
+            history=history_dicts,
+            context=req.context
+        )
+        return {
+            "status": "success",
+            "reply": reply,
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        logger.error(f"Chat API exception: {e}")
+        return {
+            "status": "fallback",
+            "reply": "I am here to assist with your chest X-ray findings and doctor referrals. How can I help you today?",
+            "timestamp": datetime.now().isoformat()
+        }
 
 
 if __name__ == "__main__":

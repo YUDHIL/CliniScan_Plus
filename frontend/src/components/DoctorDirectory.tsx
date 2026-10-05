@@ -300,7 +300,7 @@ export const DoctorDirectory: React.FC<DoctorDirectoryProps> = ({
               </div>
 
               {/* Action */}
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
                 <span className={`text-xs font-extrabold px-3 py-1 rounded-full border ${
                   doc.availability.toLowerCase() === 'available'
                     ? 'bg-emerald-50 text-emerald-800 border-emerald-300'
@@ -309,13 +309,26 @@ export const DoctorDirectory: React.FC<DoctorDirectoryProps> = ({
                   ● {doc.availability}
                 </span>
 
-                <button
-                  onClick={() => onBookDoctor(doc)}
-                  className="inline-flex items-center space-x-2 bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-extrabold px-5 py-2.5 rounded-xl shadow-md shadow-sky-600/25 transition active:scale-95 cursor-pointer"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book Slot</span>
-                </button>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={doc.maps_url || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${doc.doctor_name} ${doc.hospital} ${doc.city}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-xl border border-emerald-300 transition active:scale-95 flex items-center space-x-1 text-xs font-bold cursor-pointer"
+                    title={`View ${doc.hospital} on Google Maps`}
+                  >
+                    <MapPin className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>Maps</span>
+                  </a>
+
+                  <button
+                    onClick={() => onBookDoctor(doc)}
+                    className="inline-flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-extrabold px-4 py-2.5 rounded-xl shadow-md shadow-sky-600/25 transition active:scale-95 cursor-pointer"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    <span>Book Slot</span>
+                  </button>
+                </div>
               </div>
             </div>
           ))}

@@ -13,6 +13,7 @@ import pandas as pd
 import numpy as np
 
 from src.database import db_instance
+from src.gemini_recommender import gemini_doctor_engine
 
 logger = logging.getLogger(__name__)
 
@@ -216,11 +217,28 @@ class DoctorRecommendationEngine:
         hospital_filter: Optional[str] = None,
         availability_only: bool = True,
         max_fee: Optional[int] = None,
-        top_k: int = 4
+        top_k: int = 4,
+        use_gemini_live: bool = True
     ) -> Dict:
         """
         Intelligently recommend top medical specialists tailored to YOLO11 detections.
+        Supports real-world live doctor matching via Google Gemini AI.
         """
+        # Attempt real-world doctor retrieval via Gemini Live Engine if active
+        if use_gemini_live and gemini_doctor_engine.is_available() and (hospital_filter in (None, "All Hospitals")) and (max_fee is None or max_fee >= 2000):
+            try:
+                target_city = city_filter if (city_filter and city_filter != "All Cities") else "Bangalore"
+                gemini_res = gemini_doctor_engine.recommend_real_doctors(
+                    findings=detected_findings,
+                    city=target_city,
+                    top_k=top_k
+                )
+                if gemini_res and gemini_res.get("doctors"):
+                    logger.info("Successfully generated real-world specialist recommendations using Gemini Live Engine.")
+                    return gemini_res
+            except Exception as e:
+                logger.warning(f"Gemini live doctor fetch failed, falling back to internal database: {e}")
+
         finding_names = []
         if isinstance(detected_findings, list):
             for f in detected_findings:

@@ -49,17 +49,8 @@ CliniScan+ focuses on 10 localized and diffuse lung parenchymal and pleural abno
                      │                                                     │
                      └──────────────────────────┬──────────────────────────┘
                                                 │
-                                                ▼
-                            +───────────────────────────────────────+
-                            │       Structured Clinical Findings    │
-                            │   - Anatomical quadrant mapping       │
-                            │   - Clinical recommendation notes     │
-                            +───────────────────────────────────────+
-                                                │
-                     ┌──────────────────────────┼──────────────────────────┐
-                     ▼                          ▼                          ▼
-         Interactive Web UI            Doctor Review Queue        Audited Report Storage
-        (Streamlit Dashboard)        (Attestation & Feedback)      (MongoDB / Local JSON)
+                           Interactive Web UI            Doctor Review Queue        Audited Report Storage
+        (Next.js 14 Frontend)        (Attestation & Feedback)      (MongoDB / Local JSON)
 ```
 
 ---
@@ -67,38 +58,28 @@ CliniScan+ focuses on 10 localized and diffuse lung parenchymal and pleural abno
 ## 📂 3. Project Structure
 
 ```text
-d:\main pr\
-├── data/
-│   ├── processed/                        # YOLO-formatted dataset
-│   │   ├── images/ (train, val, test)    # 70% / 15% / 15% split
-│   │   └── labels/ (train, val, test)    # Normalized YOLO .txt annotations
-│   └── cliniscan_db_backup.json          # Local persistence fallback
-├── notebooks/
-│   ├── 01_dataset_analysis.ipynb         # EDA, class balance, aspect ratios
-│   ├── 02_annotation_validation.ipynb    # Visual bbox checks & overlay sanity
-│   └── 03_model_evaluation.ipynb         # PR curves, confusion matrices, error analysis
+d:\CliniScan+\
+├── frontend/                             # Next.js 14 React + Tailwind web app
+│   ├── src/
+│   │   ├── app/                          # App router layouts & pages
+│   │   ├── components/                   # Modular clinical UI components
+│   │   ├── lib/api.ts                    # Backend REST API client
+│   │   └── types/                        # TypeScript interfaces
+│   └── package.json                      # Frontend dependencies
 ├── src/
 │   ├── __init__.py
-│   ├── prepare_dataset.py                # Dataset filtering, conversion & split
-│   ├── validate_dataset.py               # QA checks, box normalization verification
-│   ├── train.py                          # YOLO11 training script with medical augmentations
-│   ├── evaluate.py                       # Evaluation metrics & per-class reporting
-│   ├── inference.py                      # Standalone InferenceEngine API
-│   └── database.py                       # MongoDB client with mongomock fallback
+│   ├── api_server.py                     # FastAPI REST API backend
+│   ├── gemini_recommender.py             # Live Gemini doctor recommendation engine
+│   ├── recommendation.py                 # Hybrid doctor recommendation & ranking
+│   ├── inference.py                      # Standalone YOLO11 Inference Engine
+│   └── database.py                       # MongoDB & local JSON persistence
 ├── models/                               # Saved model weights
-├── results/
-│   ├── validation_samples/               # Visual QA overlay images
-│   ├── training/                         # Training curves and logs
-│   ├── evaluation/                       # Confusion matrices & PR plots
-│   └── predictions/                      # Inference sample predictions
+├── data/                                 # Doctor directory dataset & scan records
 ├── app/
-│   ├── __init__.py
-│   ├── streamlit_app.py                  # Streamlit clinical dashboard
-│   ├── components.py                     # UI cards, badges, printable HTML generator
-│   └── styles.css                        # Modern medical styling
-├── dataset.yaml                          # YOLO11 dataset configuration
-├── requirements.txt                      # Project dependencies
-└── README.md                             # Documentation & research guide
+│   └── components.py                     # Clinical HTML badges & printable report generator
+├── run_backend.py                        # FastAPI server launcher (port 8000)
+├── requirements.txt                      # Python backend dependencies
+└── README.md                             # Documentation & project guide
 ```
 
 ---
