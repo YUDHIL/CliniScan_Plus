@@ -234,6 +234,8 @@ class DoctorRecommendationEngine:
                     top_k=top_k
                 )
                 if gemini_res and gemini_res.get("doctors"):
+                    gemini_res.setdefault("recommended_doctors", gemini_res.get("doctors", []))
+                    gemini_res.setdefault("doctors", gemini_res.get("recommended_doctors", []))
                     logger.info("Successfully generated real-world specialist recommendations using Gemini Live Engine.")
                     return gemini_res
             except Exception as e:

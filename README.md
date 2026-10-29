@@ -4,6 +4,24 @@
 
 ---
 
+## 📋 Academic Project Deliverables (Phase - II)
+
+**Institution**: Rajiv Gandhi Institute of Technology | **Department**: Computer Science & Engineering  
+**Project Group**: Group 3 (BCS786) | **Project Guide**: Dr. Latha P H  
+**Team Members**: Rishika (1RG23CS053), Vedashree (1RG23CS079), Yudhil Krishna (1RG22CS092), Shiva Kumar (1RG23CS064)
+
+Quick access to project documents in the [`docs/`](docs/) repository:
+
+| Document | File Link & Path | Description |
+| :--- | :--- | :--- |
+| 📄 **Project Report** | [docs/project_report.pdf](docs/project_report.pdf) | Final Phase-II Comprehensive Project Report |
+| 📄 **Published Paper** | [docs/published_paper.pdf](docs/published_paper.pdf) | Published Research Paper |
+| 📄 **Project Synopsis** | [docs/synopsis.pdf](docs/synopsis.pdf) | Approved Phase-II Project Synopsis |
+| 📜 **Certificates** | • [IRE Certificate](docs/Certificates/IRE_Certificate.pdf)<br>• [Acceptance Letter](docs/Certificates/Acceptance_letter.pdf) | Paper Presentation & Acceptance Credentials |
+| 📚 **Base Papers** | • [AI Interpretability & Grad-CAM](docs/base_papers/Enhancing_Pneumonia_Diagnosis_Through_AI_Interpretability_Comparative_Analysis_of_Pixel-Level_Interpretability_and_Grad-CAM_on_X-ray_Imaging_With_VGG19.pdf)<br>• [AI-Driven Deep Learning Framework](docs/base_papers/Revolutionizing_Pneumonia_Diagnosis_AI-Driven_Deep_Learning_Framework_for_Automated_Detection_From_Chest_X-Rays.pdf) | Reference Literature & Foundational Benchmarks |
+
+---
+
 ## 🎯 1. Supported 10 Target Conditions
 
 CliniScan+ focuses on 10 localized and diffuse lung parenchymal and pleural abnormalities:
@@ -59,6 +77,7 @@ CliniScan+ focuses on 10 localized and diffuse lung parenchymal and pleural abno
 
 ```text
 d:\CliniScan+\
+├── docs/                                 # Academic deliverables (Report, Synopsis, Papers, Certificates)
 ├── frontend/                             # Next.js 14 React + Tailwind web app
 │   ├── src/
 │   │   ├── app/                          # App router layouts & pages

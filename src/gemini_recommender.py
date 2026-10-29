@@ -199,6 +199,7 @@ Return ONLY a valid JSON object with this exact structure:
 
             parsed_data["source"] = "Gemini AI Real-World Clinical Intelligence"
             parsed_data["total_matches"] = len(doctors)
+            parsed_data["recommended_doctors"] = doctors
             return parsed_data
 
         except Exception as err:
