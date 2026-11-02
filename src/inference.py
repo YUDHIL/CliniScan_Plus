@@ -80,11 +80,11 @@ class CliniScanDetector:
             self.device = device
 
         # Load weights with fallback
-        if os.path.exists(model_path):
-            print(f"[CliniScanDetector] Loading trained weights from: {model_path}")
-            self.model = YOLO(model_path)
+        if self.model_path and os.path.exists(self.model_path):
+            print(f"[CliniScanDetector] Loading trained weights from: {self.model_path}")
+            self.model = YOLO(self.model_path)
         else:
-            print(f"[CliniScanDetector] Trained model '{model_path}' not found. Initializing base: {fallback_model}")
+            print(f"[CliniScanDetector] Trained model '{self.model_path}' not found. Initializing base: {fallback_model}")
             self.model = YOLO(fallback_model)
 
         # Warm up model to initialize CUDA & torchvision C-extensions in main thread

@@ -48,20 +48,50 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Enable CORS for Next.js (port 3000) and any local dev origin
+# Configure CORS for Next.js (local dev, production Vercel, and custom domain)
+allowed_origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+frontend_url_env = os.getenv("FRONTEND_URL", "").strip()
+if frontend_url_env:
+    for url in frontend_url_env.split(","):
+        clean_url = url.strip().rstrip("/")
+        if clean_url and clean_url not in allowed_origins:
+            allowed_origins.append(clean_url)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "http://localhost:8000",
-        "http://127.0.0.1:8000",
-        "*",
-    ],
+    allow_origins=allowed_origins,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_headers=[
+        "Content-Type",
+        "Authorization",
+        "Accept",
+        "X-Requested-With",
+        "Origin",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers",
+    ],
 )
+
+
+@app.get("/")
+@app.get("/health")
+@app.get("/api/health")
+def health_check():
+    """Health check endpoint for Render, load balancers, and monitoring."""
+    return {
+        "status": "healthy",
+        "service": "CliniScan+ Hospital API",
+        "version": "1.0.0",
+        "database": db_instance.storage_mode,
+        "is_connected": db_instance.is_connected,
+    }
 
 
 # Initialize YOLO11 Detector

@@ -12,8 +12,12 @@ import urllib.parse
 from typing import List, Dict, Optional, Any
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Deterministic root .env loading
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_FILE = os.path.join(PROJECT_ROOT, ".env")
+
+if os.path.exists(ENV_FILE):
+    load_dotenv(dotenv_path=ENV_FILE, override=False)
 
 logger = logging.getLogger(__name__)
 
@@ -44,34 +48,38 @@ class GeminiDoctorRecommender:
     """
 
     def __init__(self, api_key: Optional[str] = None):
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY", "").strip()
+        self.api_key = (api_key or os.getenv("GEMINI_API_KEY", "")).strip()
         self.client = None
         self._init_client()
 
     def _init_client(self):
         """Initialize Google GenAI client."""
         if not self.api_key:
-            logger.warning("GEMINI_API_KEY is not configured.")
+            logger.warning("[GeminiDoctorRecommender] GEMINI_API_KEY is not configured in .env.")
             return
 
         try:
             from google import genai
             self.client = genai.Client(api_key=self.api_key)
             self.sdk_type = "google-genai"
-            logger.info("Initialized Google GenAI SDK successfully.")
+            logger.info("[GeminiDoctorRecommender] Successfully authenticated with Google GenAI SDK.")
         except Exception as e:
             try:
                 import google.generativeai as legacy_genai
                 legacy_genai.configure(api_key=self.api_key)
                 self.client = legacy_genai
                 self.sdk_type = "legacy"
-                logger.info("Initialized legacy google.generativeai SDK.")
+                logger.info("[GeminiDoctorRecommender] Initialized legacy google.generativeai SDK.")
             except Exception as ex:
-                logger.error(f"Failed initializing Gemini client: {ex}")
+                logger.error(f"[GeminiDoctorRecommender] Failed initializing Gemini client: {ex}")
                 self.client = None
 
     def is_available(self) -> bool:
         """Check if Gemini API key is valid and client is ready."""
+        if not self.api_key:
+            self.api_key = os.getenv("GEMINI_API_KEY", "").strip()
+            if self.api_key and self.client is None:
+                self._init_client()
         return bool(self.api_key and len(self.api_key) > 10 and self.client is not None)
 
     def recommend_real_doctors(

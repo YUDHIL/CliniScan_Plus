@@ -22,8 +22,32 @@ if sys.stdout.encoding != 'utf-8':
     except Exception:
         pass
 
-# Path constants
+# Path constants & Deterministic Root .env Loading
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(BASE_DIR)
+ENV_FILE = os.path.join(PROJECT_ROOT, ".env")
+
+try:
+    from dotenv import load_dotenv
+    if os.path.exists(ENV_FILE):
+        load_dotenv(dotenv_path=ENV_FILE, override=False)
+except ImportError:
+    pass
+
+try:
+    import certifi
+    CA_FILE = certifi.where()
+except ImportError:
+    CA_FILE = None
+
+
+def mask_mongo_uri(uri: str) -> str:
+    """Mask credentials for safe console output."""
+    if not uri:
+        return ""
+    return re.sub(r"://([^:@]+):([^@]+)@", r"://\1:****@", uri)
+
+
 DEFAULT_CSV_PATH = os.path.join(BASE_DIR, "doctor_2000_realnames.csv")
 OUTPUT_CSV_PATH = os.path.join(BASE_DIR, "doctors_200_sample.csv")
 OUTPUT_JSON_PATH = os.path.join(BASE_DIR, "doctors_200_sample.json")
@@ -266,18 +290,26 @@ def populate_database(documents: list, mongo_uri: str, db_name: str, collection_
     Connects to MongoDB and inserts documents into the specified collection.
     """
     client = None
+    safe_uri = mask_mongo_uri(mongo_uri)
+    is_cloud = mongo_uri.startswith("mongodb+srv://") or "mongodb.net" in mongo_uri
+    client_kwargs = {
+        "serverSelectionTimeoutMS": 5000 if is_cloud else 2500
+    }
+    if is_cloud and CA_FILE:
+        client_kwargs["tlsCAFile"] = CA_FILE
+
     if use_mock:
         print("[*] Using 'mongomock' in-memory MongoDB client...")
         import mongomock
         client = mongomock.MongoClient()
     else:
-        print(f"[*] Connecting to MongoDB at: {mongo_uri}")
+        print(f"[*] Connecting to MongoDB at: {safe_uri}")
         try:
-            client = MongoClient(mongo_uri, serverSelectionTimeoutMS=2500)
+            client = MongoClient(mongo_uri, **client_kwargs)
             client.admin.command('ping')
             print("[OK] Connected successfully to live MongoDB server!")
         except Exception as e:
-            print(f"[!] Live MongoDB server at '{mongo_uri}' is not reachable ({e}).")
+            print(f"[!] Live MongoDB server at '{safe_uri}' is not reachable ({type(e).__name__}: {e}).")
             print("[*] Using 'mongomock' to validate data insertion, schema, and indexes...")
             import mongomock
             client = mongomock.MongoClient()

@@ -5,18 +5,63 @@ Diagnostic Scans, Appointments, and Doctor Review Workflows.
 """
 
 import os
+import sys
+import re
 import json
 import uuid
 import hashlib
+import logging
 from datetime import datetime
 from typing import Dict, List, Optional, Union, Tuple
 import pymongo
+
+# Ensure UTF-8 output on Windows consoles
+if sys.platform == "win32":
+    try:
+        if sys.stdout and hasattr(sys.stdout, 'reconfigure'):
+            sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        if sys.stderr and hasattr(sys.stderr, 'reconfigure'):
+            sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
+# ---------------------------------------------------------------------------
+# 1. Deterministic Project Root & Explicit .env Loading
+# ---------------------------------------------------------------------------
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_FILE = os.path.join(PROJECT_ROOT, ".env")
+
+try:
+    from dotenv import load_dotenv
+    if os.path.exists(ENV_FILE):
+        load_dotenv(dotenv_path=ENV_FILE, override=False)
+except ImportError:
+    pass
+
+# Verify Certifi CA Bundle for secure Atlas TLS
+try:
+    import certifi
+    CA_FILE = certifi.where()
+except ImportError:
+    CA_FILE = None
 
 try:
     import mongomock
     HAS_MONGOMOCK = True
 except ImportError:
     HAS_MONGOMOCK = False
+
+logger = logging.getLogger("CliniScanDB")
+
+
+# ---------------------------------------------------------------------------
+# 2. Credential Sanitizer (Never Expose Credentials in Logs)
+# ---------------------------------------------------------------------------
+def mask_mongo_uri(uri: str) -> str:
+    """Masks database passwords from connection strings for safe logging."""
+    if not uri:
+        return ""
+    return re.sub(r"://([^:@]+):([^@]+)@", r"://\1:****@", uri)
 
 
 def hash_password(password: str) -> str:
@@ -31,42 +76,92 @@ class CliniScanDatabase:
 
     def __init__(
         self,
-        mongo_uri: str = "mongodb://localhost:27017",
-        db_name: str = "cliniscan_hospital_db",
+        mongo_uri: Optional[str] = None,
+        db_name: Optional[str] = None,
         local_backup_path: Optional[str] = None
     ):
-        self.db_name = db_name
-        if local_backup_path is None:
-            self.local_backup_path = os.path.join(
-                os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                "data",
-                "cliniscan_db_backup.json"
-            )
-        else:
-            self.local_backup_path = local_backup_path
+        # 1. Read URI: Explicit Argument -> MONGO_URI from root .env -> Localhost default
+        self.raw_uri = (
+            mongo_uri
+            or os.getenv("MONGO_URI")
+            or os.getenv("MONGODB_URI")
+            or "mongodb://localhost:27017"
+        ).strip()
+
+        # 2. Read DB Name: Explicit Argument -> DB_NAME from .env -> default
+        self.db_name = (
+            db_name
+            or os.getenv("DB_NAME")
+            or "cliniscan_hospital_db"
+        ).strip()
+
+        self.local_backup_path = local_backup_path or os.path.join(
+            PROJECT_ROOT, "data", "cliniscan_db_backup.json"
+        )
         self.is_connected = False
         self.client = None
         self.db = None
 
-        # Attempt MongoDB connection with 1-second timeout
+        self.is_cloud = self.raw_uri.startswith("mongodb+srv://") or "mongodb.net" in self.raw_uri
+        safe_uri = mask_mongo_uri(self.raw_uri)
+
+        # 3. Connection Configuration (5s timeout for cloud Atlas, 2s for local)
+        client_kwargs = {
+            "serverSelectionTimeoutMS": 5000 if self.is_cloud else 2000,
+        }
+        if self.is_cloud and CA_FILE:
+            client_kwargs["tlsCAFile"] = CA_FILE
+
+        # 4. Attempt Live Database Connection
         try:
-            client = pymongo.MongoClient(mongo_uri, serverSelectionTimeoutMS=1000)
-            client.server_info()  # Trigger check
+            client = pymongo.MongoClient(self.raw_uri, **client_kwargs)
+            client.server_info()  # Handshake ping to verify connectivity & auth
             self.client = client
-            self.db = self.client[db_name]
+
+            # Select target database (preserves URI database path if specified, else self.db_name)
+            try:
+                uri_db = client.get_default_database()
+                self.db = uri_db if uri_db is not None else self.client[self.db_name]
+            except Exception:
+                self.db = self.client[self.db_name]
+
             self.is_connected = True
-            self.storage_mode = "MongoDB (Live Service)"
-            print(f"[CliniScanDatabase] Connected to live MongoDB: {mongo_uri}/{db_name}")
-        except Exception:
-            # Fallback to mongomock
-            if HAS_MONGOMOCK:
-                self.client = mongomock.MongoClient()
-                self.db = self.client[db_name]
-                self.storage_mode = "MongoDB Engine (In-Memory Fallback)"
-                print("[CliniScanDatabase] MongoDB service offline. Initialized Mongomock engine with local JSON backup.")
+            cluster_label = "MongoDB Atlas Cloud" if self.is_cloud else "Local MongoDB"
+            self.storage_mode = f"{cluster_label} (Live Service)"
+            print(f"[CliniScanDatabase] [OK] CONNECTED: {cluster_label} -> DB: '{self.db.name}' ({safe_uri})")
+
+        except Exception as conn_err:
+            self.is_connected = False
+            self.client = None
+            self.db = None
+
+            print("\n" + "=" * 80)
+            print(f"[CliniScanDatabase] [ALERT] DATABASE CONNECTION FAILED")
+            print(f"Target: {safe_uri}")
+            print(f"Error Type: {type(conn_err).__name__}")
+            print(f"Error Message: {conn_err}")
+            if self.is_cloud:
+                print("[CliniScanDatabase] [WARNING] PRODUCTION ALERT: MongoDB Atlas cluster is unreachable.")
+                print("   - Diagnostic scans and appointments CANNOT be saved to Atlas.")
+                print("   - Please check: 1) Atlas IP Whitelist (Network Access -> 0.0.0.0/0)")
+                print("                   2) Database user password in .env")
             else:
-                self.storage_mode = "Local JSON Storage"
-                print("[CliniScanDatabase] Initialized Local JSON database storage.")
+                print("[CliniScanDatabase] [WARNING] Local MongoDB service is offline on localhost:27017.")
+            print("=" * 80 + "\n")
+
+            # Local offline development fallback
+            if not self.is_cloud and HAS_MONGOMOCK:
+                self.client = mongomock.MongoClient()
+                self.db = self.client[self.db_name]
+                self.storage_mode = "Local In-Memory Mock (Offline Development Only)"
+                print("[CliniScanDatabase] [INFO] Initialized temporary local mock engine for offline development.")
+            else:
+                # Also initialize in-memory fallback for process continuity, but mark clearly as disconnected
+                if HAS_MONGOMOCK:
+                    self.client = mongomock.MongoClient()
+                    self.db = self.client[self.db_name]
+                self.storage_mode = "DISCONNECTED (Atlas Offline - Live Data NOT Saved)"
+                print("[CliniScanDatabase] [WARNING] Running in DISCONNECTED mode. Live records will NOT be saved to Atlas.")
 
         # Restore persisted state from local backup if available
         self._load_from_local_backup()
@@ -138,49 +233,67 @@ class CliniScanDatabase:
             print(f"[CliniScanDatabase] Recommender sync note: {r_err}")
 
     def _seed_default_data(self):
-        """Seed default demo accounts for Patient, Doctor, and Laboratory if empty."""
-        if self.db is not None and self.db.users.count_documents({}) == 0:
-            demo_users = [
-                {
-                    "username": "patient_demo",
-                    "password_hash": hash_password("patient123"),
-                    "role": "Patient",
-                    "full_name": "Eleanor Vance",
-                    "email": "eleanor.vance@example.com",
-                    "phone": "+91 98765 43210",
-                    "city": "Bangalore",
-                    "age": 58,
-                    "gender": "Female",
-                    "created_at": datetime.now().isoformat()
-                },
-                {
-                    "username": "doctor_demo",
-                    "password_hash": hash_password("doctor123"),
-                    "role": "Doctor",
-                    "full_name": "Dr. Yukti Chauhan",
-                    "email": "dr.yukti@aiims.org",
-                    "phone": "+91 98111 22334",
-                    "city": "Bangalore",
-                    "specialization": "Pulmonologist",
-                    "hospital": "AIIMS",
-                    "experience_years": 20,
-                    "rating": 5.0,
-                    "created_at": datetime.now().isoformat()
-                },
-                {
-                    "username": "lab_demo",
-                    "password_hash": hash_password("lab123"),
-                    "role": "Laboratory",
-                    "full_name": "Apex Diagnostic & Radiology Lab",
-                    "email": "contact@apexdiagnostic.com",
-                    "phone": "+91 99000 11223",
-                    "city": "Bangalore",
-                    "license_no": "LAB-BLR-2026-981",
-                    "created_at": datetime.now().isoformat()
-                }
-            ]
-            self.db.users.insert_many(demo_users)
-            print("[CliniScanDatabase] Seeded demo accounts: patient_demo, doctor_demo, lab_demo")
+        """Seed default demo accounts for Patient, Doctor, and Laboratory if missing."""
+        if self.db is None:
+            return
+
+        demo_users = [
+            {
+                "username": "patient_demo",
+                "password_hash": hash_password("patient123"),
+                "role": "Patient",
+                "full_name": "Eleanor Vance",
+                "email": "eleanor.vance@example.com",
+                "phone": "+91 98765 43210",
+                "city": "Bangalore",
+                "age": 58,
+                "gender": "Female",
+                "created_at": datetime.now().isoformat()
+            },
+            {
+                "username": "doctor_demo",
+                "password_hash": hash_password("doctor123"),
+                "role": "Doctor",
+                "full_name": "Dr. Yukti Chauhan",
+                "email": "dr.yukti@aiims.org",
+                "phone": "+91 98111 22334",
+                "city": "Bangalore",
+                "specialization": "Pulmonologist",
+                "hospital": "AIIMS",
+                "experience_years": 20,
+                "rating": 5.0,
+                "created_at": datetime.now().isoformat()
+            },
+            {
+                "username": "lab_demo",
+                "password_hash": hash_password("lab123"),
+                "role": "Laboratory",
+                "full_name": "Apex Diagnostic & Radiology Lab",
+                "email": "contact@apexdiagnostic.com",
+                "phone": "+91 99000 11223",
+                "city": "Bangalore",
+                "license_no": "LAB-BLR-2026-981",
+                "created_at": datetime.now().isoformat()
+            },
+            {
+                "username": "staff_demo",
+                "password_hash": hash_password("staff123"),
+                "role": "Laboratory",
+                "full_name": "Clinical Diagnostic Staff",
+                "email": "staff@cliniscan.hospital.med",
+                "phone": "+91 99000 44556",
+                "city": "Bangalore",
+                "license_no": "STAFF-BLR-2026-001",
+                "created_at": datetime.now().isoformat()
+            }
+        ]
+        seeded_count = 0
+        for u in demo_users:
+            if self.db.users.count_documents({"username": u["username"]}) == 0:
+                self.db.users.insert_one(u)
+                seeded_count += 1
+        if seeded_count > 0:
+            print(f"[CliniScanDatabase] Verified & seeded {seeded_count} demo accounts: patient_demo, doctor_demo, lab_demo, staff_demo")
 
     # ==========================================================================
     # USER AUTHENTICATION & MANAGEMENT

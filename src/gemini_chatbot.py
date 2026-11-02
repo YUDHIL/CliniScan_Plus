@@ -11,7 +11,13 @@ import logging
 from typing import List, Dict, Optional, Any
 from dotenv import load_dotenv
 
-load_dotenv()
+# Deterministic root .env loading
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_FILE = os.path.join(PROJECT_ROOT, ".env")
+
+if os.path.exists(ENV_FILE):
+    load_dotenv(dotenv_path=ENV_FILE, override=False)
+
 logger = logging.getLogger(__name__)
 
 SYSTEM_PROMPT = """You are CliniScan AI Clinical Assistant, an intelligent, empathetic, and medically precise medical AI for the CliniScan+ platform.
@@ -79,33 +85,37 @@ class GeminiClinicalChatbot:
     """
 
     def __init__(self, api_key: Optional[str] = None):
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY", "").strip()
+        self.api_key = (api_key or os.getenv("GEMINI_API_KEY", "")).strip()
         self.client = None
         self._init_client()
 
     def _init_client(self):
         """Initialize Google GenAI client."""
         if not self.api_key:
-            logger.warning("GEMINI_API_KEY not found for chatbot.")
+            logger.warning("[GeminiClinicalChatbot] GEMINI_API_KEY not found in .env.")
             return
 
         try:
             from google import genai
             self.client = genai.Client(api_key=self.api_key)
             self.sdk_type = "google-genai"
-            logger.info("Chatbot initialized Google GenAI SDK successfully.")
+            logger.info("[GeminiClinicalChatbot] Successfully authenticated with Google GenAI SDK.")
         except Exception as e:
             try:
                 import google.generativeai as legacy_genai
                 legacy_genai.configure(api_key=self.api_key)
                 self.client = legacy_genai
                 self.sdk_type = "legacy"
-                logger.info("Chatbot initialized legacy google.generativeai SDK.")
+                logger.info("[GeminiClinicalChatbot] Initialized legacy google.generativeai SDK.")
             except Exception as ex:
-                logger.error(f"Failed initializing chatbot Gemini client: {ex}")
+                logger.error(f"[GeminiClinicalChatbot] Failed initializing chatbot Gemini client: {ex}")
                 self.client = None
 
     def is_available(self) -> bool:
+        if not self.api_key:
+            self.api_key = os.getenv("GEMINI_API_KEY", "").strip()
+            if self.api_key and self.client is None:
+                self._init_client()
         return bool(self.api_key and len(self.api_key) > 10 and self.client is not None)
 
     def generate_response(

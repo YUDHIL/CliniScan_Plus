@@ -1,0 +1,16 @@
+node_modules
+frontend
+.venv
+.git
+.github
+docs
+vinbigdata
+results
+notebooks
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.env
+.env.*
