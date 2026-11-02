@@ -8,9 +8,16 @@ import {
   RecommendationResponse
 } from '../types';
 
-const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE ||
-  (typeof window !== 'undefined' ? '/api' : 'http://127.0.0.1:8000/api');
+function getApiBase(): string {
+  const custom = process.env.NEXT_PUBLIC_API_BASE?.trim();
+  if (custom) {
+    const stripped = custom.replace(/\/+$/, '');
+    return stripped.endsWith('/api') ? stripped : `${stripped}/api`;
+  }
+  return typeof window !== 'undefined' ? '/api' : 'http://127.0.0.1:8000/api';
+}
+
+const API_BASE = getApiBase();
 
 
 class ApiClient {
@@ -118,7 +125,7 @@ class ApiClient {
       return res.json();
     } catch (err: any) {
       if (err.message && !err.message.includes('Inference failed')) {
-        throw new Error(`Connection to backend failed: ${err.message}. Please ensure the server on port 8000 is running.`);
+        throw new Error(`Connection to backend failed: ${err.message}. Please verify the backend server is running and reachable.`);
       }
       throw err;
     }

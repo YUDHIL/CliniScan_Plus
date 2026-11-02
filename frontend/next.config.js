@@ -2,7 +2,7 @@
 const backendUrl =
   process.env.BACKEND_URL ||
   (process.env.NEXT_PUBLIC_API_BASE ? process.env.NEXT_PUBLIC_API_BASE.replace(/\/api\/?$/, '') : '') ||
-  'http://127.0.0.1:8000';
+  (process.env.NODE_ENV === 'production' ? 'https://cliniscan-backend-s5vd.onrender.com' : 'http://127.0.0.1:8000');
 
 const nextConfig = {
   reactStrictMode: true,

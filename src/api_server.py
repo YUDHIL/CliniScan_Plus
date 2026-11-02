@@ -21,7 +21,7 @@ try:
 except Exception:
     pass
 
-from fastapi import FastAPI, UploadFile, File, Form, Query, HTTPException, status
+from fastapi import FastAPI, UploadFile, File, Form, Query, HTTPException, status, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from pydantic import BaseModel, Field
@@ -54,8 +54,12 @@ allowed_origins = [
     "http://127.0.0.1:3000",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
+    "https://cliniscan-plus.vercel.app",
 ]
-frontend_url_env = os.getenv("FRONTEND_URL", "").strip()
+frontend_url_env = (
+    os.getenv("FRONTEND_URL", "").strip()
+    or os.getenv("CORS_ALLOWED_ORIGINS", "").strip()
+)
 if frontend_url_env:
     for url in frontend_url_env.split(","):
         clean_url = url.strip().rstrip("/")
@@ -78,6 +82,27 @@ app.add_middleware(
         "Access-Control-Request-Headers",
     ],
 )
+
+
+@app.middleware("http")
+async def rewrite_non_api_paths(request: Request, call_next):
+    """Route paths without /api prefix (e.g. /auth/login) to their matching /api endpoints."""
+    path = request.url.path
+    api_prefixes = (
+        "/auth",
+        "/inference",
+        "/doctors",
+        "/recommendations",
+        "/appointments",
+        "/scans",
+        "/reports",
+        "/meta",
+        "/chat",
+        "/samples",
+    )
+    if any(path == p or path.startswith(f"{p}/") for p in api_prefixes):
+        request.scope["path"] = f"/api{path}"
+    return await call_next(request)
 
 
 @app.get("/")

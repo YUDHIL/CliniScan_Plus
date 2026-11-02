@@ -123,7 +123,7 @@ export const XrayScanner: React.FC<XrayScannerProps> = ({
         }
       }
     } catch (err: any) {
-      setError(err.message || 'Inference triage failed. Please verify that the FastAPI backend server is running on port 8000.');
+      setError(err.message || 'Inference triage failed. Please verify that the backend API is reachable.');
     } finally {
       setIsAnalyzing(false);
     }
