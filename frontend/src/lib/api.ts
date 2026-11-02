@@ -9,12 +9,17 @@ import {
 } from '../types';
 
 function getApiBase(): string {
-  const custom = process.env.NEXT_PUBLIC_API_BASE?.trim();
+  // In the browser, always use the same-origin Next.js reverse proxy '/api'
+  // to eliminate CORS preflight overhead and browser-level blocks completely.
+  if (typeof window !== 'undefined') {
+    return '/api';
+  }
+  const custom = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_API_BASE;
   if (custom) {
-    const stripped = custom.replace(/\/+$/, '');
+    const stripped = custom.trim().replace(/\/+$/, '');
     return stripped.endsWith('/api') ? stripped : `${stripped}/api`;
   }
-  return typeof window !== 'undefined' ? '/api' : 'http://127.0.0.1:8000/api';
+  return 'https://cliniscan-backend-s5vd.onrender.com/api';
 }
 
 const API_BASE = getApiBase();

@@ -14,12 +14,23 @@ from typing import Dict, List, Optional, Any
 from datetime import datetime
 
 # Pre-load torchvision extension to prevent circular import in Python 3.13
+# and constrain CPU threads to prevent memory explosion on 512MB RAM cloud containers
 try:
     import torch
+    torch.set_num_threads(1)
+    if hasattr(torch, "set_num_interop_threads"):
+        torch.set_num_interop_threads(1)
     import torchvision.extension
     import torchvision
 except Exception:
     pass
+
+try:
+    import cv2
+    cv2.setNumThreads(1)
+except Exception:
+    pass
+import gc
 
 from fastapi import FastAPI, UploadFile, File, Form, Query, HTTPException, status, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -69,40 +80,13 @@ if frontend_url_env:
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
-    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_origin_regex=r"^https?://.*$",
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
-    allow_headers=[
-        "Content-Type",
-        "Authorization",
-        "Accept",
-        "X-Requested-With",
-        "Origin",
-        "Access-Control-Request-Method",
-        "Access-Control-Request-Headers",
-    ],
+    allow_methods=["*"],
+    allow_headers=["*"],
+    expose_headers=["*"],
+    max_age=86400,
 )
-
-
-@app.middleware("http")
-async def rewrite_non_api_paths(request: Request, call_next):
-    """Route paths without /api prefix (e.g. /auth/login) to their matching /api endpoints."""
-    path = request.url.path
-    api_prefixes = (
-        "/auth",
-        "/inference",
-        "/doctors",
-        "/recommendations",
-        "/appointments",
-        "/scans",
-        "/reports",
-        "/meta",
-        "/chat",
-        "/samples",
-    )
-    if any(path == p or path.startswith(f"{p}/") for p in api_prefixes):
-        request.scope["path"] = f"/api{path}"
-    return await call_next(request)
 
 
 @app.get("/")
@@ -364,6 +348,11 @@ async def run_detection(
     else:
         raise HTTPException(status_code=400, detail="No image file, sample name, or base64 data provided.")
 
+    # Prevent memory explosion on constrained cloud containers (512MB RAM)
+    # Downscale oversized X-rays (>1280px) while maintaining aspect ratio
+    if pil_image.width > 1280 or pil_image.height > 1280:
+        pil_image.thumbnail((1280, 1280), Image.Resampling.LANCZOS)
+
     # Original Image Base64
     orig_b64 = image_to_base64(pil_image)
 
@@ -398,6 +387,10 @@ async def run_detection(
             top_k=6,
             use_gemini_live=False
         )
+
+    # Free intermediate inference memory
+    del results
+    gc.collect()
 
     return {
         "model_version": results["model_version"],
