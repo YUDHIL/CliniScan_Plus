@@ -388,11 +388,7 @@ async def run_detection(
             use_gemini_live=False
         )
 
-    # Free intermediate inference memory
-    del results
-    gc.collect()
-
-    return {
+    response_payload = {
         "model_version": results["model_version"],
         "source_image": source_name,
         "image_dimensions": results["image_dimensions"],
@@ -404,8 +400,14 @@ async def run_detection(
         "status": results["status"],
         "original_image_b64": orig_b64,
         "annotated_image_b64": annotated_b64,
-        "recommendations": recs
+        "recommendations": recs,
     }
+
+    # Free intermediate inference memory
+    del results
+    gc.collect()
+
+    return response_payload
 
 
 # ==============================================================================
