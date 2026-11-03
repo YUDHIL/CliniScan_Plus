@@ -11,6 +11,8 @@ import logging
 from typing import List, Dict, Optional, Any
 from dotenv import load_dotenv
 
+from src.gemini_service import gemini_service
+
 # Deterministic root .env loading
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENV_FILE = os.path.join(PROJECT_ROOT, ".env")
@@ -82,41 +84,15 @@ FALLBACK_RESPONSES = {
 class GeminiClinicalChatbot:
     """
     Intelligent Medical AI Assistant powered by Google Gemini.
+    Delegates LLM generation and error resiliency to the shared GeminiService.
     """
 
     def __init__(self, api_key: Optional[str] = None):
-        self.api_key = (api_key or os.getenv("GEMINI_API_KEY", "")).strip()
-        self.client = None
-        self._init_client()
-
-    def _init_client(self):
-        """Initialize Google GenAI client."""
-        if not self.api_key:
-            logger.warning("[GeminiClinicalChatbot] GEMINI_API_KEY not found in .env.")
-            return
-
-        try:
-            from google import genai
-            self.client = genai.Client(api_key=self.api_key)
-            self.sdk_type = "google-genai"
-            logger.info("[GeminiClinicalChatbot] Successfully authenticated with Google GenAI SDK.")
-        except Exception as e:
-            try:
-                import google.generativeai as legacy_genai
-                legacy_genai.configure(api_key=self.api_key)
-                self.client = legacy_genai
-                self.sdk_type = "legacy"
-                logger.info("[GeminiClinicalChatbot] Initialized legacy google.generativeai SDK.")
-            except Exception as ex:
-                logger.error(f"[GeminiClinicalChatbot] Failed initializing chatbot Gemini client: {ex}")
-                self.client = None
+        self.service = gemini_service
 
     def is_available(self) -> bool:
-        if not self.api_key:
-            self.api_key = os.getenv("GEMINI_API_KEY", "").strip()
-            if self.api_key and self.client is None:
-                self._init_client()
-        return bool(self.api_key and len(self.api_key) > 10 and self.client is not None)
+        """Check whether the underlying Gemini service is connected and ready."""
+        return self.service.is_available()
 
     def generate_response(
         self,
@@ -130,9 +106,6 @@ class GeminiClinicalChatbot:
         message_clean = (message or "").strip()
         if not message_clean:
             return "Hello! I am your CliniScan AI Clinical Assistant. How can I assist you with your chest radiograph, symptoms, or finding specialists today?"
-
-        if not self.is_available():
-            self._init_client()
 
         # Build context header if provided
         context_str = ""
@@ -153,70 +126,34 @@ class GeminiClinicalChatbot:
             if ctx_parts:
                 context_str = f"[Active Context: {', '.join(ctx_parts)}]\n\n"
 
-        # If Gemini is available, query the LLM
+        # If Gemini is available, query through centralized Gemini service
         if self.is_available():
             try:
-                reply = self._call_gemini_chat(message_clean, history or [], context_str)
+                # Build conversation prompt
+                prompt_full = context_str
+                if history:
+                    prompt_full += "Conversation History:\n"
+                    for turn in history[-6:]:
+                        role_label = "User" if turn.get("role") in ["user", "human"] else "Assistant"
+                        content = turn.get("content", "").strip()
+                        if content:
+                            prompt_full += f"{role_label}: {content}\n"
+                    prompt_full += "\n"
+
+                prompt_full += f"User: {message_clean}\nAssistant:"
+
+                reply = self.service.generate_text(
+                    prompt=prompt_full,
+                    system_instruction=SYSTEM_PROMPT,
+                    temperature=0.4
+                )
                 if reply and len(reply.strip()) > 5:
-                    return reply
+                    return reply.strip()
             except Exception as err:
-                logger.error(f"Gemini chatbot error: {err}")
+                logger.error(f"[GeminiClinicalChatbot] LLM invocation error: {err}")
 
         # Intelligent Medical Fallback Generator
         return self._generate_fallback(message_clean, context)
-
-    def _call_gemini_chat(
-        self,
-        message: str,
-        history: List[Dict[str, str]],
-        context_str: str
-    ) -> Optional[str]:
-        """Query Gemini using google-genai or legacy SDK."""
-        prompt_full = f"{SYSTEM_PROMPT}\n\n{context_str}"
-
-        # Append previous conversation history (up to last 6 turns)
-        if history:
-            prompt_full += "Conversation History:\n"
-            for turn in history[-6:]:
-                role_label = "User" if turn.get("role") in ["user", "human"] else "Assistant"
-                content = turn.get("content", "").strip()
-                if content:
-                    prompt_full += f"{role_label}: {content}\n"
-            prompt_full += "\n"
-
-        prompt_full += f"User: {message}\nAssistant:"
-
-        if self.sdk_type == "google-genai":
-            models_to_try = [
-                "gemini-2.5-flash",
-                "gemini-2.0-flash",
-                "gemini-1.5-flash",
-                "gemini-1.5-pro",
-            ]
-            for model_id in models_to_try:
-                try:
-                    response = self.client.models.generate_content(
-                        model=model_id,
-                        contents=prompt_full,
-                    )
-                    if response and response.text:
-                        return response.text.strip()
-                except Exception as ex:
-                    logger.debug(f"Chatbot attempt with {model_id} failed: {ex}")
-                    continue
-
-        elif self.sdk_type == "legacy":
-            for model_id in ["gemini-1.5-flash", "gemini-pro"]:
-                try:
-                    model = self.client.GenerativeModel(model_id)
-                    response = model.generate_content(prompt_full)
-                    if response and response.text:
-                        return response.text.strip()
-                except Exception as ex:
-                    logger.debug(f"Legacy chatbot {model_id} failed: {ex}")
-                    continue
-
-        return None
 
     def _generate_fallback(self, message: str, context: Optional[Dict] = None) -> str:
         """Heuristic clinical fallback if live Gemini API is unreachable."""

@@ -103,10 +103,31 @@ def health_check():
     }
 
 
-# Initialize YOLO11 Detector
+# Initialize YOLO11 Detector (Lazy-loaded to allow instant Uvicorn port binding on Render / Cloud)
 MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "cliniscan_yolo11n_best.pt")
 FALLBACK_MODEL = os.path.join(PROJECT_ROOT, "yolo11n.pt")
-detector = CliniScanDetector(model_path=MODEL_PATH, fallback_model=FALLBACK_MODEL)
+_detector_instance = None
+
+def get_detector() -> CliniScanDetector:
+    global _detector_instance
+    if _detector_instance is None:
+        logger.info("[CliniScanAPI] Lazily initializing YOLO11 detector...")
+        _detector_instance = CliniScanDetector(model_path=MODEL_PATH, fallback_model=FALLBACK_MODEL)
+    return _detector_instance
+
+class _DetectorProxy:
+    """Proxy object preserving 100% backward compatibility for detector.predict."""
+    def __getattr__(self, name):
+        return getattr(get_detector(), name)
+
+detector = _DetectorProxy()
+
+@app.on_event("startup")
+def startup_event():
+    """Trigger background detector warm-up without delaying port scan."""
+    import threading
+    logger.info("[CliniScanAPI] Starting background worker for model initialization...")
+    threading.Thread(target=get_detector, daemon=True).start()
 
 
 # ==============================================================================

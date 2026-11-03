@@ -1,8 +1,8 @@
 """
-CliniScan+ Gemini Live Real-World Doctor Recommendation Engine
-Powered by Google Gemini 3.5 Flash with Structured Clinical Grounding.
-Discovers verified real-world medical specialists, clinics, hospital affiliations,
-contact phone numbers, and Google Maps navigation tailored to patient radiographic findings.
+CliniScan+ Gemini Live Specialist Referral & Triage Engine
+Powered by Google Gemini with Structured Clinical Grounding.
+Discovers medical specialists, accredited hospital departments, and clinic directions
+tailored to radiographic chest abnormalities.
 """
 
 import os
@@ -11,6 +11,8 @@ import logging
 import urllib.parse
 from typing import List, Dict, Optional, Any
 from dotenv import load_dotenv
+
+from src.gemini_service import gemini_service
 
 # Deterministic root .env loading
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -43,44 +45,16 @@ SPECIALTY_DISEASE_MAP = {
 
 class GeminiDoctorRecommender:
     """
-    Live real-world doctor recommendation engine utilizing Google Gemini 3.5 Flash
-    for verified specialists, physical hospital addresses, phone numbers, and Google Maps links.
+    Specialist recommendation engine utilizing centralized Gemini AI service
+    with clinical triage safeguards, JSON validation, and direct maps/booking navigation.
     """
 
     def __init__(self, api_key: Optional[str] = None):
-        self.api_key = (api_key or os.getenv("GEMINI_API_KEY", "")).strip()
-        self.client = None
-        self._init_client()
-
-    def _init_client(self):
-        """Initialize Google GenAI client."""
-        if not self.api_key:
-            logger.warning("[GeminiDoctorRecommender] GEMINI_API_KEY is not configured in .env.")
-            return
-
-        try:
-            from google import genai
-            self.client = genai.Client(api_key=self.api_key)
-            self.sdk_type = "google-genai"
-            logger.info("[GeminiDoctorRecommender] Successfully authenticated with Google GenAI SDK.")
-        except Exception as e:
-            try:
-                import google.generativeai as legacy_genai
-                legacy_genai.configure(api_key=self.api_key)
-                self.client = legacy_genai
-                self.sdk_type = "legacy"
-                logger.info("[GeminiDoctorRecommender] Initialized legacy google.generativeai SDK.")
-            except Exception as ex:
-                logger.error(f"[GeminiDoctorRecommender] Failed initializing Gemini client: {ex}")
-                self.client = None
+        self.service = gemini_service
 
     def is_available(self) -> bool:
-        """Check if Gemini API key is valid and client is ready."""
-        if not self.api_key:
-            self.api_key = os.getenv("GEMINI_API_KEY", "").strip()
-            if self.api_key and self.client is None:
-                self._init_client()
-        return bool(self.api_key and len(self.api_key) > 10 and self.client is not None)
+        """Check whether the underlying Gemini service is ready."""
+        return self.service.is_available()
 
     def recommend_real_doctors(
         self,
@@ -89,14 +63,12 @@ class GeminiDoctorRecommender:
         top_k: int = 4
     ) -> Optional[Dict[str, Any]]:
         """
-        Query Gemini to retrieve real, active medical specialists in `city`
+        Query Gemini to retrieve recommended medical specialists in `city`
         matching detected chest X-ray findings.
         """
         if not self.is_available():
-            self._init_client()
-            if not self.is_available():
-                logger.warning("Gemini recommender unavailable (API key missing or client error).")
-                return None
+            logger.warning("[GeminiDoctorRecommender] Gemini service is unavailable.")
+            return None
 
         # Extract detected class names
         finding_names = []
@@ -111,14 +83,17 @@ class GeminiDoctorRecommender:
             findings_text = "No focal radiographic abnormalities detected (Normal scan)"
         else:
             primary_finding = finding_names[0]
-            spec_info = SPECIALTY_DISEASE_MAP.get(primary_finding, {"specialty": "Pulmonologist", "urgency": "Clinical Correlation"})
+            spec_info = SPECIALTY_DISEASE_MAP.get(
+                primary_finding,
+                {"specialty": "Pulmonologist", "urgency": "Clinical Correlation"}
+            )
             findings_text = ", ".join(finding_names)
 
         target_specialty = spec_info["specialty"]
         target_urgency = spec_info["urgency"]
         effective_city = city if city and city.lower() != "all cities" else "Bangalore"
 
-        prompt = f"""You are an expert clinical triage director in the CliniScan+ Hospital Platform.
+        prompt = f"""You are a clinical triage director in the CliniScan+ Hospital Platform.
 A patient has undergone chest radiograph analysis with the following findings:
 - Radiographic Finding(s): {findings_text}
 - Recommended Specialist Domain: {target_specialty}
@@ -126,16 +101,13 @@ A patient has undergone chest radiograph analysis with the following findings:
 - Patient Location: {effective_city}
 
 TASK:
-Provide a verified list of {top_k} REAL, PROMINENT, and ACCREDITED medical doctors or specialist hospital departments located in or near {effective_city} who specialize in {target_specialty} (e.g. from renowned healthcare institutions like Apollo, Fortis, Max, Manipal, AIIMS, Medanta, Narayana Health, Aster, or top clinical practices).
+Provide a list of up to {top_k} prominent medical specialists or hospital departments in or near {effective_city} specializing in {target_specialty} (e.g. at accredited institutions such as Apollo, Fortis, Max, Manipal, AIIMS, Medanta, Narayana Health, Aster, or established clinical centers).
 
-Provide accurate real-world data:
-1. Exact Doctor Full Name (with Dr. prefix)
-2. Specialization / Sub-specialty title
-3. Renowned Hospital / Clinic Name
-4. Specific physical street address or area in {effective_city}
-5. Hospital or clinic reception contact phone number
-6. Clinical rating and estimated experience
-7. A specific, medically coherent 1-sentence explanation of why this specialist is matched for {findings_text}
+CRITICAL MEDICAL SAFEGUARDS:
+- Do not fabricate doctor personal contact numbers; use official hospital reception numbers or null.
+- Do not invent consultation fees; provide estimated standard fees or null.
+- Never state that an appointment is pre-booked or confirmed.
+- Every entry is an AI-generated clinical referral suggestion for patient navigation.
 
 Return ONLY a valid JSON object with this exact structure:
 {{
@@ -146,21 +118,19 @@ Return ONLY a valid JSON object with this exact structure:
   "recommended_urgency": "{target_urgency}",
   "doctors": [
     {{
-      "doctor_name": "Dr. Example Name",
+      "doctor_name": "Dr. Specialist Name",
       "specialization": "{target_specialty}",
       "hospital": "Hospital Name",
-      "address": "Locality and full address, {effective_city}",
+      "address": "Locality and area in {effective_city}",
       "city": "{effective_city}",
-      "experience_years": 18,
+      "experience_years": 15,
       "rating": 4.8,
-      "rating_reviews": "4.8 ⭐ (140+ reviews)",
+      "rating_reviews": "4.8 ⭐",
       "contact_phone": "+91 80 1234 5678",
       "fees_inr": 1000,
-      "availability": "Available",
-      "is_registered": true,
-      "is_real_doctor": true,
-      "ai_match_reason": "Specific medical reason linking this doctor's expertise to {findings_text}.",
-      "booking_url": "Official hospital appointment link or Practo URL",
+      "availability": "Consultation by Appointment",
+      "ai_match_reason": "Clinical rationale linking this specialist to {findings_text}.",
+      "booking_url": null,
       "maps_query": "Hospital Name {effective_city}"
     }}
   ]
@@ -168,91 +138,88 @@ Return ONLY a valid JSON object with this exact structure:
 """
 
         try:
-            raw_json = self._call_gemini_json(prompt)
+            raw_json = self.service.generate_json(
+                prompt=prompt,
+                system_instruction="You are an expert clinical referral assistant. Output only valid JSON strictly matching the requested schema.",
+                temperature=0.2
+            )
+
             if not raw_json:
+                logger.warning("[GeminiDoctorRecommender] Empty JSON response received from Gemini.")
                 return None
 
+            # Validate JSON
             parsed_data = json.loads(raw_json)
+            if not isinstance(parsed_data, dict):
+                logger.warning("[GeminiDoctorRecommender] Model output is not a JSON object.")
+                return None
 
-            # Post-process doctors and build Google Maps & Real Booking URLs
-            doctors = parsed_data.get("doctors", [])
-            for doc in doctors:
-                doc_name = doc.get("doctor_name", "Doctor")
-                hosp = doc.get("hospital", "")
-                d_city = doc.get("city", effective_city)
+            raw_doctors = parsed_data.get("doctors", [])
+            if not isinstance(raw_doctors, list):
+                raw_doctors = []
+
+            sanitized_doctors = []
+            for doc in raw_doctors:
+                if not isinstance(doc, dict):
+                    continue
+
+                doc_name = str(doc.get("doctor_name", "Medical Specialist")).strip()
+                hosp = str(doc.get("hospital", "Accredited Hospital")).strip()
+                d_city = str(doc.get("city", effective_city)).strip()
                 clean_name = doc_name.replace("Dr.", "").replace("Dr", "").strip()
-                
-                # Build direct Google Maps search URL
+
+                # Build Google Maps search link
                 maps_query = doc.get("maps_query") or f"{doc_name} {hosp} {d_city}"
-                encoded_maps = urllib.parse.quote_plus(maps_query)
-                doc["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={encoded_maps}"
+                encoded_maps = urllib.parse.quote_plus(str(maps_query))
+                maps_url = f"https://www.google.com/maps/search/?api=1&query={encoded_maps}"
 
-                # Build Direct Real Appointment Booking URLs
-                provided_booking = doc.get("booking_url", "")
-                if provided_booking and provided_booking.startswith("http") and "example" not in provided_booking:
-                    doc["booking_url"] = provided_booking
-                else:
-                    # Smart Google Booking Redirection link (Opens instant schedule consultation panel)
-                    book_q = urllib.parse.quote_plus(f"book appointment {doc_name} {hosp} {d_city}")
-                    doc["booking_url"] = f"https://www.google.com/search?q={book_q}"
-
-                # Direct Practo Directory Redirection
+                # Build Practo & Google appointment search URLs
                 practo_q = urllib.parse.quote_plus(f"{clean_name} {d_city}")
-                doc["practo_url"] = f"https://www.practo.com/search/doctors?results_type=doctor&q={practo_q}"
+                practo_url = f"https://www.practo.com/search/doctors?results_type=doctor&q={practo_q}"
 
-                doc["is_real_doctor"] = True
-                doc["disease_expertise"] = findings_text
-                if not doc.get("rating_reviews"):
-                    doc["rating_reviews"] = f"{doc.get('rating', 4.8):.1f} ⭐"
+                booking_url = doc.get("booking_url")
+                if not booking_url or not str(booking_url).startswith("http") or "example" in str(booking_url):
+                    book_q = urllib.parse.quote_plus(f"book appointment {doc_name} {hosp} {d_city}")
+                    booking_url = f"https://www.google.com/search?q={book_q}"
 
-            parsed_data["source"] = "Gemini AI Real-World Clinical Intelligence"
-            parsed_data["total_matches"] = len(doctors)
-            parsed_data["recommended_doctors"] = doctors
+                # Medical safeguards: AI suggestions are NEVER marked as verified database doctors
+                sanitized_doc = {
+                    "doctor_name": doc_name,
+                    "specialization": doc.get("specialization") or target_specialty,
+                    "hospital": hosp,
+                    "address": doc.get("address") or f"{hosp}, {d_city}",
+                    "city": d_city,
+                    "experience_years": int(doc.get("experience_years", 12)) if str(doc.get("experience_years", "")).isdigit() else 12,
+                    "rating": float(doc.get("rating", 4.8)) if isinstance(doc.get("rating"), (int, float)) else 4.8,
+                    "rating_reviews": doc.get("rating_reviews") or f"{doc.get('rating', 4.8)} ⭐",
+                    "contact_phone": doc.get("contact_phone") or "Hospital Reception / Front Desk",
+                    "fees_inr": int(doc.get("fees_inr", 800)) if str(doc.get("fees_inr", "")).isdigit() else 800,
+                    "availability": doc.get("availability") or "By Consultation / Prior Booking",
+                    "ai_match_reason": doc.get("ai_match_reason") or f"Recommended specialist for {findings_text}.",
+                    "maps_url": maps_url,
+                    "practo_url": practo_url,
+                    "booking_url": booking_url,
+                    "disease_expertise": findings_text,
+                    # STRICT MEDICAL SAFEGUARDS
+                    "is_real_doctor": False,       # Unverified AI suggestion; not an internally verified doctor
+                    "is_registered": False,        # Not verified against internal hospital credentials
+                    "verification_status": "AI Referral Suggestion (Unverified - Confirm with Clinic)"
+                }
+                sanitized_doctors.append(sanitized_doc)
+
+            parsed_data["doctors"] = sanitized_doctors
+            parsed_data["recommended_doctors"] = sanitized_doctors
+            parsed_data["total_matches"] = len(sanitized_doctors)
+            parsed_data["source"] = "Gemini AI Clinical Referral Intelligence"
+            parsed_data["disclaimer"] = (
+                "AI-generated specialist recommendations are provided for informational triage guidance. "
+                "Patients should verify credentials, availability, and consultation terms directly with the healthcare facility."
+            )
+
             return parsed_data
 
         except Exception as err:
-            logger.error(f"Error executing Gemini live doctor recommendation: {err}")
-            return None
-
-    def _call_gemini_json(self, prompt: str) -> Optional[str]:
-        """Execute the prompt with strict JSON output."""
-        if self.sdk_type == "google-genai":
-            from google.genai import types
-            models_to_try = [
-                "gemini-2.5-flash",
-                "gemini-2.0-flash",
-                "gemini-1.5-flash",
-                "gemini-1.5-pro",
-            ]
-            config = types.GenerateContentConfig(
-                response_mime_type="application/json",
-                temperature=0.2
-            )
-            for model_id in models_to_try:
-                try:
-                    response = self.client.models.generate_content(
-                        model=model_id,
-                        contents=prompt,
-                        config=config
-                    )
-                    if response and response.text:
-                        return response.text
-                except Exception as ex:
-                    logger.warning(f"Gemini model {model_id} failed: {ex}")
-            return None
-
-        else:
-            # Legacy SDK
-            try:
-                model = self.client.GenerativeModel("gemini-1.5-flash")
-                response = model.generate_content(
-                    prompt,
-                    generation_config={"response_mime_type": "application/json", "temperature": 0.2}
-                )
-                if response and response.text:
-                    return response.text
-            except Exception as ex:
-                logger.error(f"Legacy Gemini JSON call failed: {ex}")
+            logger.error(f"[GeminiDoctorRecommender] Error generating doctor recommendations: {err}")
             return None
 
 

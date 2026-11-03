@@ -1,6 +1,6 @@
 """
 Launcher for CliniScan+ FastAPI REST API Server
-Runs on http://127.0.0.1:8000
+Binds to 0.0.0.0 for cloud deployment (Render, Docker) & local development.
 """
 
 import sys
