@@ -169,44 +169,62 @@ class CliniScanDatabase:
         self._seed_default_data()
 
     def _load_from_local_backup(self):
-        """Restore users, appointments, and scans from local JSON backup on startup."""
-        if os.path.exists(self.local_backup_path) and self.db is not None:
+        """Restore users, appointments, and scans from local JSON backup on startup (batched)."""
+        if not self.is_connected or self.db is None:
+            return
+
+        try:
+            existing_usernames = set(self.db.users.distinct("username"))
+        except Exception:
+            existing_usernames = set()
+
+        if os.path.exists(self.local_backup_path):
             try:
                 with open(self.local_backup_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
 
                 if "users" in data and data["users"]:
-                    for u in data["users"]:
-                        if self.db.users.count_documents({"username": u.get("username")}) == 0:
-                            self.db.users.insert_one(u)
+                    new_users = [u for u in data["users"] if u.get("username") and u.get("username") not in existing_usernames]
+                    if new_users:
+                        self.db.users.insert_many(new_users)
+                        for u in new_users:
+                            existing_usernames.add(u.get("username"))
 
                 if "appointments" in data and data["appointments"]:
-                    for a in data["appointments"]:
-                        if self.db.appointments.count_documents({"appointment_id": a.get("appointment_id")}) == 0:
-                            self.db.appointments.insert_one(a)
+                    try:
+                        existing_appts = set(self.db.appointments.distinct("appointment_id"))
+                    except Exception:
+                        existing_appts = set()
+                    new_appts = [a for a in data["appointments"] if a.get("appointment_id") and a.get("appointment_id") not in existing_appts]
+                    if new_appts:
+                        self.db.appointments.insert_many(new_appts)
 
                 if "scans" in data and data["scans"]:
-                    for s in data["scans"]:
-                        if self.db.scans.count_documents({"scan_id": s.get("scan_id")}) == 0:
-                            self.db.scans.insert_one(s)
+                    try:
+                        existing_scans = set(self.db.scans.distinct("scan_id"))
+                    except Exception:
+                        existing_scans = set()
+                    new_scans = [s for s in data["scans"] if s.get("scan_id") and s.get("scan_id") not in existing_scans]
+                    if new_scans:
+                        self.db.scans.insert_many(new_scans)
 
-                print(f"[CliniScanDatabase] Restored {self.db.appointments.count_documents({})} appointments and {self.db.users.count_documents({})} users from backup.")
+                print("[CliniScanDatabase] Verified persisted users and records from backup.")
             except Exception as e:
                 print(f"[CliniScanDatabase] Backup restore warning: {e}")
 
         # Also check recommender sample JSON for any newly registered doctors and auto-merge
         try:
             recommender_json = os.path.join(os.path.dirname(os.path.dirname(__file__)), "recommender", "doctors_200_sample.json")
-            if os.path.exists(recommender_json) and self.db is not None:
+            if os.path.exists(recommender_json):
                 with open(recommender_json, "r", encoding="utf-8") as f:
                     sample_docs = json.load(f)
-                new_imported = 0
+                new_docs = []
                 for sd in sample_docs:
                     u_name = sd.get("username")
-                    if u_name and self.db.users.count_documents({"username": u_name}) == 0:
+                    if u_name and u_name not in existing_usernames:
                         raw_name = sd.get("Doctor_Name", "Dr. Specialist")
                         clean_n = raw_name.replace("Dr. Dr.", "Dr.").strip()
-                        self.db.users.insert_one({
+                        new_docs.append({
                             "user_id": sd.get("user_id", f"DOC-{u_name.upper()}"),
                             "username": u_name,
                             "password_hash": sd.get("password_hash", hash_password(sd.get("password", "Doctor123!"))),
@@ -225,17 +243,23 @@ class CliniScanDatabase:
                             "disease_expertise": sd.get("Disease", "General"),
                             "created_at": sd.get("created_at", datetime.now().isoformat())
                         })
-                        new_imported += 1
-                if new_imported > 0:
+                        existing_usernames.add(u_name)
+                if new_docs:
+                    self.db.users.insert_many(new_docs)
                     self._save_to_local_backup()
-                    print(f"[CliniScanDatabase] Auto-imported {new_imported} doctors from recommender directory.")
+                    print(f"[CliniScanDatabase] Auto-imported {len(new_docs)} doctors from recommender directory.")
         except Exception as r_err:
             print(f"[CliniScanDatabase] Recommender sync note: {r_err}")
 
     def _seed_default_data(self):
         """Seed default demo accounts for Patient, Doctor, and Laboratory if missing."""
-        if self.db is None:
+        if not self.is_connected or self.db is None:
             return
+
+        try:
+            existing_usernames = set(self.db.users.distinct("username"))
+        except Exception:
+            existing_usernames = set()
 
         demo_users = [
             {
@@ -287,13 +311,10 @@ class CliniScanDatabase:
                 "created_at": datetime.now().isoformat()
             }
         ]
-        seeded_count = 0
-        for u in demo_users:
-            if self.db.users.count_documents({"username": u["username"]}) == 0:
-                self.db.users.insert_one(u)
-                seeded_count += 1
-        if seeded_count > 0:
-            print(f"[CliniScanDatabase] Verified & seeded {seeded_count} demo accounts: patient_demo, doctor_demo, lab_demo, staff_demo")
+        missing_demo = [u for u in demo_users if u["username"] not in existing_usernames]
+        if missing_demo:
+            self.db.users.insert_many(missing_demo)
+            print(f"[CliniScanDatabase] Verified & seeded {len(missing_demo)} demo accounts: patient_demo, doctor_demo, lab_demo, staff_demo")
 
     # ==========================================================================
     # USER AUTHENTICATION & MANAGEMENT

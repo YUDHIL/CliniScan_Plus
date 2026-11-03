@@ -26,28 +26,56 @@ const API_BASE = getApiBase();
 
 
 class ApiClient {
-  private async request<T>(endpoint: string, options?: RequestInit): Promise<T> {
-    const res = await fetch(`${API_BASE}${endpoint}`, {
-      ...options,
-      headers: {
-        ...(options?.headers || {}),
-      },
-    });
-
-    if (!res.ok) {
-      let errorMsg = `API Error: ${res.statusText}`;
-      try {
-        const errorJson = await res.json();
-        if (errorJson.detail) {
-          errorMsg = typeof errorJson.detail === 'string' ? errorJson.detail : JSON.stringify(errorJson.detail);
-        }
-      } catch (e) {
-        // ignore parse error
+  private getTargetUrls(endpoint: string): string[] {
+    const urls = [`${API_BASE}${endpoint}`];
+    if (typeof window !== 'undefined' && API_BASE.startsWith('/')) {
+      const directCloud = (process.env.NEXT_PUBLIC_API_BASE || 'https://cliniscan-backend-s5vd.onrender.com')
+        .replace(/\/+$/, '')
+        .replace(/\/api$/, '') + '/api';
+      const fallbackUrl = `${directCloud}${endpoint}`;
+      if (!urls.includes(fallbackUrl)) {
+        urls.push(fallbackUrl);
       }
-      throw new Error(errorMsg);
     }
+    return urls;
+  }
 
-    return res.json();
+  private async request<T>(endpoint: string, options?: RequestInit): Promise<T> {
+    const urls = this.getTargetUrls(endpoint);
+    let lastError: any = null;
+
+    for (const url of urls) {
+      try {
+        const res = await fetch(url, {
+          ...options,
+          headers: {
+            ...(options?.headers || {}),
+          },
+        });
+
+        if (!res.ok) {
+          let errorMsg = `API Error: ${res.statusText}`;
+          try {
+            const errorJson = await res.json();
+            if (errorJson.detail) {
+              errorMsg = typeof errorJson.detail === 'string' ? errorJson.detail : JSON.stringify(errorJson.detail);
+            }
+          } catch (e) {
+            // ignore parse error
+          }
+          throw new Error(errorMsg);
+        }
+
+        return await res.json();
+      } catch (err: any) {
+        lastError = err;
+        // If client returned a specific 4xx error (e.g. invalid password), don't retry alternative URL
+        if (err.message && (err.message.includes('400') || err.message.includes('401') || err.message.includes('403') || err.message.includes('404'))) {
+          throw err;
+        }
+      }
+    }
+    throw lastError;
   }
 
   // --- 1. Auth & Users ---
@@ -110,30 +138,40 @@ class ApiClient {
   }
 
   async detectXray(formData: FormData): Promise<InferenceResult> {
-    try {
-      const res = await fetch(`${API_BASE}/inference/detect`, {
-        method: 'POST',
-        body: formData,
-      });
+    const urls = this.getTargetUrls('/inference/detect');
+    let lastError: any = null;
 
-      if (!res.ok) {
-        let errorMsg = `Inference failed (HTTP ${res.status})`;
-        try {
-          const errJson = await res.json();
-          if (errJson.detail) {
-            errorMsg = typeof errJson.detail === 'string' ? errJson.detail : JSON.stringify(errJson.detail);
-          }
-        } catch (e) {}
-        throw new Error(errorMsg);
-      }
+    for (const url of urls) {
+      try {
+        const res = await fetch(url, {
+          method: 'POST',
+          body: formData,
+        });
 
-      return res.json();
-    } catch (err: any) {
-      if (err.message && !err.message.includes('Inference failed')) {
-        throw new Error(`Connection to backend failed: ${err.message}. Please verify the backend server is running and reachable.`);
+        if (!res.ok) {
+          let errorMsg = `Inference failed (HTTP ${res.status})`;
+          try {
+            const errJson = await res.json();
+            if (errJson.detail) {
+              errorMsg = typeof errJson.detail === 'string' ? errJson.detail : JSON.stringify(errJson.detail);
+            }
+          } catch (e) {}
+          throw new Error(errorMsg);
+        }
+
+        return await res.json();
+      } catch (err: any) {
+        lastError = err;
+        if (err.message && (err.message.includes('400') || err.message.includes('422'))) {
+          throw err;
+        }
       }
-      throw err;
     }
+
+    if (lastError?.message && !lastError.message.includes('Inference failed')) {
+      throw new Error(`Connection to backend failed: ${lastError.message}. Please verify the backend server is running and reachable.`);
+    }
+    throw lastError;
   }
 
   // --- 3. Doctors & Recommendations ---

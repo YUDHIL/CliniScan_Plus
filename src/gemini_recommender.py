@@ -219,9 +219,10 @@ Return ONLY a valid JSON object with this exact structure:
         if self.sdk_type == "google-genai":
             from google.genai import types
             models_to_try = [
-                "gemini-3.5-flash-lite",
-                "gemini-3.8-flash",
-                "gemini-3.5-flash",
+                "gemini-2.5-flash",
+                "gemini-2.0-flash",
+                "gemini-1.5-flash",
+                "gemini-1.5-pro",
             ]
             config = types.GenerateContentConfig(
                 response_mime_type="application/json",

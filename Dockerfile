@@ -32,4 +32,4 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 8000
 
 # Start FastAPI server
-CMD ["sh", "-c", "uvicorn src.api_server:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["python", "run_backend.py"]

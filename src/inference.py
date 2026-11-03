@@ -87,12 +87,13 @@ class CliniScanDetector:
             print(f"[CliniScanDetector] Trained model '{self.model_path}' not found. Initializing base: {fallback_model}")
             self.model = YOLO(fallback_model)
 
-        # Warm up model to initialize CUDA & torchvision C-extensions in main thread
-        try:
-            dummy_img = np.zeros((640, 640, 3), dtype=np.uint8)
-            self.model.predict(dummy_img, imgsz=640, device=self.device, verbose=False)
-        except Exception as e:
-            pass
+        # Warm up model only if GPU is available to avoid delaying CPU container startup
+        if self.device != "cpu":
+            try:
+                dummy_img = np.zeros((640, 640, 3), dtype=np.uint8)
+                self.model.predict(dummy_img, imgsz=640, device=self.device, verbose=False)
+            except Exception as e:
+                pass
 
     def predict(
         self,
