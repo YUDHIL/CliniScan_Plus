@@ -596,4 +596,8 @@ def chat_endpoint(req: ChatRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("src.api_server:app", host="127.0.0.1", port=8000, reload=True)
+    raw_port = os.getenv("PORT", "8000").strip()
+    port = int(raw_port) if raw_port.isdigit() else 8000
+    host = os.getenv("HOST", "0.0.0.0").strip() or "0.0.0.0"
+    print(f"[CliniScanAPI] Starting server on http://{host}:{port} (PORT env: {os.getenv('PORT')})", flush=True)
+    uvicorn.run("src.api_server:app", host=host, port=port, reload=False)

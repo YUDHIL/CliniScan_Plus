@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: cliniscan-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    region: oregon
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: DB_NAME
+        value: doctor_db
+      - key: COLLECTION_NAME
+        value: doctors
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://cliniscan-plus.vercel.app
+      - key: FRONTEND_URL
+        value: https://cliniscan-plus.vercel.app
+      - key: MONGO_URI
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

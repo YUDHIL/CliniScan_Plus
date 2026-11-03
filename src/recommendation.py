@@ -118,6 +118,23 @@ class DoctorRecommendationEngine:
                         pass
 
             extra_rows = []
+            # Fast O(1) doctor-city index lookup to eliminate startup latency on Render free-tier CPU
+            df_lookup = {}
+            for row_idx, (doc_name_val, city_val) in enumerate(zip(df["Doctor_Name"], df["City"])):
+                clean_doc = re.sub(r'^(Dr\.\s*|Dr\s+|Doctor\s+)+', '', str(doc_name_val), flags=re.IGNORECASE).strip().lower()
+                c_val = str(city_val).strip().lower()
+                key = (clean_doc, c_val)
+                if key not in df_lookup:
+                    df_lookup[key] = []
+                df_lookup[key].append(row_idx)
+
+            col_doc_name = df.columns.get_loc("Doctor_Name")
+            col_is_reg = df.columns.get_loc("is_registered")
+            col_fees = df.columns.get_loc("Fees")
+            col_avail = df.columns.get_loc("Availability")
+            col_hosp = df.columns.get_loc("Hospital")
+            col_spec = df.columns.get_loc("Specialization")
+
             for rd in registered_doctors:
                 raw_name = str(rd.get("full_name", "")).strip()
                 clean_n = re.sub(r'^(Dr\.\s*|Dr\s+|Doctor\s+)+', '', raw_name, flags=re.IGNORECASE).strip()
@@ -132,20 +149,15 @@ class DoctorRecommendationEngine:
                 d_avail = str(rd.get("availability", "Available")).strip()
                 d_disease = str(rd.get("disease_expertise") or d_spec).strip()
 
-                # Check exact match on Doctor_Name AND City
-                exact_mask = (
-                    (df["Doctor_Name"].str.lower() == d_name.lower()) |
-                    (df["Doctor_Name"].str.lower() == clean_n.lower()) |
-                    (df["Doctor_Name"].str.lower() == f"dr. {clean_n.lower()}")
-                ) & (df["City"].str.lower() == d_city.lower())
-                
-                if exact_mask.any():
-                    df.loc[exact_mask, "Doctor_Name"] = d_name
-                    df.loc[exact_mask, "is_registered"] = True
-                    df.loc[exact_mask, "Fees"] = d_fee
-                    df.loc[exact_mask, "Availability"] = d_avail
-                    df.loc[exact_mask, "Hospital"] = d_hosp
-                    df.loc[exact_mask, "Specialization"] = d_spec
+                matching_indices = df_lookup.get((clean_n.lower(), d_city.lower()), [])
+                if matching_indices:
+                    for m_idx in matching_indices:
+                        df.iat[m_idx, col_doc_name] = d_name
+                        df.iat[m_idx, col_is_reg] = True
+                        df.iat[m_idx, col_fees] = d_fee
+                        df.iat[m_idx, col_avail] = d_avail
+                        df.iat[m_idx, col_hosp] = d_hosp
+                        df.iat[m_idx, col_spec] = d_spec
                 else:
                     # Add primary row
                     extra_rows.append({
